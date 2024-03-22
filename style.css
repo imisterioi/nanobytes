@@ -1,0 +1,48 @@
+
+#ENCABEZADO{
+    
+    text-align: center;
+    margin-top: 100px; 
+}
+
+#ENCABEZADO > h1{
+    font-size: 50px;
+}
+
+#ENCABEZADO > p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*#IMAGEN{
+     background-position: 3% center;
+    
+}*/
+
+#MANTENIMIENTO{
+    text-align: center;
+    color:red;
+    margin-top: 100px;
+    
+}
+
+#MANTENIMIENTO > p{
+    font-weight: bold;
+    color: black;
+}
+
+#PRODUCTOS{
+    text-decoration: none;
+
+    display: flex;
+    margin-top: 50px;
+    color: inherit;
+    justify-content: space-around;
+}   
+
+#ARMADO{
+    font-size: 20px;
+    text-align: center;
+    color:red;
+    margin-top: 100px;
+}
