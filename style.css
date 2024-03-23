@@ -31,24 +31,49 @@
     color: black;
 }
 
-.contenedor-img {
+/* .contenedor-img {
  
     flex-direction: row;
     align-items: center; 
     width: 50px;
     margin-top: 10px;
     margin: 0 10px;
-}
+} */
 
 
 
-#PRODUCTOS{
+/* #PRODUCTOS{
     text-decoration: none;
     display: flex;
     margin-top: 50px;
     color: inherit;
     justify-content: space-around;
-}   
+}    */
+
+.imagen-seleccion{
+    height: 250px;
+    width: 250px;
+    margin-left: 3vh;
+}
+
+#seleccion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#seleccion a .imagen-seleccion + h3 {
+    text-align: center;
+}
+
+#seleccion a{
+    text-decoration: none;
+}
+
+#consola-select{
+    position: relative;
+    bottom: 1.5vh;
+}
 
 #ARMADO{
     font-size: 20px;
