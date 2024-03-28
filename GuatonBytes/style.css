@@ -12,10 +12,12 @@
     height: 10vh;
 }
 
+
 h1{
     font-size: 1.5rem;
 }
-.logo{
+.logo{   
+    margin-top: 10px;
     display: flex;
     align-items: center;
     text-decoration: none;
