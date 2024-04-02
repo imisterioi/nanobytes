@@ -14,7 +14,11 @@
 
 
 h1{
-    font-size: 1.5rem;
+    font-size: 1.rem;
+}
+
+#bytes{
+    color: #2fc5e0;
 }
 .logo{   
     margin-top: 10px;
@@ -36,6 +40,8 @@ nav{
     display: flex;
     column-gap: 20px;
     font-size: 18px;
+    letter-spacing: 1.5px;
+   
 }
 
 a{
