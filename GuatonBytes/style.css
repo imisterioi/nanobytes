@@ -151,3 +151,78 @@ ul h3{
     position: relative;
     left: 600px;
 }
+
+
+/* *ARMADO DE PC */
+#armadopc{
+    background-image: url(assets/Black-Desktop.jpg);
+    font-size: 20px;
+    border: solid 0.5vh black;
+}
+
+#armadopc h2{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    font-size: 30px;
+}
+
+.contendio-armadopc{
+    height: 60vh;
+}
+.img-pc{
+    width: 300px;
+    height: 300px;
+}
+
+.contendio-armadopc form{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.seleccion-juegos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.seleccion-juegos input{
+    color: black;
+    width: 200px;
+    height: 20px;
+}
+
+.fps-presupuesto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fps-presupuesto select, .fps-presupuesto option, .fps-presupuesto input{
+    color: black;
+    margin: 10px;
+}
+
+.presupuesto input{
+    width: 125px;
+}
+
+.contenido-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.periferico input{
+    transform: scale(1.3);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: black;
+} 
+
+.enviar-buttom{
+    color: black;
+}
