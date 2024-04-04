@@ -6,6 +6,7 @@ html {
     margin: 0;
     font-family: sans-serif;
     color: white;
+    background-color: black;
 }
 
 #arriba{
@@ -20,7 +21,23 @@ html {
     align-items: center;
     justify-content: space-around;
     height: 10vh;
+    border-bottom: solid 1px #2fc5e0;
+    animation: bajar 1s;
     
+    
+}
+
+
+
+@keyframes bajar {
+    0%{
+        transform: translateY(-100px);
+        
+    }
+    100%{
+        transform: translateY(0px);
+        
+    }
 }
 
 
@@ -59,14 +76,27 @@ a{
     text-decoration: none;
 }
 
-#section1{
-    height: 80vh;
+#sectionbanner{
+    height: 90vh;
     display: flex;
     align-items: center;
-    background-image: url(assets/main.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url(assets/Diseño\ sin\ título.png);
+    /* background-size: contain; */
+    border-bottom: solid 1px whitesmoke;
+    background-repeat: round;
     padding-left: 20vh;
+    animation: izquierda 1s;
+}
+
+@keyframes izquierda {
+    0%{
+        transform: translateX(-400px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
 }
 
 #contenido1 > h1{
@@ -128,20 +158,21 @@ ul h3{
     text-align: center;
 }
 
-#section2{
+#sectionopiniones{
     height: 80vh;
     display: flex;
     align-items: center;
-    background-image: url(assets/cat.webp);
+    background-image: url();
     background-repeat: no-repeat;
     background-size: cover;
     padding-left: 20vh;
+    border-bottom: solid 1px whitesmoke;
 }
 
 #contenido2 > h1{
     font-size: 40px;
     /*-webkit-text-stroke: 1px black;*/
-    color: black;
+    color: azure;
     position: relative;
     left: 500px;
     bottom: 50px;
@@ -149,15 +180,26 @@ ul h3{
 
 #contenido2 > iframe{
     position: relative;
-    left: 600px;
+    left: 1000px;
 }
 
+#sectionreparaciones{
+    height: 60vh;
+    border-bottom: solid 1px whitesmoke;
 
+}
+
+#h1reparaciones{
+    position: relative;
+    top: 20px;
+    
+
+}
 /* *ARMADO DE PC */
 #armadopc{
-    background-image: url(assets/Black-Desktop.jpg);
+    background-image: url();
     font-size: 20px;
-    border: solid 0.5vh black;
+    border-bottom: solid 1px whitesmoke;
 }
 
 #armadopc h2{
