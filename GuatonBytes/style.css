@@ -21,8 +21,9 @@ html {
     align-items: center;
     justify-content: space-around;
     height: 10vh;
-    border-bottom: solid 1px #2fc5e0;
+    border-bottom: solid 0.1rem #2fc5e0;
     animation: bajar 1s;
+    color: white;
     
     
 }
@@ -44,6 +45,9 @@ html {
 h1{
     font-size: 1.rem;
 }
+#nano{
+    color: white;
+}
 
 #bytes{
     color: #2fc5e0;
@@ -64,40 +68,36 @@ h1{
     margin-right: 11px;
 }
 
+
+
+
 nav{
+    color: white;
     display: flex;
-    column-gap: 20px;
+    column-gap: 1.5rem;
     font-size: 18px;
-    letter-spacing: 1.5px;
+    /* letter-spacing: 1.5px; */
    
 }
 
 a{
     text-decoration: none;
+    color: white;
 }
 
 #sectionbanner{
     height: 90vh;
     display: flex;
     align-items: center;
-    background-image: url(assets/Diseño\ sin\ título.png);
     /* background-size: contain; */
     border-bottom: solid 1px whitesmoke;
     background-repeat: round;
     padding-left: 20vh;
-    animation: izquierda 1s;
+    
 }
 
-@keyframes izquierda {
-    0%{
-        transform: translateX(-400px);
-        opacity: 0;
-    }
-    100%{
-        transform: translateX(0px);
-        opacity: 1;
-    }
-}
+
+
 
 #contenido1 > h1{
     font-size: larger;
@@ -106,31 +106,16 @@ a{
 
 .titulo-2{
     font-size: 20px;
-    padding-left: 20px;
     text-align: center;
     margin-bottom: 25px;
 }
 
 
-.check{
-    height: 30px;
-    width: 30px;
-}
-
-#contenido1 > h3{
-    position: relative;
-    bottom: 29px;
-    left: 40px;
-    font-size: large;
-    font-size: 20px;
-}
-
 footer{
     background-color: black;
     align-items: center;
     display: flex;
-    justify-content: space-around;
-    height: 10vh;
+    height: 20vh;
 }
 
 .logofooter{
@@ -138,15 +123,10 @@ footer{
     align-items: center;
 }
 
-.logofooter h1{
-    font-size: 1.5rem;
-}
-
 .footer{
     display: flex;
-    list-style: none;
-    position: relative;
-    left: 70px;
+    justify-content: flex-end;
+    width: 90%;
     font-size: 12px;
 }
 
@@ -156,6 +136,7 @@ ul {
 
 ul h3{
     text-align: center;
+    font-size: 1rem;
 }
 
 #sectionopiniones{
@@ -166,7 +147,7 @@ ul h3{
     background-repeat: no-repeat;
     background-size: cover;
     padding-left: 20vh;
-    border-bottom: solid 1px whitesmoke;
+    border-bottom: solid 0.1rem whitesmoke;
 }
 
 #contenido2 > h1{
@@ -174,7 +155,6 @@ ul h3{
     /*-webkit-text-stroke: 1px black;*/
     color: azure;
     position: relative;
-    left: 500px;
     bottom: 50px;
 }
 
@@ -268,3 +248,10 @@ ul h3{
 .enviar-buttom{
     color: black;
 }
+
+iframe{
+    position: relative;
+    margin-left: -50%
+
+}
+
