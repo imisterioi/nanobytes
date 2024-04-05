@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+    color: white
+}
+#arriba {
+    /* position: fixed; */
+    background-color: black;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    height: 12vh;
+    animation: bajar 1s;
+    color: white;
+    border-bottom: solid 1px rgb(63, 57, 57);
+
+}
+
+@keyframes bajar {
+    0% {
+        transform: translateY(-100px);
+
+    }
+
+    100% {
+        transform: translateY(0px);
+
+    }
+}
+
+
+h1 {
+    font-size: 1.rem;
+}
+
+#nano {
+    color: white;
+}
+
+#bytes {
+    color: #2fc5e0;
+}
+
+.logo {
+    display: flex;
+    margin-right: 20rem;
+    align-items: center;
+    text-decoration: none;
+}
+
+.icon {
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    margin-right: 11px;
+}
+
+
+
+
+nav {
+    color: white;
+    display: flex;
+    column-gap: 1.3rem;
+    font-size: 1.1rem;
+    justify-content: flex-start;
+    margin-right: 3vw;
+
+}
+
+#header1:hover{
+    color: #2fc5e0;
+}
+#header2:hover{
+    color: #2fc5e0;
+}
+#header3:hover{
+    color: #2fc5e0;
+}
+#header4:hover{
+    color: #2fc5e0;
+}
+#header5:hover{
+    color: #2fc5e0;
+}
+#header6:hover{
+    color: #2fc5e0;
+}
+#header7:hover span {
+    color: aqua;
+}
+#header7:hover img {
+    filter: invert(43%) sepia(14%) saturate(2633%) hue-rotate(184deg) brightness(87%) contrast(87%);
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Armado */
+#armado{
+    background-color: black;
+    height: 70vh;
+}
+
+#armado h2{
+    text-align: center;
+}
+.contendio-armadopc {
+    height: 60vh;
+}
+
+.img-pc {
+    width: 300px;
+    height: 300px;
+}
+
+.contendio-armadopc form {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.seleccion-juegos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.seleccion-juegos input {
+    color: black;
+    width: 200px;
+    height: 20px;
+}
+
+.fps-presupuesto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fps-presupuesto select,
+.fps-presupuesto option,
+.fps-presupuesto input {
+    color: black;
+    margin: 10px;
+}
+
+.presupuesto input {
+    width: 200px;
+}
+
+.contenido-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.periferico input {
+    transform: scale(1.3);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.enviar-buttom {
+    color: black;
+}
+
+
+
+
+/* FOOTER */
+footer {
+    background-color: black;
+    align-items: center;
+    display: flex;
+    height: 20vh;
+}
+
+.logofooter {
+    display: flex;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+    font-size: 12px;
+}
+
+#autor{
+    font-size: 0.8rem;
+    display: flex;
+    margin-left: 2vw;
+}
+
+ul {
+    list-style: none;
+}
+
+ul > h3 {
+    text-align: center;
+    font-size: 1rem;
+}

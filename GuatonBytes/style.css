@@ -485,13 +485,12 @@ iframe {
 
 /* SECCIÓN COMPONENTES */
 
-#componentes > h1{
-    padding-top: 15vh;
-    margin-top: 10;
-    font-size: 5rem;
-    color: white;
+#sectioncomponentes > h1{
     display: flex;
-    justify-content: center;  
+    font-size: 5rem;
+    color: rgb(255, 255, 255);
+    display: flex;
+   
 }
 
 #componentes > p{
@@ -514,6 +513,18 @@ iframe {
     border-bottom: solid 1px rgb(65, 63, 63);
 }
 
+#componentes{
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: hidden;
+    justify-content: center;
+}
+
+#imagencomponentes > img{
+    width: 15%;
+    float: right;
+    display: block;
+}
 #catalogo{
     display: flex;
     font-size: 2rem;
@@ -542,12 +553,9 @@ iframe {
     height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url();
     background-repeat: no-repeat;
-    background-size: cover;
     border-bottom: solid 0.1rem rgb(65, 63, 63);
     background-image: url(assets/gato-blanco.jpg);
-    background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;  
     
@@ -563,3 +571,4 @@ iframe {
     display: flex;
     margin-left: 8vw;
 }
+
