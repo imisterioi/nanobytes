@@ -1,0 +1,588 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    font-family: sans-serif;
+    color: white;
+        
+}
+
+#arriba {
+    position: fixed;
+    background-color: black;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: black;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 12vh;
+    animation: bajar 1s;
+    color: white;
+    border-bottom: solid 1px rgb(63, 57, 57);
+
+
+}
+
+
+
+@keyframes bajar {
+    0% {
+        transform: translateY(-100px);
+
+    }
+
+    100% {
+        transform: translateY(0px);
+
+    }
+}
+
+
+h1 {
+    font-size: 1.rem;
+}
+
+#nano {
+    color: white;
+}
+
+#bytes {
+    color: #2fc5e0;
+}
+
+.logo {
+    display: flex;
+    margin-right: 20rem;
+    align-items: center;
+    text-decoration: none;
+}
+
+.icon {
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    margin-right: 11px;
+}
+
+
+
+
+nav {
+    color: white;
+    display: flex;
+    column-gap: 1.3rem;
+    font-size: 1.1rem;
+    justify-content: flex-start;
+    margin-right: 3vw;
+    /* letter-spacing: 1.5px; */
+
+}
+
+#header1:hover{
+    color: #2fc5e0;
+}
+#header2:hover{
+    color: #2fc5e0;
+}
+#header3:hover{
+    color: #2fc5e0;
+}
+#header4:hover{
+    color: #2fc5e0;
+}
+#header5:hover{
+    color: #2fc5e0;
+}
+#header6:hover{
+    color: #2fc5e0;
+}
+#header7:hover span {
+    color: aqua;
+}
+#header7:hover img {
+    filter: invert(43%) sepia(14%) saturate(2633%) hue-rotate(184deg) brightness(87%) contrast(87%);
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* SECCIÓN BANNER */
+#sectionbanner {
+    height: 95vh;
+    border-bottom: solid 1px rgb(0, 0, 0);
+    background-repeat: round;
+    background-color: black;
+
+}
+
+#obtener1{
+    background-color: transparent;
+    border: 0.1rem solid white;
+    padding: 1rem 1rem;  
+    width: 20rem;  
+    text-align: center;
+    transition: background-color 0.3s;
+    display: flex;
+    z-index: 1001;
+    justify-content: center;
+    font-size: 1.4rem;   
+    transition: all 0.3s ease;;  
+}
+
+#obtener1:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.1);
+}
+
+#obtener2{
+    background-color: transparent;
+    border: 0.1rem solid white;
+    padding: 1rem 1rem;  
+    width: 20rem;  
+    text-align: center;
+    transition: background-color 0.3s;
+    display: flex;
+    z-index: 1001;
+    justify-content: center;
+    font-size: 1.4rem;  
+    transition: all 0.3s ease;;    
+}
+
+#obtener2:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.1);
+}
+
+#obtener3{
+    background-color: transparent;
+    border: 0.1rem solid white;
+    padding: 1rem 1rem;  
+    width: 20rem;  
+    text-align: center;
+    transition: background-color 0.3s;
+    display: flex;
+    z-index: 1001;
+    justify-content: center;
+    font-size: 1.4rem;  
+    transition: all 0.3s ease;  
+}
+
+#obtener3:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.1);
+}
+
+#contenido1 > h1 {
+    font-size: larger;
+    font-size: 40px;
+}
+
+.titulo-2 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+
+/* FOOTER */
+footer {
+    background-color: black;
+    align-items: center;
+    display: flex;
+    height: 20vh;
+}
+
+.logofooter {
+    display: flex;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+    font-size: 12px;
+}
+
+#autor{
+    font-size: 0.8rem;
+    display: flex;
+    margin-left: 2vw;
+}
+
+ul {
+    list-style: none;
+}
+
+ul > h3 {
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+/* SECCIÓN SERVICIOS */
+
+#servicios > h1{
+    padding-top: 15vh;
+    margin-top: 10;
+    font-size: 5rem;
+    color: white;
+    display: flex;
+    justify-content: center;  
+}
+
+
+#servicios > p{
+    padding-top: 10vh;
+    font-size: 1rem;
+    color: white;
+    display: flex;
+    justify-content: left;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    justify-content: center;
+    
+    
+}
+
+#sectionservicios {
+    background-color: black;
+    height: 90vh;
+    border-bottom: solid 1px rgb(65, 63, 63);
+}
+
+#botonservicios{
+    display: flex;
+    column-gap: 10rem;
+    margin-top: 10vh;
+    justify-content: center;
+}
+
+#rep{
+    background-color: transparent;
+    border: 0.09rem solid white;
+    padding: 1rem 1rem;  
+    width: 13rem;  
+    text-align: center;
+    transition: background-color 0.3s;
+    transition: all 0.3s ease;
+    
+}
+
+#rep:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.1);
+}
+
+#arm{
+    background-color: transparent;
+    border: 0.09rem solid white;
+    padding: 1rem 1rem;
+    width: 13rem;
+    text-align: center;
+    transition: background-color 0.3s;
+    transition: all 0.3s ease;
+}
+
+#arm:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.1);
+}
+
+#comp{
+    background-color: transparent;
+    border: 0.09rem solid white;
+    padding: 1rem 1rem;
+    width: 13rem;
+    text-align: center;
+    transition: background-color 0.3s;
+    transition: all 0.3s ease;
+}
+
+#comp:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.1);
+}
+
+#upg{
+    background-color: transparent;
+    border: 0.09rem solid white;
+    padding: 1rem 1rem;
+    width: 13rem;
+    text-align: center;
+    transition: background-color 0.3s;
+    transition: all 0.3s ease;
+}
+
+#upg:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.1);
+}
+
+/* SECCIÓN ARMADO */
+#armadopc {
+    height: 120vh;
+    background-color: black;
+    background-image: url();
+    font-size: 20px;
+    border-bottom: solid 1px rgb(0, 0, 0);
+}
+
+#armadopc > h2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 30vh;
+    font-size: 4rem;
+    /* border-bottom: 0.5rem solid white; */
+ 
+}
+
+.line-container {
+    width: 70%; 
+    margin: 5% auto; 
+}
+
+.line {
+    border-bottom: 1px solid rgb(255, 255, 255); 
+    width: 80%; 
+    margin: 0 auto; 
+}
+
+.contendio-armadopc {
+    height: 60vh;
+}
+
+.img-pc {
+    width: 300px;
+    height: 300px;
+}
+
+.contendio-armadopc form {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.seleccion-juegos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.seleccion-juegos input {
+    color: black;
+    width: 200px;
+    height: 20px;
+}
+
+.fps-presupuesto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fps-presupuesto select,
+.fps-presupuesto option,
+.fps-presupuesto input {
+    color: black;
+    margin: 10px;
+}
+
+.presupuesto input {
+    width: 125px;
+}
+
+.contenido-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.periferico input {
+    transform: scale(1.3);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.enviar-buttom {
+    color: black;
+}
+
+iframe {
+    display: flex;
+    margin-left: 56vw
+}
+
+.carousel-item img {
+    
+    width: 90vw;
+    height: 95vh; /* Cambia el valor según lo desees */
+    object-fit: cover;
+    z-index: 1000;
+
+}
+
+/*SECCIÓN NOSOTROS*/
+
+#section-nosotros{
+    display: flex;
+    background-color:white;
+    height: 100vh;
+    border-bottom: solid 1px rgb(0, 0, 0);
+    background-image: url(assets/cat.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;  
+     
+}
+
+#nosotros > h1{
+    margin-top: 10vh;
+    font-size: 4rem;
+    text-align: justify;;
+    text-align: center;
+    color: black;
+}
+
+.linea {
+    border-bottom: 1px solid rgb(0, 0, 0); 
+    width: 50%; 
+    margin: 0 auto; 
+}
+.texto-nosotros{
+    display: flex;
+    border-radius: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.5);
+    height: 65vh;
+    max-height: 65vh;
+    /* text-overflow: ellipsis; */
+    padding: 10%;
+    overflow: auto;
+}
+.texto-nosotros > p{
+    font-size: 1.3rem;
+    text-align: center;
+    color: black;
+    text-overflow: ellipsis;
+    max-height: 60vh;
+    margin: 0;
+
+    
+}
+
+/* SECCIÓN COMPONENTES */
+
+#componentes > h1{
+    padding-top: 15vh;
+    margin-top: 10;
+    font-size: 5rem;
+    color: white;
+    display: flex;
+    justify-content: center;  
+}
+
+#componentes > p{
+
+    text-align: justify;
+    padding-top: 8vh;
+    font-size: 1rem;
+    color: white;
+    display: flex;
+    max-width: 50%;
+    padding-left: 3rem;
+    text-align: right;
+    flex-direction: row-reverse;
+    
+}
+
+#sectioncomponentes {
+    background-color: black;
+    height: 90vh;
+    border-bottom: solid 1px rgb(65, 63, 63);
+}
+
+#catalogo{
+    display: flex;
+    font-size: 2rem;
+    margin-top: 10vh;
+    background-color: transparent;
+    border: 0.09rem solid white;
+    padding: 1rem 1rem;  
+    width: 15rem;  
+    text-align: center;
+    transition: background-color 0.3s;
+    transition: all 0.3s ease;
+    margin-left: 80%;
+;
+}
+
+#catalogo:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.1);
+}
+
+
+
+/* SECCIÓN OPINIONES */
+#sectionopiniones {
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: solid 0.1rem rgb(65, 63, 63);
+    background-image: url(assets/gato-blanco.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;  
+    
+}
+
+#opiniones > iframe {
+    display: flex;
+    left: 1000px;
+}
+
+#opiniones > h1{
+    color: black;
+    display: flex;
+    margin-left: 8vw;
+}
+
+/* --------------- */
+
+#opciones{
+    display: flex;
+    justify-content: space-between;
+    height: 40vh;
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+    
+}
+.texto-opcion{
+    color: black;
+    display: flex;
+    align-items: center;
+    margin: 0px 10vw;
+    border: solid 4px black;
+    width: 30%;
+    height: 10vh;
+    justify-content: center;
+    border-radius: 10rem;
+    background-color: antiquewhite;
+}
+
