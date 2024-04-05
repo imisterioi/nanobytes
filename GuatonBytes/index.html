@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NanoBytes</title>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -19,48 +20,93 @@
                 <a class="logo" href="index.html">
                     <img src="assets/icon.jpg" alt="icon" class="icon">
                     <h1 id="nano">Nano</h1>
-                    <h1 id="bytes">Bytes</h1>
+                    <h1 id="bytes">Cats</h1>
                 </a>
             </div>
 
             <nav id="barrasuperior">
-                <a href="#principal">Inicio</a>
-                <a href="#">Quíenes sómos</a>
-                <a href="#">Garantías</a>
-                <a href="#">Reparaciones</a>
-                <a href="#section2">Opiniones</a>
+                <a href="#principal" id="header1">Inicio</a>
+                <a href="#sectionservicios"id="header2">Servicios</a>
+                <a href="#armadopc"id="header3">Arma tu equipo</a>
+                <a href="#section-nosotros"id="header4">Quíenes sómos</a>
+                <a href="#sectioncomponentes"id="header5">Componentes</a>
+                <a href="#sectionopiniones"id="header6">Opiniones</a>
+                <a href="#" id="header7">
+                    <span>Carrito</span>
+                    <img src="assets/shopping_cart_30px.png" alt="carrito">
+                </a>
             </nav>
 
         </div>
     </header>
 
     <section id="sectionbanner">
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="assets/gato1.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="assets/gato2.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="assets/gato3.jpg" class="d-block w-100" alt="...">
-              </div>
+
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="assets/cat1.webp" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <a href="#" id="obtener1">Obtener más información</a>
+                        <h5>Gato placeholder</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="assets/cat2.webp" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <a href="#" id="obtener2">Obtener más información</a>
+                        <h5>Gato placeholder</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/cat3.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <a href="#" id="obtener3">Obtener más información</a>
+                        <h5>Gato placeholder</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
             </button>
-          </div>
+        </div>
     </section>
-    <section id="sectionreparaciones">
+    <section id="sectionservicios">
         <header>
-            <div id="contenido2">
-                <h1 id="h1reparaciones">Reparaciones</h1>       
+            <div id="servicios">
+                <h1>Nuestros servicios</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae facilis commodi obcaecati quos
+                    iste explicabo autem mollitia voluptates, voluptas ipsum itaque incidunt quae ducimus atque iusto
+                    sit corporis, reprehenderit voluptatem, ipsa tempore! Neque, maxime minus. Dignissimos similique
+                    adipisci error maiores aspernatur est ad alias, beatae doloremque, cum sed obcaecati libero.
+                    Voluptates, eos maxime, inventore saepe explicabo et molestiae sapiente voluptas magnam voluptatem
+                    recusandae, neque repudiandae voluptatibus! Distinctio non eos consequuntur eum maxime nulla. Unde
+                    blanditiis corrupti et? Qui recusandae harum beatae cumque officia possimus minus explicabo,
+                    perspiciatis eius!</p>
+                <nav id="botonservicios">
+                    <a href="#" id="rep">Reparaciones</a>
+                    <a href="#" id="arm">Arma tu equipo</a>
+                    <a href="#" id="comp">Componentes</a>
+                    <a href="#" id="upg">Upgrades</a>
+                </nav>
             </div>
 
         </header>
@@ -71,24 +117,26 @@
 
     <section id="armadopc">
         <h2>¿Quieres armar tu primer PC Gamer?</h2>
-        
-        <div class="contendio-armadopc">
+        <div class="line-container">
+            <div class="line"></div>
+        </div>
+        <!--<div class="contendio-armadopc">
             <form action="" class="juegos">
                 <div class="seleccion-juegos">
-                <h3>Ingresa 3 juegos que te gustaría jugar:</h3>
-                <input type="text" placeholder="Primer Juego" >
-                <input type="text" placeholder="Segundo Juego">
-                <input type="text" placeholder="Tercer Juego">
-                </div>  
-                
+                    <h3>Ingresa 3 juegos que te gustaría jugar:</h3>
+                    <input type="text" placeholder="Primer Juego">
+                    <input type="text" placeholder="Segundo Juego">
+                    <input type="text" placeholder="Tercer Juego">
+                </div>
+
                 <div class="fps-presupuesto">
                     <div class="fps">
                         <label>Limite de FPS:</label>
-                        <select id="opciones" >
-                        <option value="opcion1">30FPS</option>
-                        <option value="opcion2">60FPS</option>
-                        <option value="opcion3">90FPS</option>
-                        <option value="opcion4">120FPS</option>
+                        <select id="opciones">
+                            <option value="opcion1">30FPS</option>
+                            <option value="opcion2">60FPS</option>
+                            <option value="opcion3">90FPS</option>
+                            <option value="opcion4">120FPS</option>
                         </select>
                     </div>
 
@@ -97,8 +145,8 @@
                         <input type="number" min="0" placeholder="$">
                     </div>
                 </div>
-                
-                <div class="contenido-img">    
+
+                <div class="contenido-img">
                     <img class="img-pc" src="assets/52134aa0-03ea-4067-aaef-d8d0ca5b1fd0_800x.webp" alt="PC">
                     <div class="periferico">
                         <label for="">Inlcluir perifericos:</label>
@@ -107,17 +155,64 @@
                     <input class="enviar-buttom" type="submit" value="Enviar">
                 </div>
             </form>
-        </div>
+        </div>-->
     </section>
 
+    <section id="section-nosotros">
+        <header>
+            <div id="nosotros">
+                <h1>Quíenes sómos</h1>
+                <div class="line-container">
+                    <div class="linea"></div>
+                </div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non dolore nobis ea ab et possimus
+                    explicabo nulla vel quo tenetur saepe adipisci libero consequatur debitis esse veritatis, facilis,
+                    corrupti quis dolor eveniet cumque! Iste numquam ut magnam quia maxime doloremque cumque, doloribus
+                    asperiores consequatur dolorum accusantium, itaque cum in, repudiandae ipsam nulla optio rerum? Quos
+                    possimus corrupti ab eveniet ullam, dolore ut ex distinctio nisi saepe illum sint, atque sequi.
+                    Quibusdam maxime eligendi aperiam repellat totam cum consequatur aliquid eaque numquam? Aliquid
+                    officia voluptate quos, iure quo ipsam maxime ullam.</p>
+            </div>
+
+        </header>
+
+
+
+
+    </section>
+    <section id="sectioncomponentes">
+        <header>
+            <div id="componentes">
+                <h1>Componentes</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae facilis commodi obcaecati quos
+                    iste explicabo autem mollitia voluptates, voluptas ipsum itaque incidunt quae ducimus atque iusto
+                    sit corporis, reprehenderit voluptatem, ipsa tempore! Neque, maxime minus. Dignissimos similique
+                    adipisci error maiores aspernatur est ad alias, beatae doloremque, cum sed obcaecati libero.
+                    Voluptates, eos maxime, inventore saepe explicabo et molestiae sapiente voluptas magnam voluptatem
+                    recusandae, neque repudiandae voluptatibus! Distinctio non eos consequuntur eum maxime nulla. Unde
+                    blanditiis corrupti et? Qui recusandae harum beatae cumque officia possimus minus explicabo,
+                    perspiciatis eius!</p>
+                <nav id="catalogo-componentes">
+                    <a href="#" id="catalogo">Ir al catálogo</a>
+                    
+                </nav>
+            </div>
+
+        </header>
+
+
+
+    </section>
 
     <section id="sectionopiniones">
         <header>
-            <div id="contenido2">
+            <div id="opiniones">
                 <h1 id="clientes">Testimonios de nuestros clientes</h1>
+                <nav id="comentarios">
+                </nav>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3319.9522524140034!2d-71.23225118889404!3d-33.684300509414776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x966255d61f76cb99%3A0x81d47a10451b62b0!2sNANOBYTES%20Los%20Lagos%20Formateo%20y%20Mantenciones%20PC!5e0!3m2!1ses!2scl!4v1712091208285!5m2!1ses!2scl"
-                    width=500vh height="400vw" style="border:1vh;" allowfullscreen="" loading="lazy"
+                    width=600vw height="600vh" style="border: 0.3rem solid gray;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
@@ -128,6 +223,7 @@
     </section>
 
     <footer>
+        <p id="autor">Creado por BW Proyectos</p>
         <div class="logofooter">
             <!--<img src="assets/icon.jpg" alt="icon" class="icon"> 
                 <h1>NanoBytes</h1> -->
@@ -155,7 +251,9 @@
             </ul>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
