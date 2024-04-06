@@ -1,3 +1,5 @@
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -125,16 +127,16 @@ a {
 
 #obtener1{
     background-color: transparent;
-    border: 0.1rem solid white;
+    border: 0.2rem solid white;
     padding: 1rem 1rem;  
-    width: 20rem;  
+    width: 25rem;  
     text-align: center;
     transition: background-color 0.3s;
     display: flex;
     z-index: 1001;
     justify-content: center;
     font-size: 1.4rem;   
-    transition: all 0.3s ease;;  
+    transition: all 0.3s ease;  
 }
 
 #obtener1:hover{
@@ -144,9 +146,9 @@ a {
 
 #obtener2{
     background-color: transparent;
-    border: 0.1rem solid white;
+    border: 0.2rem solid white;
     padding: 1rem 1rem;  
-    width: 20rem;  
+    width: 25rem;  
     text-align: center;
     transition: background-color 0.3s;
     display: flex;
@@ -163,9 +165,9 @@ a {
 
 #obtener3{
     background-color: transparent;
-    border: 0.1rem solid white;
+    border: 0.2rem solid white;
     padding: 1rem 1rem;  
-    width: 20rem;  
+    width: 25rem;  
     text-align: center;
     transition: background-color 0.3s;
     display: flex;
@@ -539,6 +541,7 @@ iframe {
     border: 0.09rem solid white;
     padding: 1rem 1rem;  
     width: 15rem;  
+    justify-content: center;
     text-align: center;
     transition: background-color 0.3s;
     transition: all 0.3s ease;
@@ -551,8 +554,6 @@ iframe {
     background-color: rgba(255, 255, 255, 0.1);
     transform: scale(1.1);
 }
-
-
 
 /* SECCIÓN OPINIONES */
 #sectionopiniones {
