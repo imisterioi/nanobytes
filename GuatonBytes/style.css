@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -6,8 +6,8 @@ html {
 
 * {
     margin: 0;
-    font-family: sans-serif;
     color: white;
+    
     
     
 }
@@ -259,7 +259,7 @@ ul > h3 {
     background-color: rgb(0, 0, 0);
     height: 90vh;
     border-bottom: solid 1px rgb(65, 63, 63);
-    background-image: url(assets/fondoservicios.png);
+    background-image: url();
     
 }
 
@@ -337,13 +337,13 @@ ul > h3 {
     background-color: black;
     background-image: url(assets/Fondoarmapc.png);
     font-size: 20px;
-    border-bottom: solid 1px rgb(0, 0, 0);
+    border-bottom: solid 4px rgb(0, 0, 0);
 }
 
 #armadopc > h2 {
     display: flex;
     justify-content: center;
-    padding-top: 30vh;
+    padding-top: 16vh;
     font-size: 4rem;
     /* border-bottom: 0.5rem solid white; */
  
@@ -444,7 +444,7 @@ iframe {
     background-color:white;
     height: 100vh;
     border-bottom: solid 1px rgb(0, 0, 0);
-    background-image: url(assets/cat.webp);
+    background-image: url(assets/gato-blanco.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;  
@@ -563,7 +563,7 @@ iframe {
     align-items: center;
     background-repeat: no-repeat;
     border-bottom: solid 0.1rem rgb(65, 63, 63);
-    background-image: url(assets/gato-blanco.jpg);
+    background-image: url(assets/cat.webp);
     background-attachment: fixed;
     background-size: cover;  
     
