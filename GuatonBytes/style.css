@@ -437,10 +437,6 @@ ul>h3 {
     color: black;
 }
 
-iframe {
-    display: flex;
-    margin-left: 56vw
-}
 
 .carousel-item img {
 
@@ -585,18 +581,36 @@ iframe {
     background-image: url(assets/cat.webp);
     background-attachment: fixed;
     background-size: cover;
+    height: fit-content;
+    padding: 5vh 0px;
 
+}
+
+#opiniones{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 5vh;
+    width: 100%;
 }
 
 #opiniones>iframe {
-    display: flex;
-    left: 1000px;
+
 }
+
 
 #opiniones>h1 {
     color: black;
     display: flex;
-    margin-left: 8vw;
+    width: 100%;
+    margin-left: 10%;
+}
+
+.card{
+    display: flex;
+    margin-left: 5%;
+    height: fit-content;
 }
 
 /*SECCIÓN CATALOGO*/
@@ -625,11 +639,6 @@ iframe {
     margin-top: 0%;
 }
 
-#catalogoprincipal>p {
-    color: rgb(0, 0, 0);
-    margin-top: 15%;
-}
-
 .catalog-container {
     display: flex;
     flex-wrap: wrap;
@@ -639,7 +648,7 @@ iframe {
 
 
 .product {
-    width: 22%;
+    width: 20%;
     margin: 1rem;
     text-align: center;
     transition: transform 0.3s;
