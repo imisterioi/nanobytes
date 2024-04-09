@@ -1,3 +1,7 @@
+
+
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -249,7 +253,7 @@ ul > h3 {
 }
 
 .m-imagen {
-    width: 8vw; 
+    width: 7vw; 
     transition: transform 0.3s ease; 
     cursor: pointer; 
 }
@@ -268,6 +272,7 @@ ul > h3 {
 
 .opciones-label{
     color: black;
+    font-weight: bold;
 }
 
 #m-checkbox{
@@ -275,20 +280,23 @@ ul > h3 {
     height: 1.5vh;
     width: 1.5vw;
     margin-top: 0.5vh;
+    
 }
 
 .m-opciones-check{
     display: flex;
     justify-content: center;
     border: solid black;
-    margin-left: 30vw;
-    margin-right: 30vw;
+    margin-left: 35vw;
+    margin-right: 35vw;
     margin-top: 1vh;
+    border-radius: 1vw;
 }
 
 .m-relleno{
     height: 1.5vh;
     width: 1.5vw;
+    /* outline: 0.1rem solid black; */
 }
 
 label{
@@ -296,11 +304,12 @@ label{
 }
 
 .m-titulos{
-    color: aqua;
+    color: black;
     display: flex;
     justify-content: center;
     margin-top: 5vh;
     margin-bottom: -1vh;
+    font-family: "Tilt Neon", sans-serif;
 }
 
 #cuadro-texto{
@@ -313,7 +322,27 @@ label{
     color: black;
     height: 20vh;
     width: 30vw;
-    border: solid 0.5vh black;
+    border: solid 0.4vh black;
     resize: none;
     overflow-wrap: auto;
+    border-radius: 1vw;
+    padding-left: 0.5vw;
+
 }
+
+.boton-enviar{
+    height: 5vh;
+    width: 5vw;
+    background-color: aqua;
+    color: black;
+    margin-top: 7vh;
+    margin-left: 5vw;
+    border-radius: 0.7vw;
+    border: solid 0.33vh black;
+}
+
+.este{
+    /* font-weight: bold; */
+}
+
+
