@@ -246,8 +246,7 @@ ul>h3 {
 /* SECCIÓN SERVICIOS */
 
 #servicios> h1 {
-    padding-top: 15vh;
-    margin-top: 10;
+    padding-top: 10vh;
     font-size: 5rem;
     color: white;
     display: flex;
@@ -712,7 +711,7 @@ ul>h3 {
 }
 
 .product-content {
-    border: 0.1rem solid #000000;
+    /* border: 0.1rem solid #000000; */
     border-radius: 0.2rem;
     padding: 20px;
     text-align: center;
