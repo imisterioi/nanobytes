@@ -245,7 +245,7 @@ ul>h3 {
 
 /* SECCIÓN SERVICIOS */
 
-#servicios>h1 {
+#servicios> h1 {
     padding-top: 15vh;
     margin-top: 10;
     font-size: 5rem;
@@ -256,14 +256,16 @@ ul>h3 {
 
 
 #servicios>p {
-    padding-top: 10vh;
-    font-size: 1rem;
+    padding-top: 7vh;
+    font-size: 1.7rem;
     color: white;
     display: flex;
     justify-content: left;
     padding-left: 3rem;
     padding-right: 3rem;
     justify-content: center;
+    text-align: center;
+    margin: 5%;
 
 
 }
@@ -607,6 +609,7 @@ ul>h3 {
     margin-left: 5%;
     height: fit-content;
     transition: transform 0.3s;
+    border-bottom: solid 0.2rem rgb(65, 63, 63);
 }
 
 .card > img{
