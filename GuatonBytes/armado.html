@@ -42,27 +42,24 @@
 
 
     <section id="armado">
-        <h2>¿Quieres armar tu primer wea gamer?</h2>
-           <div class="contendio-armadopc">
+        <div class="contendio-armadopc">
+            <h2>Arma tu primer PC Gamer</h2>
             <form action="" class="juegos">
                 <div class="seleccion-juegos">
                     <h2>¿Qué juegos quieres jugar?</h2>
                     <div class="que">
-                        <label for="">Juego N°1:</label>
-                        <input type="text" placeholder="Escribe aquí...">
+                        <label for="fp">Juego N°1:</label>
+                        <input type="text" placeholder="Escribe aquí..." required>
                     </div>
                     <div class="que">
                         <label for="">Juego N°2:</label>
-                        <input type="text" placeholder="Escribe aquí...">
+                        <input type="text" placeholder="Escribe aquí..." required>
                     </div>
                     <div class="que">
                         <label for="">Juego N°3:</label>
-                        <input type="text" placeholder="Escribe aquí...">
+                        <input type="text" placeholder="Escribe aquí..." required>
                     </div>
-                   
-                </div>
-
-                <div class="fps-presupuesto">
+                
                     <div class="fps">
                         <label>Limite de FPS:</label>
                         <select id="opciones">
@@ -72,13 +69,15 @@
                             <option value="opcion4">144FPS</option>
                         </select>
                     </div>
-
+    
                     <div class="presupuesto">
                         <label for="">Presupuesto:</label>
-                        <input type="number" min="0" placeholder="$">
+                        <input type="number" min="0" max="10000000" required>
                     </div>
+
                 </div>
 
+                
                 <div class="contenido-img">
                     <img class="img-pc" src="assets/52134aa0-03ea-4067-aaef-d8d0ca5b1fd0_800x.webp" alt="PC">
                     <div class="periferico">
@@ -89,8 +88,6 @@
                 </div>
             </form>
         </div>
-            
-
     </section>
 
     <footer>

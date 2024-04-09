@@ -1,35 +1,15 @@
 *{
     margin: 0;
     font-family: sans-serif;
-    color: white
+    color: white;
 }
 #arriba {
-    /* position: fixed; */
     background-color: black;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
     background-color: black;
     display: flex;
     align-items: center;
     height: 12vh;
-    animation: bajar 1s;
     color: white;
-    border-bottom: solid 1px rgb(63, 57, 57);
-
-}
-
-@keyframes bajar {
-    0% {
-        transform: translateY(-100px);
-
-    }
-
-    100% {
-        transform: translateY(0px);
-
-    }
 }
 
 
@@ -103,27 +83,36 @@ a {
 
 /* Armado */
 #armado{
-    background-color: black;
-    height: 70vh;
+    height: 75vh;
+    background-image: url(assets/games.png);
+    background-size: contain;
 }
 
-#armado h2{
-    text-align: center;
-}
 .contendio-armadopc {
-    height: 60vh;
+    height: 100%;
+}
+.contendio-armadopc h2 {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    height: 15%;
+    margin: 0;
+    background: rgba(39, 39, 39, 0.695);
+    border-radius: 10px;
+    padding: 10px;
+}
+.juegos{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .img-pc {
     width: 300px;
     height: 300px;
 }
-
-.contendio-armadopc form {
-    display: flex;
-    justify-content: space-around;
-}
-
 
 .seleccion-juegos{
     display: flex;
@@ -132,21 +121,22 @@ a {
     align-items: center;
 }
 
+form > div{
+    background: rgba(39, 39, 39, 0.695);
+    border-radius: 10px;
+    padding: 10px;
+}
+
 .seleccion-juegos input {
     color: black;
     width: 200px;
     height: 20px;
 }
 
-.fps-presupuesto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 
-.fps-presupuesto select,
-.fps-presupuesto option,
-.fps-presupuesto input {
+.fps select,
+.fps option,
+.fps input {
     color: black;
     margin: 10px;
 }
@@ -180,7 +170,7 @@ footer {
     background-color: black;
     align-items: center;
     display: flex;
-    height: 20vh;
+    height: 13vh;
 }
 
 .logofooter {
