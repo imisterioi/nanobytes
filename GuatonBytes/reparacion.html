@@ -40,13 +40,130 @@
         </div>
     </header>
 
+
+<!-- --------------------------------- -->
+
+
     <section id="pagina-mantencion">
         <div id="opciones">
-            <!-- <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, modi. Maxime officia rem consectetur aspernatur minus ipsam modi accusamus iste, molestiae consequatur molestias suscipit iure, exercitationem tenetur quaerat? Repudiandae, sit!</h1> -->
-            <p class="texto-opcion">
-                Seleccionar opcion
-            </p>
-            <!-- <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolor voluptatem exercitationem nihil molestiae totam vitae harum, rem maiores eligendi esse provident expedita omnis qui laudantium adipisci quos ea nobis.</h1> -->
+            <div class="contenedor-imagenes">
+                <img src="assets/icons8-smartphone-100 (1).png" class="m-imagen imagen" alt="Imagen 1" data-clicked="assets/icons8-smartphone-100-n.png">
+                <img src="assets/icons8-monitor-100.png" class="m-imagen imagen" alt="Imagen 2" data-clicked="assets/icons8-monitor-100-n.png">
+                <img src="assets/icons8-laptop-100-n.png" class="m-imagen imagen" alt="Imagen 3" data-clicked="assets/icons8-ordenador-portátil-100.png">
+                <img src="assets/icons8-xbox-series-s-100.png" class="m-imagen imagen" alt="Imagen 4" data-clicked="assets/icons8-consola-de-juego-100.png">
+            </div>
+            <div class="casilla-opciones">
+
+                <label for="miCheckbox" class="opciones-label">No encuentra su problema entre nuestras opciones?</label> 
+                <input type="checkbox" id="m-checkbox" name="miCheckbox">
+
+            </div>
+
+            <div id="m-opcion-check">
+
+                <h1 class="m-titulos">Energi</h1>
+
+                <div class="m-opciones-check">
+
+                    <form class="este">
+                        <input type="checkbox" class="m-relleno" name="opcion1" value="opcion1">
+                        <label for="opcion1">Bateria</label><br>
+                        
+                        <input type="checkbox" class="m-relleno" name="opcion2" value="opcion2">
+                        <label for="opcion2">Cargador</label><br>
+                        
+                        <input type="checkbox" class="m-relleno" name="opcion3" value="opcion3">
+                        <label for="opcion3">Puerto de carga</label><br>
+                        
+                        
+                      </form>
+                    
+                </div>
+
+                <h1 class="m-titulos">Pantalla</h1>
+
+                <div class="m-opciones-check">
+
+                    <form class="este">
+                        <input type="checkbox" class="m-relleno" name="opcion1" value="opcion1">
+                        <label for="opcion1">Pantalla quebrada</label><br>
+                        
+                        <input type="checkbox" class="m-relleno" name="opcion2" value="opcion2">
+                        <label for="opcion2">No da imagen</label><br>
+                        
+                        <input type="checkbox" class="m-relleno" name="opcion3" value="opcion3">
+                        <label for="opcion3">Rotura de colores</label><br>
+                        
+                        
+                      </form>
+                    
+                </div>
+
+                <h1 class="m-titulos">Componentes</h1>
+
+                <div class="m-opciones-check">
+
+                    <form class="este">
+                        <input type="checkbox" class="m-relleno" name="opcion1" value="opcion1">
+                        <label for="opcion1">Cambio/aumento de RAM</label><br>
+                        
+                        <input type="checkbox" class="m-relleno" name="opcion2" value="opcion2">
+                        <label for="opcion2">Cambio/aumento de disco duro/SSD</label><br>
+                        
+                        <input type="checkbox" class="m-relleno" name="opcion3" value="opcion3">
+                        <label for="opcion3">???</label><br>
+                        
+                        
+                      </form>
+                    
+                </div>
+
+                <h1 class="m-titulos">Teclado</h1>
+
+                <div class="m-opciones-check">
+
+                    <form class="este">
+                        <input type="checkbox" class="m-relleno" name="opcion1" value="opcion1">
+                        <label for="opcion1">Faltan teclas</label><br>
+                        
+                        <input type="checkbox" class="m-relleno" name="opcion2" value="opcion2">
+                        <label for="opcion2">Fallan algunas teclas</label><br>
+                        
+                        <input type="checkbox" class="m-relleno" name="opcion3" value="opcion3">
+                        <label for="opcion3">Puerto de carga</label><br>
+                        
+                        
+                      </form>
+                    
+                </div>
+
+                <h1 class="m-titulos">Ventilador</h1>
+
+                <div class="m-opciones-check">
+
+                    <form class="este">
+                        <input type="checkbox" class="m-relleno" name="opcion1" value="opcion1">
+                        <label for="opcion1">Suena mucho</label><br>
+                        
+                        <input type="checkbox" class="m-relleno" name="opcion2" value="opcion2">
+                        <label for="opcion2">No enciende</label><br>
+                        
+                        <input type="checkbox" class="m-relleno" name="opcion3" value="opcion3">
+                        <label for="opcion3">No funciona correctamente</label><br>
+                        
+                        
+                      </form>
+                    
+                </div>
+
+            </div>
+            
+            <div id="cuadro-texto">
+                <textarea id="mensaje" name="mensaje" placeholder="Cuentenos sobre su problema..." style="color: gray;"></textarea>
+            </div>
+
+            
+
 
         </div>
         
@@ -84,6 +201,73 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+        <script id="P-M-efectos_de_imagen">
+            document.addEventListener("DOMContentLoaded", function() {
+                const imagenes = document.querySelectorAll(".imagen");
+                let imagenActiva = null;
+        
+                imagenes.forEach((imagen) => {
+                    imagen.addEventListener("click", function() {
+                        if (imagenActiva && imagenActiva !== this) {
+                            imagenActiva.src = imagenActiva.dataset.original;
+                        }
+                        imagenes.forEach(img => img.classList.remove("activa"));
+                        this.classList.add("activa");
+                        imagenActiva = this;
+                    });
+        
+                    imagen.addEventListener("mousedown", function() {
+                        if (!this.dataset.original) {
+                            this.dataset.original = this.src;
+                        }
+                        const clickedSrc = this.dataset.clicked;
+                        if (clickedSrc) {
+                            this.src = clickedSrc;
+                        }
+                    });
+        
+                    imagen.addEventListener("dragstart", function() {
+                        const originalSrc = this.dataset.original;
+                        if (originalSrc) {
+                            this.src = originalSrc;
+                        }
+                    });
+                });
+            });
+        </script>
+
+<script id="text-area">
+    document.addEventListener("DOMContentLoaded", function() {
+        const textarea = document.getElementById("mensaje");
+        const defaultText = "Escribe tu mensaje aquí...";
+
+        // Cuando el textarea obtiene el foco, elimina el texto gris predeterminado
+        textarea.addEventListener("focus", function() {
+            if (textarea.value === defaultText) {
+                textarea.value = "";
+                textarea.style.color = "black"; // Cambia el color del texto a negro
+            }
+        });
+
+        // Cuando el textarea pierde el foco y está vacío, restaura el texto gris predeterminado
+        textarea.addEventListener("blur", function() {
+            if (textarea.value === "") {
+                textarea.value = defaultText;
+                textarea.style.color = "gray"; // Restaura el color del texto a gris
+            }
+        });
+
+        // Cuando el usuario comienza a escribir, cambia el color del texto a negro
+        textarea.addEventListener("input", function() {
+            textarea.style.color = "black";
+        });
+    });
+</script>
+
+        
 </body>
+
+
 
 </html>
