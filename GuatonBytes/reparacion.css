@@ -246,16 +246,19 @@ ul > h3 {
     display: flex;
     justify-content: center;
     gap: 1vw; 
-    
     margin-left: 30vw;
     margin-right: 30vw;
     margin-top: 5vh;
+    border-bottom: 0.6vh solid black;
+    padding-bottom: 2vh;
+    border-radius: 0.2vw;
 }
 
 .m-imagen {
-    width: 7vw; 
+    width: 8vw; 
     transition: transform 0.3s ease; 
     cursor: pointer; 
+    /* border-bottom: 1px solid black; */
 }
 
 .imagen:hover, .imagen.activa {
@@ -291,6 +294,8 @@ ul > h3 {
     margin-right: 35vw;
     margin-top: 1vh;
     border-radius: 1vw;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
 }
 
 .m-relleno{
@@ -333,16 +338,22 @@ label{
 .boton-enviar{
     height: 5vh;
     width: 5vw;
-    background-color: aqua;
-    color: black;
+    background-color: rgb(70, 70, 70);
+    color: white;
     margin-top: 7vh;
     margin-left: 5vw;
     border-radius: 0.7vw;
     border: solid 0.33vh black;
 }
 
-.este{
-    /* font-weight: bold; */
+.boton-enviar:hover {
+    background-color: rgb(100, 100, 100); /* Color al pasar el mouse */
 }
+
+.boton-enviar:active {
+    background-color: #222222; /* Color al hacer click */
+}
+
+
 
 

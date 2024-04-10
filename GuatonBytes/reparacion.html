@@ -265,6 +265,22 @@
         });
     });
 </script>
+<script id="m-cambio-color-boton">
+    document.addEventListener("DOMContentLoaded", function() {
+    const botonEnviar = document.querySelector(".boton-enviar");
+    const colorOriginal = botonEnviar.style.backgroundColor;
+
+    botonEnviar.addEventListener("mouseup", function() {
+        botonEnviar.style.backgroundColor = "rgb(100, 100, 100)"; /* Color al soltar el click */
+
+        // Restaurar el color original después de un breve retraso
+        setTimeout(function() {
+            botonEnviar.style.backgroundColor = colorOriginal;
+        }, 300); // Cambia este valor si deseas ajustar la duración del efecto
+    });
+});
+
+</script>
 
         
 </body>
