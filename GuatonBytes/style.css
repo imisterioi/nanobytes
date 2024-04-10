@@ -275,6 +275,12 @@ ul>h3 {
 
 /*                               SECCIÓN SERVICIOS                                   */
 
+
+
+.modal-body {
+    font-size: 1.3rem;
+}
+
 #servicios> h1 {
     padding-top: 5vh;
     font-size: 5rem;
@@ -313,6 +319,22 @@ ul>h3 {
     row-gap: 3rem;
     align-items: end;
     flex-direction: column;
+}
+
+#botonservicios > button{
+    background-color: transparent;
+    border: 0.09rem solid white;
+    padding: 1rem 1rem;
+    font-size: 1.8rem;
+    width: 25rem;
+    text-align: center;
+    transition: background-color 0.3s;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.1);
 }
 
 #damos-opciones{
@@ -406,6 +428,56 @@ ul>h3 {
 }
 
 /*                                        SECCIÓN ARMADO                                          */
+
+#armadopc > h1{
+    margin-top: 10%;
+}
+
+#cuerpo-armado{
+    background-color: #0000007e;
+    display: flex;
+    color: white;
+    margin-top: 5%;
+    align-items: end;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 15%;
+    padding-right: 10%;
+
+}
+
+#cuerpo-armado > p{
+
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    width: 50%;
+}
+
+#boton-armado{
+    color: rgb(255, 255, 255);
+    display: flex;
+    font-size: 3rem;
+    margin-top: 2vh;
+    background-color: rgb(58, 58, 58);
+    border: 0.09rem solid white;
+    padding: 1rem 1rem;
+    width: 50rem;
+    justify-content: center;
+    text-align: center;
+    transition: background-color 0.3s;
+    transition: all 0.3s ease;
+
+
+    ;
+}
+
+#boton-armado:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.1);
+}
+
 #armadopc {
     height: 120vh;
     background-color: black;
