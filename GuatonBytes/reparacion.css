@@ -255,11 +255,20 @@ ul > h3 {
 }
 
 .m-imagen {
-    width: 13vw; 
+    width: 10vw; 
     transition: transform 0.3s ease; 
     cursor: pointer; 
     /* border-bottom: 1px solid black; */
-    padding-left: 4vw;
+    /* padding-left: 1vw; */
+    
+}
+
+#imagen-1{
+    padding-right: 0.5vw;
+}
+
+#imagen-3{
+    padding-left: 0.5vw;
 }
 
 .imagen:hover, .imagen.activa {
@@ -289,12 +298,12 @@ ul > h3 {
 
 .m-opciones-check{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     border: solid black;
     margin-left: 35vw;
     margin-right: 35vw;
     margin-top: 1vh;
-    border-radius: 1vw;
+    /* border-radius: 1vw; */
     padding-top: 0.5vh;
     padding-bottom: 0.5vh;
 }
@@ -313,7 +322,7 @@ label{
     color: black;
     display: flex;
     justify-content: center;
-    margin-top: 5vh;
+    margin-top: 3vh;
     margin-bottom: -1vh;
     font-family: "Tilt Neon", sans-serif;
 }
@@ -321,7 +330,7 @@ label{
 #cuadro-texto{
     display: flex;
     justify-content: center;
-    margin-top: 8vh;  
+    margin-top: 5vh;  
 }
 
 #mensaje{
@@ -331,7 +340,7 @@ label{
     border: solid 0.4vh black;
     resize: none;
     overflow-wrap: auto;
-    border-radius: 1vw;
+    /* border-radius: 1vw; */
     padding-left: 0.5vw;
 
 }
@@ -342,31 +351,28 @@ label{
     background-color: rgb(70, 70, 70);
     color: white;
     margin-top: 4.5vh;
-    /* margin-left: 5vw; */
-    border-radius: 0.7vw;
+    /* border-radius: 0.7vw; */
     border: solid 0.33vh black;
-    
     
 }
 
 .boton-enviar:hover {
-    background-color: rgb(100, 100, 100); /* Color al pasar el mouse */
+    background-color: rgb(100, 100, 100); 
 }
 
 .boton-enviar:active {
-    background-color: #222222; /* Color al hacer click */
+    background-color: #222222; 
 }
 
 #m-boton-enviar{
     display: flex;
     justify-content: center;
-    /* padding-right: 4.7vw; */
 }
 
 #m-titulos-imagenes{
     display: flex;
     justify-content: center;
-    border-bottom: solid black;
+    /* border-bottom: solid black; */
     
 }
 
@@ -377,6 +383,7 @@ label{
     /* padding-left: 5.2vw; */
     text-align: center;
     /* margin: 0 2vw; */
+    font-weight: bold;
 }
 
 #Lap-top{
@@ -392,4 +399,18 @@ label{
     padding-left: 6.5vw;
 } 
 
+#titulo-dinamico{
+    color: black;
+}
 
+#div-m-titulo-opciones{
+    display: flex;
+    justify-content: center;
+    margin-top: 3vh;
+}
+
+.titulo-principal-opciones{
+    color: black;
+    font-weight: bold;
+    font-family: "Tilt Neon", sans-serif;
+}

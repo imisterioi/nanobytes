@@ -48,24 +48,22 @@
     <section id="pagina-mantencion">
         <div id="opciones">
             <div class="contenedor-imagenes">
-                <img src="assets/icons8-monitor-100.png" class="m-imagen imagen" alt="Imagen 2" data-clicked="assets/icons8-monitor-100-n.png">
-                <img src="assets/icons8-laptop-100-n.png" class="m-imagen imagen" alt="Imagen 3" data-clicked="assets/icons8-ordenador-portátil-100.png">
-                <img src="assets/icons8-xbox-series-s-100.png" class="m-imagen imagen" alt="Imagen 4" data-clicked="assets/icons8-consola-de-juego-100.png">
+                <img src="assets/icons8-monitor-100.png" id="imagen-1" class="m-imagen imagen" alt="Imagen 1" data-clicked="assets/icons8-monitor-100-n.png">
+                <img src="assets/icons8-laptop-100-n.png" id="imagen-2" class="m-imagen imagen" alt="Imagen 2" data-clicked="assets/icons8-ordenador-portátil-100.png">
+                <img src="assets/icons8-xbox-series-s-100.png" id="imagen-3" class="m-imagen imagen" alt="Imagen 3" data-clicked="assets/icons8-consola-de-juego-100.png">
             </div>
 
             <div id="m-titulos-imagenes">
-                <h1 class="m-i-titulo" id="Pc">Pc Escritorio </h1>
-                <h2 class="m-i-titulo" id="Lap-top">LapTop</h2>
-                <h3 class="m-i-titulo" id="Consola">Consola (Ps/Xbox)</h3>
+                <h1 id="titulo-laptop" class="m-i-titulo">LapTop</h1>
+                <h1 id="titulo-pc" class="m-i-titulo" style="display: none;">Pc Escritorio</h1>
+                <h1 id="titulo-consola" class="m-i-titulo" style="display: none;">Consola (Ps/Xbox)</h1>
 
+            </div>
+
+            <div id="div-m-titulo-opciones">
+                <h1 class="titulo-principal-opciones"> Marca las casillas acorde a tu problema:</h1>
             </div>
             
-            <div class="casilla-opciones">
-
-                <label for="miCheckbox" class="opciones-label">No encuentra su problema entre nuestras opciones?</label> 
-                <input type="checkbox" id="m-checkbox" name="miCheckbox">
-
-            </div>
 
             <div id="m-opcion-check">
 
@@ -138,7 +136,7 @@
                         <label for="opcion2">Fallan algunas teclas</label><br>
                         
                         <input type="checkbox" class="m-relleno" name="opcion3" value="opcion3">
-                        <label for="opcion3">???</label><br>
+                        <label for="opcion3">No funciona</label><br>
                         
                         
                       </form>
@@ -165,10 +163,17 @@
                 </div>
 
             </div>
+
+            <div class="casilla-opciones">
+
+                <label for="miCheckbox" class="opciones-label">No encuentra su problema entre nuestras opciones? <br>Detallenos lo sucedido aqui abajo.</label> 
+                <!-- <input type="checkbox" id="m-checkbox" name="miCheckbox"> -->
+
+            </div>
             
             <div id="cuadro-texto">
                 <textarea id="mensaje" name="mensaje" placeholder="Cuentenos sobre su problema... 
-Ej: Se me cayó desde un segundo piso y no prendió mas." style="color: gray;"></textarea>
+                Ej: Se me cayó desde un segundo piso y no prendió mas." style="color: gray;"></textarea>
             </div>
             
             <div id="m-boton-enviar">
@@ -293,6 +298,20 @@ Ej: Se me cayó desde un segundo piso y no prendió mas." style="color: gray;"><
     });
 });
 
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const imagenes = document.querySelectorAll(".imagen");
+        const titulos = document.querySelectorAll(".m-i-titulo");
+
+        imagenes.forEach((imagen, index) => {
+            imagen.addEventListener("click", function() {
+                const titulo = titulos[index];
+                titulos.forEach(titulo => titulo.style.display = "none");
+                titulo.style.display = "block";
+            });
+        });
+    });
 </script>
 
         
