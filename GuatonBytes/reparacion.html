@@ -52,6 +52,14 @@
                 <img src="assets/icons8-laptop-100-n.png" class="m-imagen imagen" alt="Imagen 3" data-clicked="assets/icons8-ordenador-portátil-100.png">
                 <img src="assets/icons8-xbox-series-s-100.png" class="m-imagen imagen" alt="Imagen 4" data-clicked="assets/icons8-consola-de-juego-100.png">
             </div>
+
+            <div id="m-titulos-imagenes">
+                <h1 class="m-i-titulo" id="Pc">Pc Escritorio </h1>
+                <h2 class="m-i-titulo" id="Lap-top">LapTop</h2>
+                <h3 class="m-i-titulo" id="Consola">Consola (Ps/Xbox)</h3>
+
+            </div>
+            
             <div class="casilla-opciones">
 
                 <label for="miCheckbox" class="opciones-label">No encuentra su problema entre nuestras opciones?</label> 
@@ -159,8 +167,13 @@
             </div>
             
             <div id="cuadro-texto">
-                <textarea id="mensaje" name="mensaje" placeholder="Cuentenos sobre su problema..." style="color: gray;"></textarea>
+                <textarea id="mensaje" name="mensaje" placeholder="Cuentenos sobre su problema... 
+Ej: Se me cayó desde un segundo piso y no prendió mas." style="color: gray;"></textarea>
+            </div>
+            
+            <div id="m-boton-enviar">
                 <button class="boton-enviar">Enviar</button>
+                
             </div>
 
             
@@ -241,7 +254,7 @@
 <script id="text-area">
     document.addEventListener("DOMContentLoaded", function() {
         const textarea = document.getElementById("mensaje");
-        const defaultText = "Cuentenos sobre su problema...";
+        const defaultText = "Cuentenos sobre su problema...\nEj: Se me cayó desde un segundo piso y no prendió mas.";
 
         // Cuando el textarea obtiene el foco, elimina el texto gris predeterminado
         textarea.addEventListener("focus", function() {
@@ -276,7 +289,7 @@
         // Restaurar el color original después de un breve retraso
         setTimeout(function() {
             botonEnviar.style.backgroundColor = colorOriginal;
-        }, 300); // Cambia este valor si deseas ajustar la duración del efecto
+        }, 0); // Cambia este valor si deseas ajustar la duración del efecto
     });
 });
 
