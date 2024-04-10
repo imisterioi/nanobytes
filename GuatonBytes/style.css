@@ -22,7 +22,6 @@ html {
     align-items: center;
     justify-content: space-around;
     height: 12vh;
-    animation: bajar 1s;
     color: white;
     border-bottom: solid 1px rgb(63, 57, 57);
 
@@ -74,7 +73,7 @@ h1 {
 
 
 nav {
-    color: white;
+    color: rgb(0, 0, 0);
     display: flex;
     column-gap: 1.3rem;
     font-size: 1.1rem;
@@ -126,8 +125,9 @@ a {
     color: white;
 }
 
-/* SECCIÓN BANNER */
+/*                                          SECCIÓN BANNER                                            */
 #sectionbanner {
+    margin-top: 7vh;
     height: 95vh;
     border-bottom: solid 1px rgb(0, 0, 0);
     background-repeat: round;
@@ -135,15 +135,39 @@ a {
 
 }
 
+#obtener1-container{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5vh;
+}
+
+#titulobanner1{
+    color: white;
+    text-align: center;
+    width: 50%;
+    margin-bottom: 30vh;
+    margin-left: -9%;
+
+}
+
+#titulobanner1 > h1{
+    font-size: 4rem;
+    border-radius: 1%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: #000000d0;
+}
+
 #obtener1 {
     background-color: transparent;
     border: 0.2rem solid white;
     padding: 1rem 1rem;
-    width: 25rem;
+    width: 27rem;
     text-align: center;
+    margin-bottom: 7%;
     transition: background-color 0.3s;
-    display: flex;
     z-index: 1001;
+    display: flex;
     justify-content: center;
     font-size: 1.4rem;
     transition: all 0.3s ease;
@@ -205,7 +229,7 @@ a {
 }
 
 
-/* FOOTER */
+/*                                            FOOTER                                               */
 footer {
     background-color: black;
     align-items: center;
@@ -243,35 +267,36 @@ ul>h3 {
 }
 
 
-/* SECCIÓN SERVICIOS */
+/*                               SECCIÓN SERVICIOS                                   */
 
 #servicios> h1 {
-    padding-top: 10vh;
+    padding-top: 5vh;
     font-size: 5rem;
     color: white;
     display: flex;
     justify-content: center;
 }
 
+#parrafo-botones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-#servicios>p {
-    padding-top: 7vh;
+#parrafo-botones > p {
     font-size: 1.7rem;
     color: white;
     display: flex;
-    justify-content: left;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    justify-content: center;
-    text-align: center;
-    margin: 5%;
+    text-align: right;
+    max-width: 50%;
+    margin-right: 15%;
 
 
 }
 
 #sectionservicios {
     background-color: rgb(0, 0, 0);
-    height: 90vh;
+    height: 190vh;
     border-bottom: solid 1px rgb(65, 63, 63);
     background-image: url();
 
@@ -279,16 +304,16 @@ ul>h3 {
 
 #botonservicios {
     display: flex;
-    column-gap: 10rem;
-    margin-top: 10vh;
-    justify-content: center;
+    row-gap: 3rem;
+    align-items: end;
+    flex-direction: column;
 }
 
 #rep {
     background-color: transparent;
     border: 0.09rem solid white;
     padding: 1rem 1rem;
-    width: 13rem;
+    width: 25rem;
     text-align: center;
     transition: background-color 0.3s;
     transition: all 0.3s ease;
@@ -304,7 +329,7 @@ ul>h3 {
     background-color: transparent;
     border: 0.09rem solid white;
     padding: 1rem 1rem;
-    width: 13rem;
+    width: 25rem;
     text-align: center;
     transition: background-color 0.3s;
     transition: all 0.3s ease;
@@ -319,7 +344,7 @@ ul>h3 {
     background-color: transparent;
     border: 0.09rem solid white;
     padding: 1rem 1rem;
-    width: 13rem;
+    width: 25rem;
     text-align: center;
     transition: background-color 0.3s;
     transition: all 0.3s ease;
@@ -334,7 +359,7 @@ ul>h3 {
     background-color: transparent;
     border: 0.09rem solid white;
     padding: 1rem 1rem;
-    width: 13rem;
+    width: 25rem;
     text-align: center;
     transition: background-color 0.3s;
     transition: all 0.3s ease;
@@ -345,7 +370,7 @@ ul>h3 {
     transform: scale(1.1);
 }
 
-/* SECCIÓN ARMADO */
+/*                                        SECCIÓN ARMADO                                          */
 #armadopc {
     height: 120vh;
     background-color: black;
@@ -449,14 +474,14 @@ ul>h3 {
 
 }
 
-/*SECCIÓN NOSOTROS*/
+/*                                                   SECCIÓN NOSOTROS                                                       */
 
 #section-nosotros {
     display: flex;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     height: 100vh;
     border-bottom: solid 1px rgb(0, 0, 0);
-    background-image: url(assets/gato-blanco.jpg);
+    /* background-image: url(assets/gato-blanco.jpg); */
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -468,7 +493,7 @@ ul>h3 {
     font-size: 4rem;
     text-align: justify;
     text-align: center;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .linea {
@@ -482,7 +507,7 @@ ul>h3 {
     border-radius: 0.5rem;
     justify-content: center;
     align-items: center;
-    background-color: rgba(128, 128, 128, 0.5);
+    background-color: rgb(244, 244, 244);
     height: 65vh;
     max-height: 65vh;
     /* text-overflow: ellipsis; */
@@ -501,30 +526,34 @@ ul>h3 {
 
 }
 
-/* SECCIÓN COMPONENTES */
+/*                                                       SECCIÓN COMPONENTES                                                */
 
 #contenedorcomponentes>h1 {
     display: flex;
     font-size: 4rem;
     color: rgb(255, 255, 255);
-    justify-content: left;
-    margin-left: 16%;
-    padding-top: 8vh;
-    margin-bottom: -1rem;
+    padding-top: 20vh;
+    text-align: center;
+    justify-content: center;
+
+
+    /* padding-top: 18vh;
+    padding-bottom: 18vh; */
+
 
 }
 
 #componentes>p {
 
     text-align: justify;
-    padding-top: -8vh;
+    padding-top: 8vh;
     font-size: 1.2rem;
     color: white;
     display: flex;
     max-width: 50%;
     padding-left: 3rem;
-    text-align: right;
-    flex-direction: row-reverse;
+    text-align: center;
+
 
 
 }
@@ -532,35 +561,37 @@ ul>h3 {
 #sectioncomponentes {
     background-color: black;
     height: 90vh;
-    border-bottom: solid 1px rgb(65, 63, 63);
+    /* border-bottom: solid 1px rgb(65, 63, 63); */
+    background-image: url(assets/banner-componentes.png);
 }
 
 #componentes {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    padding-bottom: 4vh;
+    background-color: #000000cd;
+    margin-left: 15%;
+    margin-right: 15%;
+    
 
-}
-
-#imagencomponentes>img {
-    width: 28%;
-    display: flex;
-    margin-left: 15vw;
 }
 
 #catalogo {
     display: flex;
     font-size: 2rem;
-    margin-top: -5vh;
+    margin-top: 6vh;
     background-color: transparent;
     border: 0.09rem solid white;
     padding: 1rem 1rem;
     width: 15rem;
     justify-content: center;
     text-align: center;
+    
     transition: background-color 0.3s;
     transition: all 0.3s ease;
-    margin-left: 20%;
+
 
     ;
 }
@@ -620,7 +651,7 @@ ul>h3 {
 
 }
 
-/*SECCIÓN CATALOGO*/
+/*                                               SECCIÓN CATALOGO                                        */
 #pagina-catalogo {
     height: 200vh;
     background-color: rgb(255, 255, 255)(55, 255, 255);
