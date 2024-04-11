@@ -40,25 +40,54 @@
         </div>
     </header>
 
+    <section>
+
+    </section>
 
     <section id="armado">
         <div class="contendio-armadopc">
-            <h2>Arma tu primer PC Gamer</h2>
+            <!-- <h2>Arma tu primer PC Gamer</h2> -->
             <form action="" class="juegos">
                 <div class="seleccion-juegos">
                     <h2>¿Qué juegos quieres jugar?</h2>
+                    <div class="gama">
+                        <label for="gama">Gama:</label>
+                        <select id="gama" name="gama">
+                            <option value="opcion2">Alta</option>
+                            <option value="opcion3">Media</option>
+                            <option value="opcion4">Baja</option>
+                        </select>
+                    </div>
                     <div class="que">
-                        <label for="juego1">Juego N°1:</label>
-                        <input type="text" name="juego1" id="juego1" placeholder="Escribe aquí..." required>
+                        <label for="app1">Juego N°1:</label>
+                        <input type="text" name="juego1" id="juego1" placeholder="Battlefield 1" required>
                     </div>
                     <div class="que">
                         <label for="juego2">Juego N°2:</label>
-                        <input type="text" name="juego2" id="juego2" placeholder="Escribe aquí..." required>
+                        <input type="text" name="juego2" id="juego2" placeholder="Gta V" required>
                     </div>
                     <div class="que">
                         <label for="juego3">Juego N°3:</label>
-                        <input type="text" name="juego3" id="juego3" placeholder="Escribe aquí..." required>
+                        <input type="text" name="juego3" id="juego3" placeholder="Fortnite" required>
                     </div>
+
+                
+                    <h2>¿Qué Aplicaciones quieres usar?</h2>
+                    <div class="que">
+                        <label for="app1">Aplicación N°1:</label>
+                        <input type="text" name="app1" id="app1" placeholder="Battlefield 1" required>
+                    </div>
+                    <div class="que">
+                        <label for="app2">Aplicación N°2:</label>
+                        <input type="text" name="app2" id="app2" placeholder="Battlefield 1" required>
+                    </div>
+                    <div class="que">
+                        <label for="app3">Aplicación N°3:</label>
+                        <input type="text" name="app3" id="app3" placeholder="Battlefield 1" required>
+                    </div>
+                
+
+                        
 
                     <div class="fps">
                         <label for="fps">Limite de FPS:</label>
@@ -70,16 +99,12 @@
                         </select>
                     </div>
 
-                    <div class="presupuesto">
-                        <label for="presupuesto">Presupuesto:</label>
-                        <input type="number" name="presupuesto" id="presupuesto" min="0" max="10000000" required>
-                    </div>
-
+                    
                 </div>
-
-
+                
+                
                 <div class="contenido-img">
-                    <img class="img-pc" src="assets/52134aa0-03ea-4067-aaef-d8d0ca5b1fd0_800x.webp" alt="PC">
+                    <!-- <img class="img-pc" src="assets/52134aa0-03ea-4067-aaef-d8d0ca5b1fd0_800x.webp" alt="PC"> -->
                     <div class="periferico">
                         <label for="perifericos" class="titulolabel">Incluir periféricos:</label>
                         <input type="checkbox" id="perifericos" name="perifericos">
@@ -87,27 +112,31 @@
                             <div>
                                 <label for="mouse">Mouse:</label>
                                 <input type="checkbox" id="mouse" name="mouse">
-                                <input type="text" name="" id="mouse-text" placeholder="Escribe el modelo aquí" required>
+                                <!-- <input type="text" name="" id="mouse-text" placeholder="Escribe el modelo aquí" required> -->
                             </div>
                             
                             <div>
                                 <label for="teclado">Teclado:</label>
                                 <input type="checkbox" id="teclado" name="teclado">
-                                <input type="text" name="" id="teclado-text" placeholder="Escribe el modelo aquí" required>
+                                <!-- <input type="text" name="" id="teclado-text" placeholder="Escribe el modelo aquí" required> -->
                             </div>
                             <div>
                                 <label for="auriculares">Auriculares:</label>
                                 <input type="checkbox" id="auriculares" name="auriculares">
-                                <input type="text" name="" id="auriculares-text" placeholder="Escribe el modelo aquí" required>
+                                <!-- <input type="text" name="" id="auriculares-text" placeholder="Escribe el modelo aquí" required> -->
                             </div>
                         </div>
+                    </div>
+                    <div class="presupuesto">
+                        <label for="presupuesto">Presupuesto:</label>
+                        <input type="number" name="presupuesto" id="presupuesto" min="0" max="10000000" required placeholder="$0">
                     </div>
                     <input class="enviar-buttom" type="submit" value="Enviar">
                 </div>
             </form>
         </div>
     </section>
-
+    
     <footer>
         <p id="autor">Creado por BW Proyectos</p>
         <div class="footer">
