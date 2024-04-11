@@ -230,16 +230,33 @@ ul > h3 {
     font-size: 1rem;
 }
 
-/* SECCION MANTENCION */
+/*                                         SECCION MANTENCION                                                          */
+
+#m-background{
+    background-color: black;
+}
+
+#pagina-mantencion{
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    /* background-color: black; */
+}
 
 #opciones{
     position: relative;
     display: flex;
-    height: 300vh;
+    /* height: 250vh; */
     margin-top: 12vh;
     flex-wrap: wrap;
     flex-direction: column;
-    
+    background-color: white;
+    margin-left: 100vw;
+    margin-right: 100vw;
+    /* width: 50%; */
+    /* justify-content: center; */
+    /* align-items: center; */
+
 }
 
 .contenedor-imagenes {
@@ -307,6 +324,7 @@ ul > h3 {
     padding-top: 0.5vh;
     padding-bottom: 0.5vh;
     font-size: 2vh;
+    /* width: 60vw; */
 }
 
 .m-relleno{
@@ -357,7 +375,7 @@ label{
     transition: all 0.3s ease;
     margin-top: 2vh;
     border-radius: 0.2rem;
-    
+    /* margin-bottom: 5%; */
 }
 
 .boton-enviar:hover {
@@ -377,6 +395,8 @@ label{
 #m-boton-enviar{
     display: flex;
     justify-content: center;
+    margin-bottom: 5%;
+    margin-top: 2%;
 }
 
 #m-titulos-imagenes{
