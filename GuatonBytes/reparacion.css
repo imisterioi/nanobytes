@@ -234,25 +234,31 @@ ul > h3 {
 
 #m-background{
     background-color: black;
-}
+    width: 80%;
+    /* display: flex;
+    justify-content: center;*/
+} 
 
 #pagina-mantencion{
     display: flex;
     height: fit-content;
     justify-content: center;
-    /* background-color: black; */
+    background-color: black;
+    
 }
 
 #opciones{
+    /* padding-right: 50vw; */
     position: relative;
     display: flex;
     /* height: 250vh; */
     margin-top: 12vh;
     flex-wrap: wrap;
     flex-direction: column;
-    background-color: white;
-    margin-left: 100vw;
-    margin-right: 100vw;
+    background-color: white ;
+    /* margin-left: 1vw; */
+    /* margin-left: 100vw; */
+    /* margin-right: 100vw; */
     /* width: 50%; */
     /* justify-content: center; */
     /* align-items: center; */
@@ -263,8 +269,8 @@ ul > h3 {
     display: flex;
     justify-content: center;
     gap: 1vw; 
-    margin-left: 30vw;
-    margin-right: 30vw;
+    /* margin-left: 30vw;
+    margin-right: 30vw; */
     margin-top: 5vh;
     /* border-bottom: 0.6vh solid black; */
     padding-bottom: 2vh;
@@ -275,8 +281,6 @@ ul > h3 {
     width: 10vw; 
     transition: transform 0.3s ease; 
     cursor: pointer; 
-    /* border-bottom: 1px solid black; */
-    /* padding-left: 1vw; */
     
 }
 
@@ -296,8 +300,9 @@ ul > h3 {
 .casilla-opciones{
     margin-top: 5vh;
     display: flex;
-    justify-content: center;
-    text-align: center;
+    margin-left: 3vw;
+    /* justify-content: center; */
+    /* text-align: center; */
 }
 
 .opciones-label{
@@ -316,15 +321,15 @@ ul > h3 {
 .m-opciones-check{
     display: flex;
     /* justify-content: center; */
-    /* border: solid black; */
-    margin-left: 35vw;
-    margin-right: 35vw;
+    
+    margin-left: 3vw;
+    /* margin-right: 35vw; */
     margin-top: 4vh;
-    /* border-radius: 1vw; */
+    
     padding-top: 0.5vh;
     padding-bottom: 0.5vh;
     font-size: 2vh;
-    /* width: 60vw; */
+    
 }
 
 .m-relleno{
@@ -339,7 +344,8 @@ label{
 .m-titulos{
     color: black;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    margin-left: 5vw;
     margin-top: 7vh;
     margin-bottom: -1vh;
     font-family: "Tilt Neon", sans-serif;
@@ -347,19 +353,21 @@ label{
 
 #cuadro-texto{
     display: flex;
-    justify-content: center;
-    margin-top: 5vh;  
+    /* justify-content: center; */
+    margin-top: 5vh; 
+    margin-left: 3vw; 
 }
 
 #mensaje{
     color: black;
     height: 20vh;
-    width: 30vw;
+    width: 40vw;
     border: solid 0.4vh black;
     resize: none;
     overflow-wrap: auto;
     /* border-radius: 1vw; */
     padding-left: 0.5vw;
+    margin-bottom: 5vh;
 
 }
 
@@ -370,11 +378,13 @@ label{
     border: 2px solid #000000;
     padding: 10px 20px;
     width: 15vw;
+    height: 8vh;
     cursor: pointer;
     transition: background-color 0.3s;
     transition: all 0.3s ease;
     margin-top: 2vh;
     border-radius: 0.2rem;
+    margin-left: 5vw;
     /* margin-bottom: 5%; */
 }
 
