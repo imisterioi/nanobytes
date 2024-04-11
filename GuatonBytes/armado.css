@@ -96,10 +96,7 @@ a {
     display: flex;
     align-items: end;
     justify-content: center;
-    height: 15%;
-    margin: 0;
-    border-radius: 10px;
-    padding: 10px;
+    height: 9%;
 
 }
 
@@ -153,7 +150,7 @@ form > .seleccion-juegos, form .contenido-img .periferico{
     align-items: center;
 }
 
-.periferico input {
+.periferico input[type="checkbox"] {
     transform: scale(1.3);
     margin-top: 15px;
     margin-bottom: 15px;
@@ -165,16 +162,50 @@ form > .seleccion-juegos, form .contenido-img .periferico{
 }
 
 #perifericos:checked ~ #form2 {
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
+
+#mouse-text{
+    display: none;
+}
+
+#mouse:checked ~ #mouse-text{
+    display: inline;
+    height: 3vh;
+    width: 12vw;
+}
+
+#teclado-text{
+    display: none;
+}
+#teclado:checked ~ #teclado-text{
+    display: inline ;
+    height: 3vh;
+    width: 12vw;
+    
+}
+
+#auriculares-text{
+    display: none;
+}
+
+#auriculares:checked ~ #auriculares-text{
+    display: inline ;
+    height: 3vh;
+    width: 12vw;
+}
+
+#form2 input{
+    color: black;
+}
 
 .enviar-buttom {
     color: black;
     font-size: 0.9rem;
+    height: -1%;
 }
-
-
 
 
 /* FOOTER */

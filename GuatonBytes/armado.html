@@ -81,19 +81,28 @@
                 <div class="contenido-img">
                     <img class="img-pc" src="assets/52134aa0-03ea-4067-aaef-d8d0ca5b1fd0_800x.webp" alt="PC">
                     <div class="periferico">
-                        <label for="perifericos">Incluir periféricos:</label>
+                        <label for="perifericos" class="titulolabel">Incluir periféricos:</label>
                         <input type="checkbox" id="perifericos" name="perifericos">
                         <div id="form2">
-                            <label for="mouse">Mouse:</label>
-                            <input type="checkbox" id="mouse" name="mouse">
-                            <label for="teclado">Teclado:</label>
-                            <input type="checkbox" id="teclado" name="teclado">
-                            <label for="auriculares">Auriculares:</label>
-                            <input type="checkbox" id="auriculares" name="auriculares">
+                            <div>
+                                <label for="mouse">Mouse:</label>
+                                <input type="checkbox" id="mouse" name="mouse">
+                                <input type="text" name="" id="mouse-text" placeholder="Escribe el modelo aquí" required>
+                            </div>
+                            
+                            <div>
+                                <label for="teclado">Teclado:</label>
+                                <input type="checkbox" id="teclado" name="teclado">
+                                <input type="text" name="" id="teclado-text" placeholder="Escribe el modelo aquí" required>
+                            </div>
+                            <div>
+                                <label for="auriculares">Auriculares:</label>
+                                <input type="checkbox" id="auriculares" name="auriculares">
+                                <input type="text" name="" id="auriculares-text" placeholder="Escribe el modelo aquí" required>
+                            </div>
                         </div>
                     </div>
                     <input class="enviar-buttom" type="submit" value="Enviar">
-
                 </div>
             </form>
         </div>
