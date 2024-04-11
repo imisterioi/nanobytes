@@ -166,14 +166,14 @@
 
             <div class="casilla-opciones">
 
-                <label for="miCheckbox" class="opciones-label">No encuentra su problema entre nuestras opciones? <br>Detallenos lo sucedido aqui abajo.</label> 
+                <label for="miCheckbox" class="opciones-label">¿No encuentra su problema entre nuestras opciones? <br>Detallenos lo sucedido.</label> 
                 <!-- <input type="checkbox" id="m-checkbox" name="miCheckbox"> -->
 
             </div>
             
             <div id="cuadro-texto">
                 <textarea id="mensaje" name="mensaje" placeholder="Cuentenos sobre su problema... 
-                Ej: Se me cayó desde un segundo piso y no prendió mas." style="color: gray;"></textarea>
+Ej: Se me cayó desde un segundo piso y no prendió mas." style="color: gray;"></textarea>
             </div>
             
             <div id="m-boton-enviar">
@@ -261,23 +261,21 @@
         const textarea = document.getElementById("mensaje");
         const defaultText = "Cuentenos sobre su problema...\nEj: Se me cayó desde un segundo piso y no prendió mas.";
 
-        // Cuando el textarea obtiene el foco, elimina el texto gris predeterminado
+        
         textarea.addEventListener("focus", function() {
             if (textarea.value === defaultText) {
                 textarea.value = "";
-                textarea.style.color = "black"; // Cambia el color del texto a negro
+                textarea.style.color = "black"; 
             }
         });
 
-        // Cuando el textarea pierde el foco y está vacío, restaura el texto gris predeterminado
         textarea.addEventListener("blur", function() {
             if (textarea.value === "") {
                 textarea.value = defaultText;
-                textarea.style.color = "gray"; // Restaura el color del texto a gris
+                textarea.style.color = "gray"; 
             }
         });
 
-        // Cuando el usuario comienza a escribir, cambia el color del texto a negro
         textarea.addEventListener("input", function() {
             textarea.style.color = "black";
         });
@@ -289,12 +287,12 @@
     const colorOriginal = botonEnviar.style.backgroundColor;
 
     botonEnviar.addEventListener("mouseup", function() {
-        botonEnviar.style.backgroundColor = "rgb(100, 100, 100)"; /* Color al soltar el click */
+        botonEnviar.style.backgroundColor = "rgb(100, 100, 100)"; 
 
-        // Restaurar el color original después de un breve retraso
+       
         setTimeout(function() {
             botonEnviar.style.backgroundColor = colorOriginal;
-        }, 0); // Cambia este valor si deseas ajustar la duración del efecto
+        }, 0); 
     });
 });
 

@@ -280,7 +280,7 @@ ul > h3 {
     margin-top: 5vh;
     display: flex;
     justify-content: center;
-    
+    text-align: center;
 }
 
 .opciones-label{
@@ -299,19 +299,19 @@ ul > h3 {
 .m-opciones-check{
     display: flex;
     /* justify-content: center; */
-    border: solid black;
+    /* border: solid black; */
     margin-left: 35vw;
     margin-right: 35vw;
-    margin-top: 1vh;
+    margin-top: 4vh;
     /* border-radius: 1vw; */
     padding-top: 0.5vh;
     padding-bottom: 0.5vh;
+    font-size: 2vh;
 }
 
 .m-relleno{
     height: 1.5vh;
     width: 1.5vw;
-    /* outline: 0.1rem solid black; */
 }
 
 label{
@@ -322,7 +322,7 @@ label{
     color: black;
     display: flex;
     justify-content: center;
-    margin-top: 3vh;
+    margin-top: 7vh;
     margin-bottom: -1vh;
     font-family: "Tilt Neon", sans-serif;
 }
@@ -346,14 +346,24 @@ label{
 }
 
 .boton-enviar{
-    height: 5vh;
-    width: 10vw;
-    background-color: rgb(70, 70, 70);
-    color: white;
-    margin-top: 4.5vh;
-    /* border-radius: 0.7vw; */
-    border: solid 0.33vh black;
+    background-color: black;
+    color: #ffffff;
+    font-size: 1.1rem;
+    border: 2px solid #000000;
+    padding: 10px 20px;
+    width: 15vw;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    transition: all 0.3s ease;
+    margin-top: 2vh;
+    border-radius: 0.2rem;
     
+}
+
+.boton-enviar:hover {
+    background-color: rgba(21, 21, 21, 0.1);
+    color: #ffffff;
+    transform: scale(1.1);
 }
 
 .boton-enviar:hover {
