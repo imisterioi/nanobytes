@@ -112,9 +112,10 @@ nav {
 #header7:hover img {
     filter: invert(43%) sepia(14%) saturate(2633%) hue-rotate(184deg) brightness(87%) contrast(87%);
 }
+
 a {
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 /* SECCIÓN BANNER */
@@ -309,12 +310,12 @@ ul > h3 {
 }
 
 .opciones-label{
-    color: black;
+    color: rgb(0, 0, 0), 55, 255, 255);
     font-weight: bold;
 }
 
 #m-checkbox{
-    margin-left: 0.6vw;
+    display: flex;
     height: 1.5vh;
     width: 1.5vw;
     margin-top: 0.5vh;
@@ -325,14 +326,19 @@ ul > h3 {
     display: flex;
     /* justify-content: center; */
     
-    margin-left: 3vw;
+
     /* margin-right: 35vw; */
     margin-top: 4vh;
-    
-    padding-top: 0.5vh;
-    padding-bottom: 0.5vh;
+    background-color: #000000d1;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
     font-size: 2vh;
     
+}
+
+.este{
+    margin-left: 5vw;
+
 }
 
 .m-relleno{
@@ -341,11 +347,11 @@ ul > h3 {
 }
 
 label{
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .m-titulos{
-    color: black;
+    color: rgb(0, 0, 0);
     display: flex;
     /* justify-content: center; */
     margin-left: 5vw;
@@ -362,7 +368,7 @@ label{
 }
 
 #mensaje{
-    color: black;
+    color: rgb(0, 0, 0);
     height: 20vh;
     width: 40vw;
     border: solid 0.4vh black;
@@ -449,7 +455,7 @@ label{
 }
 
 .titulo-principal-opciones{
-    color: black;
+    color: rgb(0, 0, 0);
     font-weight: bold;
     font-family: "Tilt Neon", sans-serif;
 }

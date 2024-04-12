@@ -174,7 +174,7 @@ a {
 }
 
 #obtener1 {
-    background-color: transparent;
+    background-color: black;
     border: 0.2rem solid white;
     padding: 1rem 1rem;
     width: 27rem;
@@ -189,7 +189,7 @@ a {
 }
 
 #obtener1:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0.801);
     transform: scale(1.1);
 }
 
@@ -201,7 +201,7 @@ a {
 }
 
 #obtener2 {
-    background-color: transparent;
+    background-color: black;
     border: 0.2rem solid white;
     padding: 1rem 1rem;
     width: 35rem;
@@ -216,7 +216,7 @@ a {
 }
 
 #obtener2:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0.842);
     transform: scale(1.1);
 }
 
@@ -797,6 +797,7 @@ button:hover{
 #pagina-catalogo {
     height: fit-content;
     background-color: rgb(255, 255, 255)(55, 255, 255);
+    background-image: url();
 }
 
 #catalogoprincipal {
@@ -832,7 +833,7 @@ button:hover{
     font-size: 2.5rem;
     margin-left: 1%;
     margin-bottom: 3%;
-    border-bottom: solid 0.2rem rgb(65, 63, 63);
+    /* border-bottom: solid 0.2rem rgb(65, 63, 63); */
 }
 
 
