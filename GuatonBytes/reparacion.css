@@ -235,12 +235,14 @@ ul > h3 {
 #m-background{
     background-color: black;
     width: 80%;
+    background-image: url();
     /* display: flex;
     justify-content: center;*/
 } 
 
 #pagina-mantencion{
     display: flex;
+    background-image: url();
     height: fit-content;
     justify-content: center;
     background-color: black;
@@ -253,6 +255,7 @@ ul > h3 {
     display: flex;
     /* height: 250vh; */
     margin-top: 12vh;
+    background-image: url(assets/fondo-marca-agua2.jpg);
     flex-wrap: wrap;
     flex-direction: column;
     background-color: white ;

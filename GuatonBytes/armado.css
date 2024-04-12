@@ -4,12 +4,21 @@
     
 }
 #arriba {
+    position: fixed;
     background-color: black;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1001;
     background-color: black;
     display: flex;
     align-items: center;
-    height: 12vh;
+    justify-content: space-around;
+    height: 10vh;
     color: white;
+    border-bottom: solid 1px rgb(63, 57, 57);
+
+    
 }
 
 
@@ -83,9 +92,11 @@ a {
 
 /* Armado */
 #armado{
-    height: 110vh;
+    height: fit-content;
     background-color: white;
     background-size: contain;
+    border-left: 10% solid black; 
+    border-right: 1px solid black;
 }
 
 .contendio-armadopc {
@@ -122,15 +133,18 @@ a {
 
 .seleccion-juegos{
     color: black;
+    margin-top: 10vh;
     display: flex;
+    font-size: 1.5rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     row-gap: 1.5vh;
 }
 
-.seleccion-juegos h2{
+.seleccion-juegos > h2{
     margin-bottom: 5vh;
+    font-size: 3rem;
     margin-top: 5vh ;
 }
 
@@ -157,9 +171,14 @@ label{
     margin: 10px;
 }
 
+.presupuesto{
+    font-size: 1.5rem;
+}
+
 .presupuesto input {
     width: 200px;
     margin-top: 8vh;
+    
 }
 
 .contenido-img {
@@ -172,6 +191,7 @@ label{
 .periferico{
     width: 50vw;
     margin-left: 80%;
+    font-size: 1.4rem;
 }
 
 
@@ -186,6 +206,7 @@ label{
 
 #form2 {
     display: none;
+    font-size: 1.4rem;
 }
 
 #perifericos:checked ~ #form2 {
@@ -232,12 +253,12 @@ label{
 .enviar-buttom {
     display: flex;
     color: white;
-    font-size: 2rem;
     margin-top: 6vh;
     background-color: black;
     /* border: 0.09rem solid white; */
     padding: 1rem 1rem;
-    width: 15rem;
+    width: 25rem;
+    height: 5rem;
     justify-content: center;
     text-align: center;
     transition: background-color 0.3s;
@@ -252,7 +273,7 @@ label{
     color: black;
 }
 .enviar-buttom {
-    font-size: 0.9rem;
+    font-size: 1.8rem;
     height: -1%;
     margin-top: 4vh;
 }
@@ -263,7 +284,9 @@ footer {
     background-color: black;
     align-items: center;
     display: flex;
+    margin-top: 5%;
     height: 13vh;
+    color: white;
 }
 
 .logofooter {

@@ -193,15 +193,22 @@ a {
     transform: scale(1.1);
 }
 
+#obtener2-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20vh;
+
+}
+
 #obtener2 {
     background-color: transparent;
     border: 0.2rem solid white;
     padding: 1rem 1rem;
-    width: 25rem;
+    width: 35rem;
     text-align: center;
     transition: background-color 0.3s;
     display: flex;
-    z-index: 1001;
+    z-index: 999;
     justify-content: center;
     font-size: 1.4rem;
     transition: all 0.3s ease;
@@ -692,9 +699,10 @@ button:hover{
 
 #sectioncomponentes {
     background-color: black;
-    height: 90vh;
+    height: 78vh;
     /* border-bottom: solid 1px rgb(65, 63, 63); */
     background-image: url(assets/banner-componentes.png);
+
 }
 
 #componentes {
