@@ -256,7 +256,7 @@ ul > h3 {
     display: flex;
     /* height: 250vh; */
     margin-top: 12vh;
-    background-image: url(assets/fondo-marca-agua2.jpg);
+    background-image: url();
     flex-wrap: wrap;
     flex-direction: column;
     background-color: white ;
@@ -309,8 +309,8 @@ ul > h3 {
     /* text-align: center; */
 }
 
-.opciones-label{
-    color: rgb(0, 0, 0), 55, 255, 255);
+.opciones-label {
+    color: rgba(0, 0, 0, 0.55); 
     font-weight: bold;
 }
 
