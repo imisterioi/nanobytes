@@ -31,11 +31,11 @@
                 <a href="nosotros.html" id="header4">Quíenes sómos</a>
                 <a href="#sectioncomponentes" id="header5">Componentes</a>
                 <a href="#sectionopiniones" id="header6">Contáctanos</a>
+                <a href="carrito.html" id="header7">
+                    <span>Carrito</span>
+                    <img src="assets/shopping_cart_30px.png" alt="carrito">
+                </a>
             </nav>
-            <a href="carrito.html" id="header7">
-                <span>Carrito</span>
-                <img src="assets/shopping_cart_30px.png" alt="carrito">
-            </a>
 
         </div>
     </header>
@@ -213,17 +213,19 @@
             <div class="card" id="cards" style="width: 18rem;">
                 <img src="assets/disco-duro.JPG" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Almacenamiento</h5>
+                    <h5 class="card-title">Disco duro MD</h5>
                     <p class="card-text">SSD's, Discos duros externos, pendrives</p>
+                    <p class="precio">$19.990</p>
                     <a href="https://g.co/kgs/fDCnATb" class="btn btn-dark">Revisar</a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
                 <img src="assets/tarjeta-grafica2.JPG" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Tarjetas gráficas</h5>
+                    <h5 class="card-title">Tarjetas NVIDIA 1050</h5>
                     <p class="card-text">Tarjetas con RTX NVIDIA 3050, 3060TI, 1050, 4060
                     </p>
+                    <p class="precio">$59.990</p>
                     <a href="https://g.co/kgs/PUav5gc" class="btn btn-dark">Revisar</a>
                 </div>
             </div>
@@ -232,6 +234,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Memorias RAM</h5>
                     <p class="card-text">Memorias de 4gb, 8gb y 16gb</p>
+                    <p class="precio">$9.990</p>
                     <a href="https://g.co/kgs/fDCnATb" class="btn btn-dark">Revisar</a>
                 </div>
             </div>
@@ -240,6 +243,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Almacenamiento</h5>
                     <p class="card-text">SSD's, Discos duros externos, pendrives</p>
+                    <p class="precio">$9.990</p>
                     <a href="https://g.co/kgs/fDCnATb" class="btn btn-dark">Revisar</a>
                 </div>
             </div>
@@ -249,6 +253,7 @@
                     <h5 class="card-title">Tarjetas gráficas</h5>
                     <p class="card-text">Tarjetas con RTX NVIDIA 3050, 3060TI, 1050, 4060
                     </p>
+                    <p class="precio">$89.990</p>
                     <a href="https://g.co/kgs/PUav5gc" class="btn btn-dark">Revisar</a>
                 </div>
             </div>
@@ -257,7 +262,9 @@
                 <div class="card-body">
                     <h5 class="card-title">Memorias RAM</h5>
                     <p class="card-text">Memorias de 4gb, 8gb y 16gb</p>
+                    <p class="precio">$39.990</p>
                     <a href="https://g.co/kgs/fDCnATb" class="btn btn-dark">Revisar</a>
+                   
                 </div>
             </div>
 
@@ -272,20 +279,29 @@
             <div id="formulario-contacto">
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Asunto</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                        placeholder="Consulta de precios.">
+                    <input type="email" class="form-control" id="asuntoInputContacto"
+                        placeholder="Consulta de precios." onkeyup="validarAsuntoContacto()">
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">Detallanos tu caso</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"
                         placeholder="Estoy interesado en mejorar los componentes de mi equipo."></textarea>
                     <a href="https://g.co/kgs/fDCnATb" class="btn btn-dark" id="btn-contacto">Envíar</a>
+                    <h2>Nuestras ubicaciones:</h2>
+                    <p id="ubicacion1">Lago Vichuquén 1875, 9580000 Melipilla, Región Metropolitana</p>
+                    <p id="ubicacion2">Ubicación número 2</p>
                 </div>
             </div>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3319.9522524140034!2d-71.23225118889404!3d-33.684300509414776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x966255d61f76cb99%3A0x81d47a10451b62b0!2sNANOBYTES%20Los%20Lagos%20Formateo%20y%20Mantenciones%20PC!5e0!3m2!1ses!2scl!4v1712091208285!5m2!1ses!2scl"
-                width=600vw height="600vh" style="border: 0.3rem solid gray;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div id="mapas">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3319.9522524140034!2d-71.23225118889404!3d-33.684300509414776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x966255d61f76cb99%3A0x81d47a10451b62b0!2sNANOBYTES%20Los%20Lagos%20Formateo%20y%20Mantenciones%20PC!5e0!3m2!1ses!2scl!4v1712091208285!5m2!1ses!2scl"
+                    width=600vw height="500vh" style="border: 0.2rem solid gray;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" id="mapa-ubicacion-1"></iframe>
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3319.9522524140034!2d-71.23225118889404!3d-33.684300509414776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x966255d61f76cb99%3A0x81d47a10451b62b0!2sNANOBYTES%20Los%20Lagos%20Formateo%20y%20Mantenciones%20PC!5e0!3m2!1ses!2scl!4v1712091208285!5m2!1ses!2scl"
+                    width=600vw height="500vh" style="border: 0.2rem solid gray;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" id="mapa-ubicacion-1"></iframe>
+            </div>
         </div>
 
 
@@ -326,6 +342,7 @@
 
         </div>
     </footer>
+    <script src="funciones.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

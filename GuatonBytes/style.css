@@ -126,13 +126,13 @@ nav {
     filter: invert(43%) sepia(14%) saturate(2633%) hue-rotate(184deg) brightness(87%) contrast(87%);
 }
 
-#header7 {
+/* #header7 {
     display: flex;
     align-items: center;
     margin-right: 1%;
     margin-left: -9%;
     font-size: 1.3rem;
-}
+} */
 
 a {
     text-decoration: none;
@@ -523,7 +523,6 @@ button:hover{
 .card-armado{
     display: flex;
     flex-direction: column;
-    margin-left: 3%;
     margin-top: 3%;
     height: 58vh;
     width: 22% !important;
@@ -845,7 +844,7 @@ button:hover{
     transform: scale(1.1);
 }
 
-/*                                          SECCIÓN OPINIONES                               */
+/*                                          SECCIÓN CONTACTO                               */
 #sectionopiniones {
     background-color: rgb(255, 255, 255);
     height: 100vh;
@@ -861,6 +860,12 @@ button:hover{
 
 }
 
+#mapas{
+    display: flex;
+    background-color: #000000;
+    flex-direction: column;
+}
+
 #formulario-contacto{
     display: flex;
     align-items: flex-start;
@@ -870,13 +875,37 @@ button:hover{
     margin-top: 5vh;
 }
 
+.incorrecto {
+    border: 3px #6e0909ec solid !important;
+}
+
+
+.correct {
+    border: 3px #22a30b solid !important;
+}
+
+
+input {
+    box-shadow: none !important;
+}
+
 .form-control{
     
-    width: 280%;
+    /* width: 280%; */
     border: solid 0.1rem rgba(0, 0, 0, 0.753);
 }
 
+.form-label{
+    width: 25vw;
+}
+
 #btn-contacto{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    width: 15vw;
+}
+
+#ubicacion1{
     margin-top: 5vh;
 }
 
@@ -886,7 +915,7 @@ button:hover{
     justify-content: space-evenly;
     flex-wrap: wrap;
     row-gap: 1vh;
-    column-gap: 30vw;
+    column-gap: 10vw;
     width: 100%;
 }
 
@@ -895,7 +924,15 @@ button:hover{
     color: black;
     display: flex;
     width: 100%;
-    margin-left: 10%;
+    margin-left: 8.6%;
+}
+
+#ubicacion1{
+    font-size: 1.8rem;
+}
+
+#ubicacion2{
+    font-size: 1.8rem;
 }
 
 .card{
@@ -908,6 +945,7 @@ button:hover{
     border-bottom: solid 0.2rem rgb(65, 63, 63);
 }
 
+
 .card-tittle{
     display: flex;
     
@@ -916,7 +954,11 @@ button:hover{
 .card-text{
     display: flex;
     max-height: 1vh;
-    margin-bottom: 8vh;
+    margin-bottom: 4vh;
+}
+
+.precio{
+    font-size: 1.7rem;
 }
 
 .card > img{
