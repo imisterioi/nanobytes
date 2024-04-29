@@ -830,6 +830,7 @@ button:hover{
     padding: 1rem 1rem;
     width: 35rem;
     justify-content: center;
+    margin-bottom: 18vh;
     text-align: center;
     
     transition: background-color 0.3s;
@@ -905,10 +906,11 @@ input {
     width: 15vw;
 }
 
-#ubicacion1{
-    margin-top: 5vh;
+.ubicaciones{
+    display: flex;
+    column-gap: 2vw;
 }
-
+    
 #opiniones{
     display: flex;
     /* flex-direction: column; */
@@ -929,10 +931,13 @@ input {
 
 #ubicacion1{
     font-size: 1.8rem;
+    margin-top: 5vh;
+    font-weight: bold;
 }
 
 #ubicacion2{
     font-size: 1.8rem;
+    font-weight: bold;
 }
 
 .card{
@@ -959,6 +964,7 @@ input {
 
 .precio{
     font-size: 1.7rem;
+    color: #048031;
 }
 
 .card > img{

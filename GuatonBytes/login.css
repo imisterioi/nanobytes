@@ -19,9 +19,12 @@ body{
     flex-direction: column;
     align-items: center;
     border-radius: 7%;
-    padding: 10%;
-    background-color: rgb(255, 255, 255);
-    border: 2px solid #000000;
+    height: 60vh;
+    width: 23vw;
+    max-width: 23vw;
+    max-height: 60vh;
+    background-color: transparent;
+    border: 5px solid #000000;
     
     
 
@@ -29,45 +32,49 @@ body{
 
 #contenido-login{
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     /* justify-content: center; */
     flex-direction: column;
 }
 
 h1{
-    margin-bottom: 7vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
     font-size: 2.5rem;
     text-align: left;
 }
 
 h3{
+    margin-top: 3vh;
     font-size: 1.7rem;
 }
 
 h5{
     font-size: 1.5rem;
+    margin-top: 2vh;
 }
 
-a{
+#btn-login{
     background-color: black;
     color: #ffffff;
     font-size: 1.8rem;
     padding: 10px 20px;
-    margin-top: 15vh;
+    margin-top: 7vh;
     cursor: pointer;
     transition: background-color 0.3s;
     transition: all 0.3s ease;
-    margin-top: 10%;
     border-radius: 0.2rem;
+    
 }
 
-a:hover {
+#btn-login:hover {
     background-color: rgba(21, 21, 21, 0.1);
     color: #000000;
     border: 2px solid #000000;
 }
 
 input{
-    width: 170%;
-    height: 20%;
+    border: 2px solid #000000;
+    border-radius: 2%;
+    font-size: 1rem;
 }
