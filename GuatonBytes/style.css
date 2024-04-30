@@ -10,6 +10,10 @@ html {
    
 }
 
+span{
+    margin-bottom: 1vh;
+}
+
 #arriba {
     position: fixed;
     background-color: black;
@@ -26,6 +30,10 @@ html {
     border-bottom: solid 1px rgb(63, 57, 57);
 
 
+}
+
+#principal{
+    background-color: #000000;
 }
 
 #carouselExampleDark{
@@ -88,6 +96,7 @@ nav {
     /* letter-spacing: 1.5px; */
 
 }
+
 
 #header7 {
     display: flex;
@@ -1144,12 +1153,32 @@ input {
 
 @media (max-width: 1500px){
     #arriba{
-        flex-direction: column;
+
         height: 13vh;
     }
 
+    #nano{
+        font-size: 1.7rem;
+    }
+
+    #bytes{
+        font-size: 1.7rem;
+    }
+
+    .logo{
+        margin-right: -9rem;
+    }
+
+    #barrasuperior{
+        font-size: 1rem;
+    }
+
+    #botonservicios{
+        margin-right: 5vw;
+    }
+
     #carouselExampleDark{
-        margin-top: 8%;
+        margin-top: -5%;
         padding-top: 15%;
     }
 
@@ -1161,7 +1190,109 @@ input {
         flex-wrap: wrap;
     }
 
+    #sectionservicios{
+        height: 133vh;
+    }
+
+    .card-armado{
+        height: 50vh;
+    }
+
+    .card-armado > img{
+        max-height: 19vh;
+    }
+
     #sectionopiniones{
         margin-top: 42vh;
     }
+}
+
+@media (max-width: 1200px){
+    #arriba{
+        flex-direction: column;
+    }
+
+    nav{
+        column-gap: 1.1rem;
+    }
+
+    #damos-opciones{
+        margin-bottom: 4%;
+    }
+
+    #rep{
+        width: 16rem;
+    }
+
+    #arm{
+        width: 16rem;
+    }
+
+    #comp{
+        width: 16rem;
+    }
+
+    #botonservicios > button{
+        width: 16rem;
+    }
+
+    #parrafo-botones > p{
+        font-size: 1.6rem;
+        margin-right: 6%;
+    }
+
+    #armadopc > h2{
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .card-text-armado{
+        max-height: 8vh;
+    }
+
+    .card-armado > img{
+        max-height: 12vh;
+    }
+
+    .btn-armado{
+        width: 18vw;
+    }
+
+    .carousel-item img{
+        height: 40vh;
+    }
+
+    .carousel-dark{
+        bottom: -10.75rem;
+    }
+
+    #obtener2-container{
+        margin-bottom: 13vh;
+    }
+
+    #boton-armado{
+        width: 34rem;
+    }
+
+    #cuerpo-armado > p{
+        margin-top: 27%;
+    }
+
+    #sectioncomponentes{
+        height: 155vh;
+    }
+
+    #formulario-contacto{
+        margin-left: 4vw;
+    }
+
+    #carouselExampleDark{
+        margin-top: -19%;
+    }
+
+    #sectionbanner{
+        height: 78vh;
+    }
+
+
 }
