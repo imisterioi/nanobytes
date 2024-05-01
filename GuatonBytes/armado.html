@@ -8,7 +8,10 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="armado.css">
+    
+
 </head>
 
 <body>
@@ -40,103 +43,215 @@
         </div>
     </header>
 
-    <section>
-
-    </section>
-
     <section id="armado">
-        <div class="contendio-armadopc">
-            <!-- <h2>Arma tu primer PC Gamer</h2> -->
-            <form action="" class="juegos">
-                <div class="seleccion-juegos">
-                    <h2>¿Qué juegos quieres jugar?</h2>
-                    <div class="gama">
-                        <label for="gama">Gama:</label>
-                        <select id="gama" name="gama">
-                            <option value="opcion2">Alta</option>
-                            <option value="opcion3">Media</option>
-                            <option value="opcion4">Baja</option>
-                        </select>
+        <div id="contenedor-armado">
+            <div id="contenedor-primero">
+                <h1 id="titulo"><em>Arma tu próximo PC Gamer a tu medida</em></h1>
+                <div id="contenedor-imagenes">
+                    <img src="assets/tier3.jpg" alt="">
+                    <img src="assets/tier3.jpg" alt="">
+                </div>
+            </div>
+            <div id="contenedor-opciones">
+                <p id="categoria1">1.- Categoría / Tipo</p>
+                <div id="opciones1">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="categoria1" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Gaming Inicial / Tu primera PC
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="categoria1" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          Gamer Entusiasta / Aficionado
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="categoria1" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          Gamer Avanzado / Streamer
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="categoria1" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          eSports / Productividad
+                        </label>
+                      </div>
+                </div>
+                <p id="categoria2-1">2.1.- Resolución preferida</p>
+                <div id="opciones2">
+                    <div id="opciones2-1">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="categoria2" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              768p HD
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="categoria2" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              1080p FULL HD
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="categoria2" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              1440p QUAD HD
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="categoria2" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              2140p 4K
+                            </label>
+                          </div>
                     </div>
-                    <div class="que">
-                        <label for="app1">Juego N°1:</label>
-                        <input type="text" name="juego1" id="juego1" placeholder="Battlefield 1" required>
+                    <p id="categoria2-2">2.2.- Calidad preferida</p>
+                    <div id="opciones2-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="categoria2-2" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Baja
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="categoria2-2" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              Media
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="categoria2-2" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              Alta
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="categoria2-2" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              Ultra / Épico
+                            </label>
+                          </div>
                     </div>
-                    <div class="que">
-                        <label for="juego2">Juego N°2:</label>
-                        <input type="text" name="juego2" id="juego2" placeholder="Gta V" required>
+                </div>
+                <p id="categoria3">3.- FPS minimos, Hz Máximos</p>
+                <div id="opciones3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="categoria3" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          75 FPS / HZ
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="categoria3" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          120 FPS / HZ
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="categoria3" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          144 FPS / HZ
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="categoria3" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          165 FPS / HZ
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="categoria3" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          240 FPS / HZ
+                        </label>
+                      </div>
+                </div>
+                <p id="categoria4">4.- Juegos favoritos</p>
+                <p id="escribe-juegos">Escribe a continuación 3 juegos que esperas correr con los requisitos ingresados:</p>
+                <div id="opciones4">
+                    <textarea rows="4" id="juegos"></textarea>
+                </div>
+                <p id="categoria5">5.- Periféricos</p>
+                <div id="opciones5">
+                    <div id="opciones5-1">
+                        <div class="form-check-perifericos">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Pantalla
+                            </label>
+                          </div>
+                          <div class="form-check-perifericos">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                              Teclado Membrana
+                            </label>
+                          </div>
+                          <div class="form-check-perifericos">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Teclado Mecánico
+                            </label>
+                          </div>
+                          <div class="form-check-perifericos">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                              Cámara
+                            </label>
+                          </div>
                     </div>
-                    <div class="que">
-                        <label for="juego3">Juego N°3:</label>
-                        <input type="text" name="juego3" id="juego3" placeholder="Fortnite" required>
+                    <div id="opciones5-2">
+                        <div class="form-check-perifericos">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                              Mouse Cableado
+                            </label>
+                          </div>
+                          <div class="form-check-perifericos">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                              Mouse Inalámbrico
+                            </label>
+                          </div>
+                          <div class="form-check-perifericos">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                              WiFi USB
+                            </label>
+                          </div>
+                          <div class="form-check-perifericos">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                              Micrófono
+                            </label>
+                          </div>
+                          
                     </div>
-
-                
-                    <h2>¿Qué Aplicaciones quieres usar?</h2>
-                    <div class="que">
-                        <label for="app1">Aplicación N°1:</label>
-                        <input type="text" name="app1" id="app1" placeholder="Battlefield 1" required>
+                    <div id="opciones5-3">
+                        <div class="form-check-perifericos">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                              Audífonos
+                            </label>
+                          </div>
                     </div>
-                    <div class="que">
-                        <label for="app2">Aplicación N°2:</label>
-                        <input type="text" name="app2" id="app2" placeholder="Battlefield 1" required>
-                    </div>
-                    <div class="que">
-                        <label for="app3">Aplicación N°3:</label>
-                        <input type="text" name="app3" id="app3" placeholder="Battlefield 1" required>
-                    </div>
-                
-
-                        
-
-                    <div class="fps">
-                        <label for="fps">Limite de FPS:</label>
-                        <select id="fps" name="fps">
-                            <option value="opcion2">60FPS</option>
-                            <option value="opcion3">90FPS</option>
-                            <option value="opcion4">125FPS</option>
-                            <option value="opcion4">144FPS</option>
-                        </select>
-                    </div>
-
+                    
                     
                 </div>
-                
-                
-                <div class="contenido-img">
-                    <!-- <img class="img-pc" src="assets/52134aa0-03ea-4067-aaef-d8d0ca5b1fd0_800x.webp" alt="PC"> -->
-                    <div class="periferico">
-                        <label for="perifericos" class="titulolabel">Incluir periféricos:</label>
-                        <input type="checkbox" id="perifericos" name="perifericos">
-                        <div id="form2">
-                            <div>
-                                <label for="mouse">Mouse:</label>
-                                <input type="checkbox" id="mouse" name="mouse">
-                                <!-- <input type="text" name="" id="mouse-text" placeholder="Escribe el modelo aquí" required> -->
-                            </div>
-                            
-                            <div>
-                                <label for="teclado">Teclado:</label>
-                                <input type="checkbox" id="teclado" name="teclado">
-                                <!-- <input type="text" name="" id="teclado-text" placeholder="Escribe el modelo aquí" required> -->
-                            </div>
-                            <div>
-                                <label for="auriculares">Auriculares:</label>
-                                <input type="checkbox" id="auriculares" name="auriculares">
-                                <!-- <input type="text" name="" id="auriculares-text" placeholder="Escribe el modelo aquí" required> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="presupuesto">
-                        <label for="presupuesto">Presupuesto:</label>
-                        <input type="number" name="presupuesto" id="presupuesto" min="0" max="10000000" required placeholder="$0">
-                    </div>
-                    <input class="enviar-buttom" type="submit" value="Enviar">
-                </div>
-            </form>
+            </div>
+            <div id="contenedor-instrucciones">
+                <div id="opciones6"></div>
+            </div>
         </div>
     </section>
-    
+
+
+
+
+
+
     <footer>
         <p id="autor">Creado por BW Proyectos</p>
         <div class="footer">

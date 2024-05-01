@@ -1,318 +1,96 @@
-*{
-    margin: 0;
-    font-family: sans-serif;
-    
-}
-#arriba {
-    position: fixed;
-    background-color: black;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1001;
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 10vh;
-    color: white;
-    border-bottom: solid 1px rgb(63, 57, 57);
-
-    
-}
-
-
-h1 {
-    font-size: 1.rem;
-}
-
-#nano {
-    color: white;
-}
-
-#bytes {
-    color: #2fc5e0;
-}
-
-.logo {
-    display: flex;
-    margin-right: 20rem;
-    align-items: center;
-    text-decoration: none;
-}
-
-.icon {
-    border-radius: 100%;
-    height: 50px;
-    width: 50px;
-    margin-right: 11px;
-}
-
-
-
-
-nav {
-    color: white;
-    display: flex;
-    column-gap: 1.3rem;
-    font-size: 1.1rem;
-    justify-content: flex-start;
-    margin-right: 3vw;
-
-}
-
-#header1:hover{
-    color: #2fc5e0;
-}
-#header2:hover{
-    color: #2fc5e0;
-}
-#header3:hover{
-    color: #2fc5e0;
-}
-#header4:hover{
-    color: #2fc5e0;
-}
-#header5:hover{
-    color: #2fc5e0;
-}
-#header6:hover{
-    color: #2fc5e0;
-}
-#header7:hover span {
-    color: aqua;
-}
-#header7:hover img {
-    filter: invert(43%) sepia(14%) saturate(2633%) hue-rotate(184deg) brightness(87%) contrast(87%);
-}
-a {
-    text-decoration: none;
-    color: white;
-}
-
-/* Armado */
 #armado{
-    height: fit-content;
-    background-color: white;
-    background-size: contain;
-    border-left: 10% solid black; 
-    border-right: 1px solid black;
-}
-
-.contendio-armadopc {
-    color: black;
-    height: 100%;
-}
-
-.contendio-armadopc > h2 {
-    display: flex;
-    align-items: end;
-    justify-content: center;
-    height: 9%;
+    height: 190vh;
     
 }
 
-.aplicacion h2{
-    font-size: 1.9rem;
-    margin-top: 4vh;
-}
-
-.juegos{
-    width: 100%;
-    height: 85%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
-}
-
-.img-pc {
-    width: 300px;
-    height: 300px;
-}
-
-.seleccion-juegos{
-    color: black;
-    margin-top: 10vh;
-    display: flex;
-    font-size: 1.5rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    row-gap: 1.5vh;
-}
-
-.seleccion-juegos > h2{
-    margin-bottom: 5vh;
+#titulo{
+    width: 30%;
+    text-align: center;
     font-size: 3rem;
-    margin-top: 5vh ;
+    margin-left: 5vw;
 }
 
-label{
-
-    color: black;
+#contenedor-armado{
+    display: flex;
+    margin-top: 15vh;
+    flex-direction: column;
 }
 
-.seleccion-juegos input {
-    color: black;
-    width: 200px;
-    height: 20px;
+#contenedor-primero{
+    /* background-color: aqua; */
+    display: flex;
+    column-gap: 5vw;
+    margin-bottom: 10vh;
 }
 
-
-.fps{
-    margin-top: 6vh;
+#contenedor-imagenes{
+    display: flex;
 }
 
-.fps select,
-.fps option,
-.fps input {
-    color: black;
-    margin: 10px;
+#contenedor-imagenes > img{
+    max-width: 15vw;
 }
 
-.presupuesto{
+#contenedor-opciones{
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(77, 116, 116); */
+    column-gap: 5vw;
     font-size: 1.5rem;
+    padding-left: 3vw;
+    padding-right: 3vw;
 }
 
-.presupuesto input {
-    width: 200px;
-    margin-top: 8vh;
-    
+#contenedor-instrucciones{
+    background-color: rgb(28, 33, 33);
 }
 
-.contenido-img {
+#opciones1{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    column-gap: 2vw;
 }
 
+#opciones2-1{
+    display: flex;
+    flex-direction: row;
+    column-gap: 2vw;
+}
 
-.periferico{
+#opciones2-2{
+    display: flex;
+    flex-direction: row;
+    column-gap: 2vw;
+}
+
+#opciones3{
+    display: flex;
+    flex-direction: row;
+    column-gap: 2vw;
+}
+
+#opciones4{
+    display: flex;
+    flex-direction: row;
+    column-gap: 2vw;
+}
+
+#opciones5{
+    display: flex;
+    flex-direction: row;
+    column-gap: 5vw;
+    row-gap: 3vh;
+}
+
+.form-check{
+    margin-bottom: 10vh;
+}
+
+textarea{
     width: 50vw;
-    margin-left: 80%;
-    font-size: 1.4rem;
 }
 
-
-.periferico input[type="checkbox"] {
-    transform: scale(1.3);
-    margin-top: 15px;
-    margin-bottom: 15px;
-    color: black;
-    
-}
-
-
-#form2 {
-    display: none;
-    font-size: 1.4rem;
-}
-
-#perifericos:checked ~ #form2 {
-    display: flex;
-    flex-direction: column;
-
-}
-
-
-#mouse-text{
-    display: none;
-}
-
-#mouse:checked ~ #mouse-text{
-    display: inline;
-    height: 3vh;
-    width: 12vw;
-}
-
-#teclado-text{
-    display: none;
-}
-#teclado:checked ~ #teclado-text{
-    display: inline ;
-    height: 3vh;
-    width: 12vw;
-    
-}
-
-#auriculares-text{
-    display: none;
-}
-
-#auriculares:checked ~ #auriculares-text{
-    display: inline ;
-    height: 3vh;
-    width: 12vw;
-}
-
-#form2 input{
-    color: black;
-}
-
-.enviar-buttom {
-    display: flex;
-    color: white;
-    margin-top: 6vh;
-    background-color: black;
-    /* border: 0.09rem solid white; */
-    padding: 1rem 1rem;
-    width: 25rem;
-    height: 5rem;
-    justify-content: center;
-    text-align: center;
-    transition: background-color 0.3s;
-    transition: all 0.3s ease;
-}
-
-
-
-.enviar-buttom:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    transform: scale(1.1);
-    color: black;
-}
-.enviar-buttom {
-    font-size: 1.8rem;
-    height: -1%;
-    margin-top: 4vh;
-}
-
-
-/* FOOTER */
-footer {
-    background-color: black;
-    align-items: center;
-    display: flex;
-    margin-top: 5%;
-    height: 13vh;
-    color: white;
-}
-
-.logofooter {
-    display: flex;
-    align-items: center;
-}
-
-.footer {
-    display: flex;
-    justify-content: flex-end;
-    width: 80%;
-    font-size: 12px;
-}
-
-#autor{
-    font-size: 0.8rem;
-    display: flex;
-    margin-left: 2vw;
-    color: white;
-}
-
-ul {
-    list-style: none;
-}
-
-ul > h3 {
-    text-align: center;
-    font-size: 1rem;
+#categoria5{
+    margin-top: 7vh;
+    margin-bottom: 5vh;
 }
