@@ -707,7 +707,7 @@ button:hover{
 #section-nosotros {
     display: flex;
     background-color: rgb(0, 0, 0);
-    height: 70vh;
+    height: 90vh;
     margin-top: 8vh;
     border-bottom: solid 1px rgb(0, 0, 0);
     /* background-image: url(assets/gato-blanco.jpg); */
@@ -717,58 +717,6 @@ button:hover{
 
 }
 
-#nosotros > h1 {
-    margin-top: 5.5vh;
-    margin-bottom: -17%;
-    font-size: 4rem;
-    text-align: justify;
-    text-align: center;
-    color: rgb(0, 0, 0);
-}
-
-.linea {
-    border-bottom: 1px solid rgba(0, 0, 0, 0);
-    width: 50%;
-    margin: 0 auto;
-}
-
-#nosotros-parrafo1-parrafo2{
-    font-size: 1.6rem;
-    text-align: end;
-    margin-top: 7%;
-    margin-right: 6%;
-}
-
-.texto-nosotros {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 2%;
-    margin-right: 2%;
-    background-color: rgb(244, 244, 244);
-    height: 65vh;
-    max-height: 65vh;
-    margin-bottom: 10vh;
-    /* text-overflow: ellipsis; */
-    padding: 10%;
-    /* overflow: auto; */
-}
-
-#nosotros3{
-    text-align: left;
-    font-size: 2rem;
-}
-
-.texto-nosotros>p {
-    font-size: 1.5rem;
-    text-align: center;
-    color: black;
-    text-overflow: ellipsis;
-    max-height: 60vh;
-    margin: 0;
-
-
-}
 
 /*                                                       SECCIÓN COMPONENTES                                                */
 
