@@ -46,149 +46,60 @@
 
 
     <section id="pagina-mantencion">
-        <div id="m-background">
+        
             <div id="opciones">
+                <div id="pregunta">
+                    <h1 id="titulo-principal">¿Necesitas ayuda con tu equipo?</h1>
+                </div>
+                
+                
                 <div class="contenedor-imagenes">
                     <img src="assets/icons8-monitor-100.png" id="imagen-1" class="m-imagen imagen" alt="Imagen 1" >
                     <img src="assets/icons8-laptop-100-n.png" id="imagen-2" class="m-imagen imagen" alt="Imagen 2" >
                     <img src="assets/icons8-xbox-series-s-100.png" id="imagen-3" class="m-imagen imagen" alt="Imagen 3">
                 </div>
-    
-                <div id="m-titulos-imagenes">
-                    <h1 id="titulo-pc" class="m-i-titulo" style="display: none;">Pc Escritorio</h1>
-                    <h1 id="titulo-laptop" class="m-i-titulo">Notebook</h1>          
-                    <h1 id="titulo-consola" class="m-i-titulo" style="display: none;">Consola (Psx/Xbox)</h1>
-    
-                </div>
-    
-                <div id="div-m-titulo-opciones">
-                    <h1 class="titulo-principal-opciones"> Marca las casillas acorde a tu problema:</h1>
-                </div>
-                
-    
-                <div id="m-opcion-check">
-    
-                    <h1 class="m-titulos">Energia</h1>
-    
-                    <div class="m-opciones-check">
-    
-                        <form class="este">
-                            <input type="checkbox" class="m-relleno" name="opcion1" value="opcion1">
-                            <label for="opcion1">Bateria.</label><br>
-                            
-                            <input type="checkbox" class="m-relleno" name="opcion2" value="opcion2">
-                            <label for="opcion2">Cargador.</label><br>
-                            
-                            <input type="checkbox" class="m-relleno" name="opcion3" value="opcion3">
-                            <label for="opcion3">Puerto de carga.</label><br>
-                            
-                            
-                          </form>
-                        
-                    </div>
-    
-                    <h1 class="m-titulos">Pantalla</h1>
-    
-                    <div class="m-opciones-check">
-    
-                        <form class="este">
-                            <input type="checkbox" class="m-relleno" name="opcion1" value="opcion1">
-                            <label for="opcion1">Pantalla quebrada.</label><br>
-                            
-                            <input type="checkbox" class="m-relleno" name="opcion2" value="opcion2">
-                            <label for="opcion2">No da imagen.</label><br>
-                            
-                            <input type="checkbox" class="m-relleno" name="opcion3" value="opcion3">
-                            <label for="opcion3">Rotura de colores.</label><br>
-                            
-                            
-                          </form>
-                        
-                    </div>
-    
-                    <h1 class="m-titulos">Componentes</h1>
-    
-                    <div class="m-opciones-check">
-    
-                        <form class="este">
-                            <input type="checkbox" class="m-relleno" name="opcion1" value="opcion1">
-                            <label for="opcion1">Cambio/aumento de RAM.</label><br>
-                            
-                            <input type="checkbox" class="m-relleno" name="opcion2" value="opcion2">
-                            <label for="opcion2">Cambio/aumento de disco duro/SSD.</label><br>
-                            
-                            <input type="checkbox" class="m-relleno" name="opcion3" value="opcion3">
-                            <label for="opcion3">Otro.</label><br>
-                            
-                            
-                          </form>
-                        
-                    </div>
-    
-                    <h1 class="m-titulos">Teclado</h1>
-    
-                    <div class="m-opciones-check">
-    
-                        <form class="este">
-                            <input type="checkbox" class="m-relleno" name="opcion1" value="opcion1">
-                            <label for="opcion1">Faltan teclas.</label><br>
-                            
-                            <input type="checkbox" class="m-relleno" name="opcion2" value="opcion2">
-                            <label for="opcion2">Fallan algunas teclas.</label><br>
-                            
-                            <input type="checkbox" class="m-relleno" name="opcion3" value="opcion3">
-                            <label for="opcion3">No funciona.</label><br>
-                            
-                            
-                          </form>
-                        
-                    </div>
-    
-                    <h1 class="m-titulos">Ventilador</h1>
-    
-                    <div class="m-opciones-check">
-    
-                        <form class="este">
-                            <input type="checkbox" class="m-relleno" name="opcion1" value="opcion1">
-                            <label for="opcion1">Suena mucho.</label><br>
-                            
-                            <input type="checkbox" class="m-relleno" name="opcion2" value="opcion2">
-                            <label for="opcion2">No enciende.</label><br>
-                            
-                            <input type="checkbox" class="m-relleno" name="opcion3" value="opcion3">
-                            <label for="opcion3">Otro.</label><br>
-                            
-                            
-                          </form>
-                        
-                    </div>
-    
-                </div>
-    
-                <div class="casilla-opciones">
-    
-                    <label for="miCheckbox" class="opciones-label">¿No encuentra su problema entre nuestras opciones? <br>Detallenos lo sucedido.</label> 
-                    <!-- <input type="checkbox" id="m-checkbox" name="miCheckbox"> -->
-    
-                </div>
-                
-                <div id="cuadro-texto">
-                    <textarea id="mensaje" name="mensaje" placeholder="Cuentenos sobre su problema... 
-Ej: Se me cayó desde un segundo piso y no prendió mas." style="color: gray;"></textarea>
 
-                    <div id="m-boton-enviar">
-                        <button class="boton-enviar">Enviar</button>
-                        
-                    </div>
+                <div id="div-preguntas">
+                    <h1 class="pregunta-titulo">Paso 1</h1>
+                    
+                        <label class="pregunta" for="pregunta">No enciende</label>
+                        <input class="pregunta-check" type="checkbox" >
+                    
+
+                    
+                    <label class="pregunta" for="pregunta">Si enciende</label>
+                    <input class="pregunta-check" type="checkbox" >
+                     
+
+                    
+                    <label class="pregunta" for="pregunta">No lo se</label>
+                    <input class="pregunta-check" type="checkbox" >
+                    
+
                 </div>
-                
-                
-    
-                
-    
-    
+
+
+
+
+                <div id="datos-usuario">
+                    <div id="div-nombre">
+                        <h1 class="datos-titulos">Ingrese su nombre: </h1>
+                        <input type="text" style="color: black;">
+                    </div>
+                    <div id="div-celular">
+                        <h1 class="datos-titulos">Numero de celular: </h1>
+                        <input type="text" style="color: black;">
+                    </div>
+                    <div id="div-email">
+                        <h1 class="datos-titulos">E-MAIL: </h1>
+                    <input type="text" style="color: black;">
+                    </div>
+                    
+                </div>
+ 
             </div>
-        </div>
+            
+        
         
         
     </section>

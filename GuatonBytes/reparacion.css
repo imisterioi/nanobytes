@@ -234,8 +234,8 @@ ul > h3 {
 /*                                         SECCION MANTENCION                                                          */
 
 #m-background{
-    background-color: black;
-    width: 80%;
+    /* background-color: black; */
+    /* width: 80%; */
     background-image: url();
     /* display: flex;
     justify-content: center;*/
@@ -247,6 +247,7 @@ ul > h3 {
     height: fit-content;
     justify-content: center;
     background-color: black;
+    /* width: 100rem; */
     
 }
 
@@ -260,10 +261,11 @@ ul > h3 {
     flex-wrap: wrap;
     flex-direction: column;
     background-color: white ;
+
     /* margin-left: 1vw; */
     /* margin-left: 100vw; */
     /* margin-right: 100vw; */
-    /* width: 50%; */
+    width: 100rem;
     /* justify-content: center; */
     /* align-items: center; */
 
@@ -301,161 +303,59 @@ ul > h3 {
     z-index: 10; 
 }
 
-.casilla-opciones{
+#pregunta{
+    display: flex;
+    justify-content: center;
     margin-top: 5vh;
-    display: flex;
-    margin-left: 3vw;
-    /* justify-content: center; */
-    /* text-align: center; */
 }
 
-.opciones-label {
-    color: rgba(0, 0, 0, 0.55); 
-    font-weight: bold;
-}
-
-#m-checkbox{
-    display: flex;
-    height: 1.5vh;
-    width: 1.5vw;
-    margin-top: 0.5vh;
-    
-}
-
-.m-opciones-check{
-    display: flex;
-    /* justify-content: center; */
-    
-
-    /* margin-right: 35vw; */
-    margin-top: 4vh;
-    background-color: #000000d1;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-    font-size: 2vh;
-    
-}
-
-.este{
-    margin-left: 5vw;
-
-}
-
-.m-relleno{
-    height: 1.5vh;
-    width: 1.5vw;
-}
-
-label{
-    color: rgb(255, 255, 255);
-}
-
-.m-titulos{
-    color: rgb(0, 0, 0);
-    display: flex;
-    /* justify-content: center; */
-    margin-left: 5vw;
-    margin-top: 7vh;
-    margin-bottom: -1vh;
-    font-family: "Tilt Neon", sans-serif;
-}
-
-#cuadro-texto{
-    display: flex;
-    /* justify-content: center; */
-    margin-top: 5vh; 
-    margin-left: 3vw; 
-}
-
-#mensaje{
-    color: rgb(0, 0, 0);
-    height: 20vh;
-    width: 40vw;
-    border: solid 0.4vh black;
-    resize: none;
-    overflow-wrap: auto;
-    /* border-radius: 1vw; */
-    padding-left: 0.5vw;
-    margin-bottom: 5vh;
-
-}
-
-.boton-enviar{
-    background-color: black;
-    color: #ffffff;
-    font-size: 1.1rem;
-    border: 2px solid #000000;
-    padding: 10px 20px;
-    width: 15vw;
-    height: 8vh;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    transition: all 0.3s ease;
-    margin-top: 2vh;
-    border-radius: 0.2rem;
-    margin-left: 5vw;
-    /* margin-bottom: 5%; */
-}
-
-.boton-enviar:hover {
-    background-color: rgba(21, 21, 21, 0.1);
-    color: #ffffff;
-    transform: scale(1.1);
-}
-
-.boton-enviar:hover {
-    background-color: rgb(100, 100, 100); 
-}
-
-.boton-enviar:active {
-    background-color: #222222; 
-}
-
-#m-boton-enviar{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 5%;
-    margin-top: 2%;
-}
-
-#m-titulos-imagenes{
-    display: flex;
-    justify-content: center;
-    /* border-bottom: solid black; */
-    
-}
-
-.m-i-titulo{
+#titulo-principal{
     color: black;
-    font-family: "Tilt Neon", sans-serif;
-    font-size: 3vh;
-    /* padding-left: 5.2vw; */
-    text-align: center;
-    /* margin: 0 2vw; */
     font-weight: bold;
 }
 
-#Pc{
-    padding-right: 8vw;
-    padding-left: 7vw;
-}
-
-#Consola{
-    padding-left: 6.5vw;
-} 
-
-#titulo-dinamico{
+.datos-titulos{
     color: black;
+    font-size: 2rem;
 }
 
-#div-m-titulo-opciones{
+#datos-usuario{
+}
+
+#div-nombre{
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+    padding-left: 5vw;
+}
+
+#div-celular{
+    padding-bottom: 5vh;
+    padding-left: 5vw;
+}
+
+#div-email{
+    padding-left: 5vw;
+}
+
+#div-preguntas{
     display: flex;
-    justify-content: center;
-    margin-top: 3vh;
+    flex-direction: column;
 }
 
-.titulo-principal-opciones{
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    font-family: "Tilt Neon", sans-serif;
+.pregunta-titulo{
+    color: black;
+    padding-left: 10vw;
+}
+
+.pregunta-check{
+    color: black;
+    scale: 130%;
+    margin-left: 1rem;
+    
+}
+
+.pregunta{
+    color: black;
+    font-size: 1.5rem;
+    padding-left: 10vw;
 }
