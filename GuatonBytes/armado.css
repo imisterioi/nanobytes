@@ -186,13 +186,59 @@ textarea{
     cursor: pointer;
     transition: background-color 0.3s;
     transition: all 0.3s ease;
-    margin-top: 2%;
+    margin-top: -10%;
     margin-right: 2%;
     border-radius: 0.2rem;
+    margin-bottom: 3vh;
+
 }
 
 .btn-enviar:hover{
     background-color: rgba(21, 21, 21, 0.864);
     color: #ffffff;
     transform: scale(1.1);
+}
+
+@media (max-width: 1350px){
+    .btn-enviar{
+        margin-top: -22%;
+        margin-bottom: 9vh;
+    }
+}
+
+@media (max-width: 1230px){
+    #armado{
+        height: 410vh;
+    }
+    #nombre-completo, #correo, #celular {
+        width: 52vw;
+    }
+    .btn-enviar {
+        margin-top: 26%;
+    }
+}
+
+@media (max-width: 690px){
+    #armado{
+        height: 466vh;
+    }
+
+    #contenedor-imagenes{
+        max-width: 25vw;
+        max-height: 32vh;
+        margin-top: 16vh;
+        margin-left: -1vw;
+    }
+
+    #contenedor-primero{
+        flex-direction: column;
+    }
+
+    #nombre-completo, #correo, #celular {
+        width: 52vw;
+    }
+
+    .btn-enviar{
+        margin-top: 23%;
+    }
 }

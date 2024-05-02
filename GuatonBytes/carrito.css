@@ -152,3 +152,37 @@ input{
     transform: scale(1.1);
 }
 
+@media (max-width: 1350px){
+    .producto{
+        column-gap: 3vw;
+    }
+
+    #titulos{
+        column-gap: 9vw;
+    }
+
+    #titulos > #segundo{
+        margin-left: 32.5vw;
+    }
+
+}
+
+@media (max-width: 800px){
+    #titulos > #segundo{
+        margin-left: 7.5vw;
+    }
+
+    .btn-pagar{
+        width: 42vw;
+        margin-right: 31%;
+
+    }
+
+    .btn-quitar{
+        padding: 1px 1px;
+    }
+
+    .producto{
+        font-size: 1.1rem;
+    }
+}

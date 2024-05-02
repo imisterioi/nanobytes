@@ -1235,6 +1235,27 @@ input {
     }
 }
 
+@media (max-width: 1150px){
+    .product-content{
+        width: 137%;  
+    }
+
+    #almacenamiento{
+        column-gap: 5vw;
+    }
+
+    #tarjetas{
+        column-gap: 5vw;
+    }
+
+    #memorias{
+        column-gap: 5vw;
+    }
+
+
+ 
+} 
+
 @media (max-width: 1200px){
     #arriba{
         flex-direction: column;
@@ -1322,5 +1343,27 @@ input {
         height: 78vh;
     }
 
+
+}
+
+@media (max-width: 800px){
+    .product-content {
+        width: 269%;
+    }
+
+    #almacenamiento{
+        column-gap: 27vw;
+    }
+
+    #tarjetas{
+        column-gap: 27vw;
+    }
+
+    #memorias{
+        column-gap: 27vw;
+    }
+}
+
+@media (max-width: 600px){
 
 }
