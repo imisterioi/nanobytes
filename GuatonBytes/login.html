@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+   
     <link rel="stylesheet" href="login.css">
 </head>
 
@@ -13,14 +13,21 @@
 
    <section id="login">
         <div id="cuadro-login">
+            <h1>Login</h1>      
             <div id="contenido-login">
-                <h1>Login</h1>
                 <h3>Usuario</h3>
                 <input type="Usuario" size="47" style="height: 4vh;" id="usuario">
                 <h3>Clave</h3>
                 <input type="Usuario" size="47" style="height: 4vh;" id="clave">
-                <h5>Recuérdame</h5>
-                <a href="https://g.co/kgs/fDCnATb" class="btn btn-dark" id="btn-login">Ingresar</a>
+                <div class="form-check-perifericos">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Mantener sesión iniciada
+                    </label>
+                  </div>
+                <div id="contenedor-boton">
+                    <a href="https://g.co/kgs/fDCnATb" class="btn btn-dark" id="btn-login">Ingresar</a>
+                </div>  
 
             </div>
         </div>
