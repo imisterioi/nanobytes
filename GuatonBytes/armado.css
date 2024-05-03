@@ -1,5 +1,5 @@
 #armado{
-    height: 330vh;
+    height: 340vh;
     
 }
 
@@ -147,13 +147,51 @@ textarea{
     width: 20vw;
 }
 
+/************************* PLANILLA DE CONTACTO *********************/
+
 #nombre-completo, #correo, #celular{
-    width: 30vw;
+    box-shadow: none !important;
+}
+
+#nombre-completo{
+    width: 35vw;
+    height: 4vh;
+}
+
+#correo{
+    width: 35vw;
+    height: 4vh;
+}
+
+#contenedor-telefono{
+    display: flex;
+    column-gap: 1vw;
+}
+
+#contenedor-presupuesto{
+    display: flex;
+    column-gap: 1vw;
+    font-size: 2rem;
+}
+
+#celular{
+    width: 15vw;
+    height: 4vh;
 }
 
 #planilla-contacto{
     margin-top: 10vh;
 }
+/************************* MODAL **********************************/
+
+
+
+/************************* VALIDACIONES TEXTOS ERROR *********************************/
+
+#error-nombre, #error-correo, #error-celular, #error-presupuesto{
+    color: #ffffff;
+}
+
 
 #informacion{
     margin-top: 5vh;
@@ -178,7 +216,7 @@ textarea{
 .btn-enviar{
     background-color: black;
     color: #ffffff;
-    width: 20vw;
+    width: 15vw;
     text-align: center;
     font-size: 1.7rem;
     border: 2px solid #000000;
@@ -186,8 +224,9 @@ textarea{
     cursor: pointer;
     transition: background-color 0.3s;
     transition: all 0.3s ease;
-    margin-top: -10%;
-    margin-right: 2%;
+    margin-left: 5%;
+    margin-top: -7%;
+
     border-radius: 0.2rem;
     margin-bottom: 3vh;
 
@@ -198,6 +237,10 @@ textarea{
     color: #ffffff;
     transform: scale(1.1);
 }
+
+
+
+
 
 @media (max-width: 1350px){
     .btn-enviar{

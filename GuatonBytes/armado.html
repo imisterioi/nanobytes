@@ -172,8 +172,9 @@
         <p id="categoria4"><strong>4.- Juegos favoritos</strong></p>
         <p id="escribe-juegos">Escribe a continuación 3 juegos que esperas correr con los requisitos ingresados:</p>
         <div id="opciones4">
-          <textarea rows="4" id="juegos" placeholder="World of Warcraft: The War Within"></textarea>
+          <textarea id="juegos" placeholder="World of Warcraft: The War Within"></textarea>
         </div>
+
         <p id="categoria5"><strong>5.- Periféricos</strong></p>
         <div id="opciones5">
           <div id="opciones5-1">
@@ -246,22 +247,77 @@
           <strong>
             <p>6.- Presupuesto disponible</p>
           </strong>
-          <textarea rows="1" id="presupuesto" placeholder="$499.999"></textarea>
+          <div id="contenedor-presupuesto">
+            <strong>
+              <p>$</p>
+            </strong>
+            <textarea rows="1" id="presupuesto" placeholder="450000" onkeyup="validarPresupuesto()"></textarea>
+          </div>
+          <strong>
+            <p id="error-presupuesto">Debe ingresar un presupuesto válido.</p>
+          </strong>
         </div>
 
-        <p id="informacion"><strong>Una vez recibida tu planilla de armado se te entregará un presupuesto formal para tu confirmación o
-          modificación, y así proceder a la compra de componentes.</p></strong>
+        <p id="informacion"><strong>Una vez recibida tu planilla de armado se te entregará un presupuesto formal para tu
+            confirmación o
+            modificación, y así proceder a la compra de componentes.</p></strong>
         <div id="planilla-contacto">
-          <strong><p>A continuación valida tu planilla enviando tu contacto:</p>
-            <p>Nombre completo:</p></strong>
-          <textarea id="nombre-completo" cols="1" rows="1"></textarea>
-          <strong><p>Dirección de correo:</p></strong>
-          <textarea id="correo" cols="1" rows="1"></textarea>
-          <strong><p>Celular:</p></strong>
-          <textarea id="celular" cols="1" rows="1"></textarea>
-        </div>  
+          <strong>
+            <p>A continuación valida tu planilla enviando tu contacto:</p>
+            <p>Nombre completo:</p>
+          </strong>
+          <textarea id="nombre-completo" onkeyup="validarArmadoNombre()"></textarea>
+          <strong>
+            <p id="error-nombre">Debe ingresar su nombre completo.</p>
+          </strong>
+          <strong>
+            <p>Dirección de correo:</p>
+          </strong>
+          <textarea id="correo" onkeyup="validarArmadoCorreo()"></textarea>
+          <strong>
+            <p id="error-correo">Debe ingresar un correo válido.</p>
+          </strong>
+          <strong>
+            <p>Celular:</p>
+          </strong>
+          <div id="contenedor-telefono">
+            <strong>
+              <p>+56</p>
+            </strong>
+            <textarea id="celular" onkeyup="validarArmadoCelular()" placeholder="912345678"></textarea>
+            <strong>
+              <p id="error-celular">Debe ingresar un teléfono / celular válido.</p>
+            </strong>
+          </div>
+        </div>
+
         <div id="boton-enviar">
-          <a href="https://g.co/kgs/PUav5gc" class="btn-enviar btn-dark">Enviar</a>
+
+          <button type="button" class="btn-enviar btn-primary" onclick="validarFormulario()" data-bs-target="#staticBackdrop">
+            Enviar
+          </button>
+
+
+          <div class="modal fade" id="modalEnviar" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">¡Gracias por elegirnos!</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Una vez que recibamos tu planilla de armado nos contactaremos contigo para confirmar los detalles y te
+                  enviaremos un presupuesto con las mejores opciones para ti.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Entendido</button>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
 
@@ -301,6 +357,7 @@
       </ul>
     </div>
   </footer>
+  <script src="funciones.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
