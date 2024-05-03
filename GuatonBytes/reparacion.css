@@ -303,10 +303,19 @@ ul > h3 {
     z-index: 10; 
 }
 
+#titulo-imagenes{
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-top: 1vh;
+}
+
 #pregunta{
     display: flex;
     justify-content: center;
     margin-top: 5vh;
+    /* padding-bottom: 10vh; */
+    /* margin-bottom: ; */
 }
 
 #titulo-principal{
@@ -318,6 +327,11 @@ ul > h3 {
     color: black;
     font-size: 17.6px;
     font-weight: bold;
+}
+
+#div-titulo-imagenes{
+    display: flex;
+    justify-content: center;    
 }
 
 #div-nombre{
@@ -333,7 +347,7 @@ ul > h3 {
 
 #div-email{
     padding-left: 10vw;
-    padding-bottom: 3vh;
+    padding-bottom: 10vh;
 }
 
 #div-preguntas{
@@ -349,7 +363,7 @@ ul > h3 {
     font-size: 1.5rem;
     width: 100%;
     padding-top: 10vh;
-    padding-bottom: 1vh;
+    padding-bottom: 3vh;
     font-weight: bold;
 }
 
@@ -357,7 +371,7 @@ ul > h3 {
     color: black;
     width: 100%;
     padding-top: 10vh;
-    padding-bottom: 1vh;
+    /* padding-bottom: 1vh; */
     /* font-size: 1.5rem; */
     /* fon */
 }
@@ -395,6 +409,17 @@ ul > h3 {
 }
 
 .pregunta-check-3{
+    color: black;
+    width: 1.5rem;
+    height: 1.5rem;
+    /* margin-left: 1rem; */
+    /* margin-top: 0.8vh;    */
+    /* width: 100%;  */
+    margin-bottom: 1vh;
+    margin-left: 4vw;
+}
+
+.separacion-pregunta-check-3{
     color: black;
     width: 1.5rem;
     height: 1.5rem;
@@ -463,20 +488,22 @@ ul > h3 {
     color: black;
     font-size: 1.2rem;
     font-weight: bold;
-    padding-left: 26vw;
+    padding-left: 27vw;
+    padding-bottom: 4vh;
 }
 
 #input-number{
     color: black;
     width: 5vw;
     margin-top: 2vh;
-    margin-left: 10vw;
+    margin-left: 8vw;
 }
 
 #label-number{
     color: black;
-    padding-left: 4.3vw;
+    padding-left: 4vw;
     font-weight: bold;
+    padding-top: 3vh;
 }
 
 #div-separacion3-paso-2{
@@ -485,14 +512,10 @@ ul > h3 {
     width: 30%;
 }
 
-#pregunta-paso-3{
-    /* font-size: 2.4rem; */
-}
-
-#a{
-    padding-left: 10vw;
+#pregunta-complementaria-paso-3{
+    padding-left: 7vw;
     width: 100%;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     padding-bottom: 3vh;
 }
@@ -501,7 +524,7 @@ ul > h3 {
     color: black;
     font-size: 1.5rem;
     font-weight: bold;
-    padding-left: 8vw;
+    padding-left: 11.5vw;
     padding-top: 4vh;
     width: 100%;
     padding-bottom: 5.4vh;
@@ -531,13 +554,12 @@ ul > h3 {
     border-top: solid grey ;
     color: black;
     padding-top: 10vh;
-    padding-bottom: 1vh;
     margin-top: 6vh;
 }
 
 #subir-archivo{
     margin-top: 3vh;
-    margin-left: 4vw;
+    margin-left: 3.8vw;
     width: 18vw;
 }
 
@@ -549,11 +571,11 @@ ul > h3 {
 
 #titulo-adjuntar{
     width: 100%;
-    padding-left: 4vw;
+    padding-left: 3.8vw;
 }
 
 #titulo-aqui{
-    padding-left: 4vw;
+    padding-left: 3.8vw;
     width: 100%;
 }
 
@@ -581,11 +603,11 @@ ul > h3 {
 .btn-enviar{
     background-color: black;
     color: #ffffff;
-    width: 15vw;
+    width: 10vw;
     text-align: center;
     font-size: 1.2rem;
     border: 2px solid #000000;
-    padding: 10px 20px;
+    padding: 1.7vh;
     cursor: pointer;
     transition: background-color 0.3s;
     transition: all 0.3s ease;
