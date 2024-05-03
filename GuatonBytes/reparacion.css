@@ -246,7 +246,7 @@ ul > h3 {
     background-image: url();
     height: fit-content;
     justify-content: center;
-    background-color: black;
+    /* background-color: black; */
     /* width: 100rem; */
     
 }
@@ -325,37 +325,202 @@ ul > h3 {
 #div-nombre{
     padding-top: 10vh;
     padding-bottom: 5vh;
-    padding-left: 5vw;
+    padding-left: 4vw;
 }
 
 #div-celular{
     padding-bottom: 5vh;
-    padding-left: 5vw;
+    padding-left: 4vw;
 }
 
 #div-email{
-    padding-left: 5vw;
+    padding-left: 4vw;
+    padding-bottom: 5vh;
 }
 
 #div-preguntas{
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    /* justify-content: center; */
 }
 
 .pregunta-titulo{
     color: black;
-    padding-left: 10vw;
+    padding-left: 4vw;
+    width: 100%;
+    padding-top: 10vh;
+    padding-bottom: 1vh;
 }
 
 .pregunta-check{
     color: black;
-    scale: 130%;
-    margin-left: 1rem;
-    
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 5rem;
+    /* margin-top: 0.8vh; */
 }
 
 .pregunta{
     color: black;
-    font-size: 1.5rem;
-    padding-left: 10vw;
+    font-size: 1.2rem;
+    padding-left: 0.25vw;
 }
+
+.pregunta-2{
+    color: black;
+    font-size: 1.2rem;
+    /* padding-left: 10vw; */
+    /* padding-bottom: 10vh; */
+}
+
+.pregunta-check-2{
+    color: black;
+    width: 1.5rem;
+    height: 1.5rem;
+    /* margin-left: 1rem; */
+    /* margin-top: 0.8vh;    */
+    /* width: 100%;  */
+    margin-bottom: 1vh;
+    margin-left: 4vw;
+}
+
+.pregunta-check-3{
+    color: black;
+    width: 1.5rem;
+    height: 1.5rem;
+    /* margin-left: 1rem; */
+    /* margin-top: 0.8vh;    */
+    /* width: 100%;  */
+    margin-bottom: 1vh;
+    margin-left: 6vw;
+}
+
+#div-paso-2{
+    display: flex;
+    /* flex-direction: column; */
+    width: 100%;
+    
+}
+
+#div-paso-3{
+    display: flex;
+    /* border-bottom: 0.2vh solid grey; */
+
+    width: 100%;
+    
+}
+
+#div-paso-4{
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+
+#div-paso-3-complemento{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+#pregunta-paso-2{
+    /* padding-bottom: 5vh; */
+}
+
+#pregunta-complementaria{
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-left: 30vw;
+}
+
+#pregunta-complementaria-2{
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-left: 26vw;
+}
+
+#input-number{
+    color: black;
+    width: 5vw;
+    margin-top: 2vh;
+    margin-left: 10vw;
+}
+
+#label-number{
+    color: black;
+    padding-left: 4.3vw;
+    font-weight: bold;
+}
+
+#div-separacion3-paso-2{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+#pregunta-paso-3{
+    font-size: 2.4rem;
+}
+
+#a{
+    padding-left: 10vw;
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-bottom: 3vh;
+}
+
+#titulo-paso-3-complemento{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-left: 8vw;
+    padding-top: 4vh;
+    width: 100%;
+    padding-bottom: 5.4vh;
+}
+
+#titulo-paso-3-complemento-1{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-left: 8vw;
+    padding-top: 4vh;
+    width: 100%;
+    padding-bottom: 1vh;
+}
+
+#subtitulo-paso-3-complemento{
+    color: black;
+    font-size: 1rem;
+    padding-left: 10.5vw;
+    font-weight: bold;
+    padding-bottom: 2vh;
+}
+
+#titulo-paso-4{
+    font-size: 2.3rem;
+}
+
+#subir-archivo{
+    margin-top: 3vh;
+    margin-left: 4vw;
+}
+
+.titulo-archivos{
+    color: black;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+#titulo-adjuntar{
+    width: 100%;
+    padding-left: 4vw;
+}
+
+#titulo-aqui{
+    padding-left: 4vw;
+    width: 100%;
+}
+
