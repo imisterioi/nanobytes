@@ -376,12 +376,17 @@ ul > h3 {
     /* fon */
 }
 
+.primer-pregunta-check{
+    color: black;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
 .pregunta-check{
     color: black;
     width: 1.5rem;
     height: 1.5rem;
     margin-left: 5rem;
-    /* margin-top: 0.8vh; */
 }
 
 .pregunta{
@@ -450,11 +455,12 @@ ul > h3 {
     
 }
 
+#div-subtitulos-paso-2{
+    display: flex;
+}
+
 #div-paso-3{
     display: flex;
-    /* border-bottom: solid grey; */
-    /* padding-bottom: 6vh; */
-
     width: 100%;
     
 }
@@ -476,11 +482,17 @@ ul > h3 {
     flex-wrap: wrap;
 }
 
+#div-separacion3-paso-2{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
 #pregunta-complementaria{
     color: black;
     font-size: 1.2rem;
     font-weight: bold;
-    padding-left: 30vw;
+    padding-left: 26vw;
     width: 100%;
 }
 
@@ -488,29 +500,24 @@ ul > h3 {
     color: black;
     font-size: 1.2rem;
     font-weight: bold;
-    padding-left: 27vw;
+    padding-left: 23vw;
     padding-bottom: 4vh;
 }
 
 #input-number{
     color: black;
     width: 5vw;
-    margin-top: 2vh;
-    margin-left: 8vw;
+    margin-left: 9vw;
 }
 
 #label-number{
     color: black;
-    padding-left: 4vw;
+    padding-left: 3vw;
     font-weight: bold;
     padding-top: 3vh;
 }
 
-#div-separacion3-paso-2{
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-}
+
 
 #pregunta-complementaria-paso-3{
     padding-left: 7vw;
@@ -559,7 +566,7 @@ ul > h3 {
 
 #subir-archivo{
     margin-top: 3vh;
-    margin-left: 3.8vw;
+    /* margin-left: 3.8vw; */
     width: 18vw;
 }
 
@@ -571,11 +578,11 @@ ul > h3 {
 
 #titulo-adjuntar{
     width: 100%;
-    padding-left: 3.8vw;
+    /* padding-left: 3.8vw; */
 }
 
 #titulo-aqui{
-    padding-left: 3.8vw;
+    /* padding-left: 3.8vw; */
     width: 100%;
 }
 
@@ -597,7 +604,7 @@ ul > h3 {
     padding-right: 10vw;
     height: 10vh;
     margin-top: 21.5vh;
-    margin-left: 20vw;
+    margin-left: 14vw;
 }
 
 .btn-enviar{
