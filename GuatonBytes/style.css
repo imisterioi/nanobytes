@@ -563,6 +563,15 @@ button:hover{
     margin-bottom: 20vh;
 }
 
+.card-body-armado{
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    padding: 1rem; 
+}
+
 .btn-armado{
     margin-bottom: -3vh;
     background-color: black;
@@ -882,6 +891,21 @@ button:hover{
     transform: scale(1.1);
 }
 
+.catalog-container > h3{
+    border-bottom: 1px solid black;
+    width: 50vw;
+    padding-bottom: 3vh;
+}
+
+.card-body-principal{
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    padding: 1rem; 
+}
+
 /*                                          SECCIÓN CONTACTO                               */
 #sectionopiniones {
     background-color: rgb(255, 255, 255);
@@ -911,6 +935,12 @@ button:hover{
     width: 41vw;
     flex-direction: column;
     margin-top: 5vh;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
 }
 
 .incorrecto {
@@ -1047,6 +1077,8 @@ input {
     padding-bottom: 5vh;
     
 }
+
+
 
 .btn{
     display: flex;
@@ -1224,7 +1256,7 @@ input {
     }
 
     #sectionservicios{
-        height: 133vh;
+        height: 143vh;
     }
 
     .card-armado{

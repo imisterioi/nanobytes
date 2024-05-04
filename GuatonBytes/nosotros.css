@@ -1,0 +1,61 @@
+/*********************** EMPLEADO 1 ********************/
+
+#section2{
+    height: 140vh;
+}
+
+#contenido2{
+    margin-top: 16vh;
+    display: flex;
+    flex-direction: row;
+    column-gap: 3vw;
+    justify-content: center;
+    margin-left: 8vw;
+}
+
+#texto-empleado1{
+    width: 60%;
+}
+
+#nombre-texto1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#section2{
+    height: 160vh;
+}
+
+/*********************** EMPLEADO 2 ********************/
+
+#section3{
+    height: 140vh;
+}
+
+#contenido3{
+    margin-top: 16vh;
+    display: flex;
+    flex-direction: row-reverse;
+    column-gap: 3vw;
+    justify-content: center;
+    margin-right: 8vw;
+}
+
+#texto-empleado2{
+    width: 60%;
+}
+
+#nombre-texto2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#section3{
+    height: 160vh;
+}
