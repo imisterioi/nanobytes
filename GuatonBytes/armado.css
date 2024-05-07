@@ -84,6 +84,12 @@
     border-bottom: 1px solid gray;
 }
 
+.juegos{
+
+    width: 20vw;
+    height: 4vh;
+}
+
 #opciones5{
     display: flex;
     flex-direction: row;
