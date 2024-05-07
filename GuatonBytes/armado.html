@@ -251,10 +251,17 @@
             <strong>
               <p>$</p>
             </strong>
-            <textarea rows="1" id="presupuesto" placeholder="450000" onkeyup="validarPresupuesto()"></textarea>
+            <input rows="1" id="presupuesto" placeholder="450000" onkeyup="validarPresupuesto()">
+            <p><strong></strong>CLP</strong></p>
+            <div id="tu-presupuesto">
+              <p>Tu presupuesto en dólares: </p>
+              <div id="presupuesto-dolares">
+            </div>
+              
+            </div>
           </div>
           <strong>
-            <p id="error-presupuesto">Debe ingresar un presupuesto válido.</p>
+            <p id="error-presupuesto">Debe ingresar un presupuesto válido, con un valor mínimo de $100.000 CLP.</p>
           </strong>
         </div>
 
@@ -266,16 +273,16 @@
             <p>A continuación valida tu planilla enviando tu contacto:</p>
             <p>Nombre completo:</p>
           </strong>
-          <textarea id="nombre-completo" onkeyup="validarArmadoNombre()"></textarea>
+          <input id="nombre-completo" onkeyup="validarArmadoNombre()">
           <strong>
-            <p id="error-nombre">Debe ingresar su nombre completo.</p>
+            <p id="error-nombre">Debe rellenar este campo.</p>
           </strong>
           <strong>
             <p>Dirección de correo:</p>
           </strong>
-          <textarea id="correo" onkeyup="validarArmadoCorreo()"></textarea>
+          <input id="correo" onkeyup="validarArmadoCorreo()">
           <strong>
-            <p id="error-correo">Debe ingresar un correo válido.</p>
+            <p id="error-correo">Debe rellenar este campo.</p>
           </strong>
           <strong>
             <p>Teléfono / Celular:</p>
@@ -284,7 +291,7 @@
             <strong>
               <p>+56</p>
             </strong>
-            <textarea id="celular" onkeyup="validarArmadoCelular()" placeholder="912345678"></textarea>
+            <input id="celular" onkeyup="validarArmadoCelular()" placeholder="912345678"></textarea>
             <strong>
               <p id="error-celular">Debe ingresar un teléfono / celular válido.</p>
             </strong>

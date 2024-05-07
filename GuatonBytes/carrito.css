@@ -1,5 +1,5 @@
 #carrito{
-    height: 72vh;
+    height: 80vh;
 }
 
 #contenedor-carrito{
@@ -151,6 +151,27 @@ input{
     color: #ffffff;
     transform: scale(1.1);
 }
+
+/****************** TIPO MONEDA *******************/
+
+#tipo-moneda{
+    display: flex;
+    column-gap: 2vw;
+    margin-left: 5vw;
+
+
+}
+
+select{
+    display: flex;
+    width: 12vw;
+    height: 4vh;
+    font-size: 1.5rem;
+    text-align: center;
+    border: 3px solid black;
+}
+
+/******************** RESPONSIVIDAD *********************/
 
 @media (max-width: 1350px){
     .producto{

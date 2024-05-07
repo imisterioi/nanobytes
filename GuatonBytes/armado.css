@@ -1,5 +1,5 @@
 #armado{
-    height: 340vh;
+    height: 350vh;
     
 }
 
@@ -97,6 +97,15 @@
 #opciones6{
     margin-top: 5vh;
     background-color: white;
+}
+
+#presupuesto-dolares{
+    margin-left: 5vw;
+}
+
+#tu-presupuesto{
+    display: flex;
+    margin-left: 10vw;
 }
 
 .form-check{
