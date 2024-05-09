@@ -1415,7 +1415,13 @@ input {
     #sectionopiniones{
         margin-top: 42vh;
     }
+
+    #nuestros-trabajos{
+        height: 182vh;
+    }
+
 }
+
 
 @media (max-width: 1150px){
     .product-content{
