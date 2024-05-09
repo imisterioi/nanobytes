@@ -435,6 +435,7 @@ footer {
 #sectionservicios {
     background-color: rgb(6, 6, 6);
     height: 88vh;
+    
     /* border-bottom: solid 1px rgb(65, 63, 63); */
     background-image: url();
 
@@ -538,14 +539,14 @@ button:hover{
     transform: scale(1.1);
 }
 
-#videos{
+/* #videos{
     display: flex;
     background-color: white;
     height: 100vh;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
+} */
 
 #videos > h2{
     color: rgb(0, 0, 0);
@@ -940,6 +941,8 @@ button:hover{
     background-image: url();
     background-repeat: repeat-x;
     border: 0.2rem solid rgb(0, 0, 0);
+    background-image: url(assets/muro-hormigon-blanco.jpg);
+    background-attachment: fixed;
 
 }
 
@@ -1012,6 +1015,7 @@ button:hover{
     background-size: cover;
     height: fit-content;
     padding: 5vh 0px;
+    background-image: url(assets/muro-hormigon-blanco.jpg);
 
 }
 
@@ -1309,9 +1313,16 @@ input {
 /* -------------- SECCIÓN NUESTROS TRABAJOS ------------------- */
 
 #nuestros-trabajos{
-    height: 130vh;
+    height: 142vh;
     font-family: "Public Sans", sans-serif;
-    background-image: url(assets/);
+
+    
+}
+
+#videos > h2{
+    padding-top: 6vh; 
+    padding-bottom: -3vh;  
+    font-weight: bold;
 }
 
 /* -------------- VIDEOS -------------------- */
@@ -1319,7 +1330,10 @@ input {
 #videos{
     display: flex;
     flex-direction: column;
-    margin-top: 10vh;
+    background-image: url(assets/muro-hormigon-blanco.jpg);
+    background-attachment: fixed;
+    background-repeat: repeat-y;
+ 
 }
 
 #primer-video, #segundo-video, #tercer-video{
@@ -1327,15 +1341,15 @@ input {
     column-gap: 14vw;
     justify-content: center;
     align-items: center;
-    margin-top: 5vh;
+    margin-top: 4vh;
     padding-bottom: 4vh;
-    margin-left: 7vw;
-    margin-right: 7vw;
+    margin-left: 12vw;
+    margin-right: 12vw;
 }
 
 #primer-video, #segundo-video{
-    border-bottom: 3px solid black;
-}
+    /* border-bottom: 1px solid black;  */
+} 
 
 #segundo-video{
     flex-direction: row-reverse;
@@ -1344,6 +1358,7 @@ input {
 .parrafo-video{
     width: 30%;
     font-size: 1.6rem;
+    text-align: justify;
 }
 
 
@@ -1500,6 +1515,7 @@ input {
 
     #sectioncomponentes{
         height: 155vh;
+       
     }
 
     #formulario-contacto{
