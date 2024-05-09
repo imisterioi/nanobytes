@@ -204,7 +204,8 @@ textarea{
 /************************* VALIDACIONES TEXTOS ERROR *********************************/
 
 #error-nombre, #error-correo, #error-celular, #error-presupuesto{
-    color: #ffffff;
+    visibility: hidden;
+    color: red;
 }
 
 
