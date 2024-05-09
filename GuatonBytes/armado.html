@@ -253,7 +253,7 @@
             <strong>
               <p>$</p>
             </strong>
-            <input rows="1" id="presupuesto" placeholder="450000" onkeyup="validarPresupuesto()">
+            <input type="number" min="0" rows="1" id="presupuesto" placeholder="450000" onkeyup="validarPresupuesto()">
             <p><strong></strong>CLP</strong></p>
             <div id="tu-presupuesto">
               <p>Tu presupuesto en dólares: </p>
@@ -293,7 +293,7 @@
             <strong>
               <p>+56</p>
             </strong>
-            <input id="celular" onkeyup="validarArmadoCelular()" placeholder="912345678"></textarea>
+            <input type="number" id="celular" onkeyup="validarArmadoCelular()" placeholder="912345678"></textarea>
             <strong>
               <p id="error-celular">Debe ingresar un teléfono / celular válido.</p>
             </strong>

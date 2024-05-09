@@ -635,7 +635,14 @@ a {
     width: 15vw;
 }
 
-#input-number-2{
-    -moz-appearance: none !important;
-    -webkit-appearance: none !important;
+input#input-number-2::-webkit-inner-spin-button,
+input#input-number-2::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Ocultar las flechas en Firefox */
+input#input-number-2 {
+    -moz-appearance: textfield;
+
 }
