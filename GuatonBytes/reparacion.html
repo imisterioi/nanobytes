@@ -319,7 +319,7 @@
                         </div>
                         <div id="div-celular">
                             <h1 class="datos-titulos">Número de celular: </h1>
-                            <input class="input-datos" id="input-number-2"  type="number" min="0" style="color: black;">
+                            <input class="input-datos" id="input-number-2"  type="number" min="0" style="color: black;" oninput="filterInput(event)">
                         </div>
                         <div id="div-email">
                             <h1 class="datos-titulos">E-mail: </h1>
@@ -445,5 +445,19 @@
         });
     });
 </script>
+<script>
+    function filterInput(event) {
+        // Obtener el valor actual del input
+        let value = event.target.value;
+        
+        // Reemplazar cualquier ocurrencia de "e" o "-" con una cadena vacía
+        value = value.replace(/e/gi, ''); // "gi" hace que sea insensible a mayúsculas y minúsculas
+        value = value.replace(/-/g, '');
+    
+        // Actualizar el valor del input
+        event.target.value = value;
+    }
+</script>
+
 
 </html>

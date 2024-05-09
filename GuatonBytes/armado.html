@@ -253,7 +253,7 @@
             <strong>
               <p>$</p>
             </strong>
-            <input type="number" min="0" rows="1" id="presupuesto" placeholder="450000" onkeyup="validarPresupuesto()">
+            <input type="number" min="0" rows="1" id="presupuesto" placeholder="450000" onkeyup="validarPresupuesto()" oninput="filterInput(event)">
             <p><strong></strong>CLP</strong></p>
             <div id="tu-presupuesto">
               <p>Tu presupuesto en dólares: </p>
@@ -293,7 +293,7 @@
             <strong>
               <p>+56</p>
             </strong>
-            <input type="number" id="celular" onkeyup="validarArmadoCelular()" placeholder="912345678"></textarea>
+            <input type="number" id="celular" onkeyup="validarArmadoCelular()" oninput="filterInput(event)" placeholder="912345678"></textarea> 
             <strong>
               <p id="error-celular">Debe ingresar un teléfono / celular válido.</p>
             </strong>
@@ -390,5 +390,19 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 </body>
+
+<script>
+  function filterInput(event) {
+      // Obtener el valor actual del input
+      let value = event.target.value;
+      
+      // Reemplazar cualquier ocurrencia de "e" o "-" con una cadena vacía
+      value = value.replace(/e/gi, ''); // "gi" hace que sea insensible a mayúsculas y minúsculas
+      value = value.replace(/-/g, '');
+  
+      // Actualizar el valor del input
+      event.target.value = value;
+  }
+</script>
 
 </html>
