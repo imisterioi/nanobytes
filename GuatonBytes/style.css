@@ -418,7 +418,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 5vh;
+    height: auto;
 }
 
 #parrafo-botones > p {
@@ -434,8 +434,7 @@ footer {
 
 #sectionservicios {
     background-color: rgb(6, 6, 6);
-    height: 88vh;
-    
+    height: auto;
     /* border-bottom: solid 1px rgb(65, 63, 63); */
     background-image: url();
 
@@ -447,6 +446,7 @@ footer {
     margin-top: 5%;
     align-items: end;
     flex-direction: column;
+    margin-bottom: 4vh;
 }
 
 #botonservicios > button{
@@ -1313,7 +1313,7 @@ input {
 /* -------------- SECCIÓN NUESTROS TRABAJOS ------------------- */
 
 #nuestros-trabajos{
-    height: 142vh;
+    height: auto;
     font-family: "Public Sans", sans-serif;
 
     
@@ -1401,7 +1401,7 @@ input {
     }
 
     #sectionservicios{
-        height: 143vh;
+        height: auto;
     }
 
     .card-armado{
@@ -1417,7 +1417,7 @@ input {
     }
 
     #nuestros-trabajos{
-        height: 182vh;
+        height: auto;
     }
 
 }
@@ -1530,7 +1530,7 @@ input {
     }
 
     #sectionbanner{
-        height: 78vh;
+        height: 90vh;
     }
 
 

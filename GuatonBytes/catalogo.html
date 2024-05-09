@@ -10,9 +10,10 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="catalogo.css">
+    <script src="funciones.js"></script>
 </head>
 
-<body>
+<body onload="mostrarProductos()" >
 
     <header id="principal">
         <div id="arriba">
@@ -73,8 +74,10 @@
                 </div>
             </div>
         </div>
+
+        <section id="productos"></section>
        
-        <div class="catalog-container">
+       <div class="catalog-container">
             <h3>Almacenamiento</h3>
             <div id="almacenamiento">
                 <div class="product">
@@ -265,10 +268,9 @@
                     </div>
                 </div>
             </div>
-            <!-- Agrega más productos siguiendo el mismo formato -->
         </div>
 
-    </section>
+    </section> 
 
     <footer>
         <div id="footer-iconos">

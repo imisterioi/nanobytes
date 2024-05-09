@@ -1,3 +1,4 @@
+
 function validarAsuntoContacto() {
     let input = document.querySelector("#asuntoInputContacto")
     if (input.value.length >= 5) {
@@ -166,5 +167,34 @@ function onPlayer3Ready(event) {
 document.addEventListener('DOMContentLoaded', function () {
     onYouTubeIframeAPIReady();
 });
+
+/***************** API PRODUCTOS ************************/
+
+async function getProductos() {
+    try {
+        const response = await fetch('https://api.platzi.com/fakestore/v2/products');
+        const data = await response.json();
+        console.log(data);
+        return data.slice(0, 8); // Obtener solo los primeros 8 productos
+    } catch (error) {
+        console.error('Error al obtener productos:', error);
+        return [];
+    }
+}
+
+async function mostrarProductos() {
+    const productos = await getProductos();
+    const productosContainer = document.getElementById('productos');
+    productos.forEach(producto => {
+        const productoDiv = document.createElement('div');
+        productoDiv.innerHTML = `
+            <h2>${producto.title}</h2>
+            <p><strong>Precio:</strong> $${producto.price}</p>
+            <p><strong>Categoría:</strong> ${producto.category}</p>
+            <img src="${producto.image}" alt="${producto.title}" style="max-width: 200px;">
+        `;
+        productosContainer.appendChild(productoDiv);
+    });
+}
 
 
