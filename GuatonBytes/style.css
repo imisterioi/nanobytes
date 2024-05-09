@@ -1405,7 +1405,7 @@ input {
     }
 
     .card-armado{
-        height: 50vh;
+        height: auto;
     }
 
     .card-armado > img{
@@ -1413,11 +1413,15 @@ input {
     }
 
     #sectionopiniones{
-        margin-top: 42vh;
+        margin-top: 0vh;
     }
 
     #nuestros-trabajos{
         height: auto;
+    }
+
+    #twitter-icon, #whatsapp-icon, #instagram-icon, #facebook-icon, #correo-icon{
+        padding: 2vh;
     }
 
 }
@@ -1439,6 +1443,16 @@ input {
     #memorias{
         column-gap: 5vw;
     }
+
+    #parrafo-botones{
+        flex-direction: column;
+    }
+    
+    #damos-opciones {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }    
 
 
  
@@ -1493,6 +1507,7 @@ input {
 
     .btn-armado{
         width: 18vw;
+        border: 1px solid white;
     }
 
     .carousel-item img{
@@ -1516,7 +1531,7 @@ input {
     }
 
     #sectioncomponentes{
-        height: 155vh;
+        height: auto;
        
     }
 
@@ -1551,6 +1566,35 @@ input {
 
     #memorias{
         column-gap: 27vw;
+    }
+
+    #primer-video{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #segundo-video{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #tercer-video{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .parrafo-video{
+        width: 90%;
+    }
+
+    #footer-iconos{
+        justify-content: center;
+        column-gap: 5.5vw;
+        margin-right: 0vw;
+    }
+
+    #twitter-icon, #whatsapp-icon, #instagram-icon, #facebook-icon, #correo-icon{
+        padding: 2vh;
     }
 }
 

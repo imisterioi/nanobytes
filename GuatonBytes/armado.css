@@ -1,5 +1,6 @@
 #armado{
     height: 350vh;
+    overflow-y: auto; 
     
 }
 
@@ -174,7 +175,7 @@ input#presupuesto {
 
 }
 
-/****************123********* PLANILLA DE CONTACTO *********************/
+/************************* PLANILLA DE CONTACTO *********************/
 
 #nombre-completo, #correo, #celular{
     box-shadow: none !important;
@@ -289,11 +290,13 @@ input#celular {
         margin-top: -22%;
         margin-bottom: 9vh;
     }
+
+
 }
 
 @media (max-width: 1230px){
     #armado{
-        height: 410vh;
+        height: 454vh;
     }
     #nombre-completo, #correo, #celular {
         width: 52vw;
@@ -301,6 +304,26 @@ input#celular {
     .btn-enviar {
         margin-top: 26%;
     }
+
+    #contenedor-imagenes > img {
+        max-height: 100vh;
+    }
+
+    #contenedor-primero{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #tu-presupuesto {
+        display: block;
+        
+    }
+
+    #presupuesto {
+        width: 20vw;
+        height: 8vh;
+    }    
 }
 
 @media (max-width: 690px){
