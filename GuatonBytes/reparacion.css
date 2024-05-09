@@ -590,6 +590,36 @@ a {
     }
 }
 
+@media (max-width: 1350px){
+    .pregunta-2{
+        padding-right: 1vw;
+    }
+
+    #input-number{
+        margin-left: 9vw;
+    }
+    #pregunta-complementaria{
+        padding-left: 32vw;
+    }
+    #pregunta-complementaria-2{
+        padding-left: 34vw;
+    }
+    #label-number{
+        padding-left: 4vw;
+    }
+    .separacion-pregunta-check-3{
+        margin-left: 5vw !important;
+    }
+
+    #contenedor-complemento-bateria{
+        margin-left: 10vw;
+    }
+
+    #div-separacion2-paso-2{
+        margin-left: 5vw;
+    }
+}
+
 #boton-enviar{
     margin-top: 5vh;
     display: flex;
@@ -641,7 +671,6 @@ input#input-number-2::-webkit-outer-spin-button {
     margin: 0;
 }
 
-/* Ocultar las flechas en Firefox */
 input#input-number-2 {
     -moz-appearance: textfield;
 
