@@ -1306,6 +1306,47 @@ input {
  
 }
 
+/* -------------- SECCIÓN NUESTROS TRABAJOS ------------------- */
+
+#nuestros-trabajos{
+    height: 130vh;
+    font-family: "Public Sans", sans-serif;
+    background-image: url(assets/);
+}
+
+/* -------------- VIDEOS -------------------- */
+
+#videos{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+}
+
+#primer-video, #segundo-video, #tercer-video{
+    display: flex;
+    column-gap: 14vw;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    padding-bottom: 4vh;
+    margin-left: 7vw;
+    margin-right: 7vw;
+}
+
+#primer-video, #segundo-video{
+    border-bottom: 3px solid black;
+}
+
+#segundo-video{
+    flex-direction: row-reverse;
+}
+
+.parrafo-video{
+    width: 30%;
+    font-size: 1.6rem;
+}
+
+
 
 /* -------------- DISEÑO RESPONSIVO --------------- */
 

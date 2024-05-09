@@ -110,3 +110,55 @@ document.getElementById("presupuesto").addEventListener("keyup", function() {
             console.error("Error al obtener la tasa de cambio:", error);
         });
 });
+
+
+/**************************** VIDEOS *************************************/
+
+
+
+function onYouTubeIframeAPIReady() {
+    var player = new YT.Player('video1', {
+        height: '360',
+        width: '640',
+        videoId: 'voHmSz7tJCo',
+        events: {
+            'onReady': onPlayerReady
+        }
+    });
+
+    var player2 = new YT.Player('video2', {
+        height: '360',
+        width: '640',
+        videoId: 'YxKjFxmzEnY',
+        events: {
+            'onReady': onPlayer2Ready
+        }
+    });
+
+    var player3 = new YT.Player('video3', {
+        height: '360',
+        width: '640',
+        videoId: '51c88IbjjQE',
+        events: {
+            'onReady': onPlayer3Ready
+        }
+    });
+}
+
+function onPlayerReady(event) {
+    event.target.pauseVideo();
+}
+
+function onPlayer2Ready(event) {
+    event.target.pauseVideo();
+}
+
+function onPlayer3Ready(event) {
+    event.target.pauseVideo();
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    onYouTubeIframeAPIReady();
+});
+
+
