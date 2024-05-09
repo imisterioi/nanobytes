@@ -250,6 +250,10 @@ a {
     /* border-radius: 0.2vw; */
 }
 
+.preunta-check-separacion{
+    margin-bottom: 0.5vh;
+}
+
 .m-imagen {
     width: 10vw; 
     transition: transform 0.3s ease; 
@@ -292,7 +296,7 @@ a {
 
 .datos-titulos{
     color: black;
-    font-size: 17.6px;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -371,7 +375,7 @@ a {
     padding-left: 0.25vw;
     /* padding-left: 10vw; */
     /* padding-bottom: 10vh; */
-    padding-right: 2rem;
+    padding-right: 6vw;
 }
 
 .pregunta-check-2{
@@ -479,17 +483,15 @@ a {
 #input-number{
     color: black;
     width: 5vw;
-    margin-left: 9vw;
+    margin-left: 4vw;
 }
 
 #label-number{
     color: black;
-    padding-left: 3vw;
+    padding-left: 5.3vw;
     font-weight: bold;
     padding-top: 3vh;
 }
-
-
 
 #pregunta-complementaria-paso-3{
     padding-left: 7vw;
@@ -503,7 +505,27 @@ a {
     color: black;
     font-size: 1.5rem;
     font-weight: bold;
-    padding-left: 2.5vw;
+    padding-left: 6vw;
+    padding-top: 4vh;
+    width: 100%;
+    padding-bottom: 5.4vh;
+}
+
+#titulo-bateria{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-left: 3vw;
+    padding-top: 4vh;
+    width: 100%;
+    padding-bottom: 5.4vh;
+}
+
+#titulo-pantalla{
+    padding-left: 10vw;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
     padding-top: 4vh;
     width: 100%;
     padding-bottom: 5.4vh;
@@ -607,4 +629,13 @@ a {
     scale: 1.5;
     box-shadow: none !important;
     border-color: rgb(107, 107, 107);
+}
+
+.input-datos{
+    width: 15vw;
+}
+
+#input-number-2{
+    -moz-appearance: none !important;
+    -webkit-appearance: none !important;
 }
