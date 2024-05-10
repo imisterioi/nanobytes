@@ -1,4 +1,7 @@
 /*********************** EMPLEADO 1 ********************/
+#section-nosotros{
+    overflow-y: auto; 
+}
 
 #section2{
     height: 140vh;
@@ -8,9 +11,11 @@
     margin-top: 16vh;
     display: flex;
     flex-direction: row;
-    column-gap: 3vw;
+    column-gap: 20vw;
     justify-content: center;
-    margin-left: 8vw;
+    align-items: center;
+    
+    margin-bottom: 3vh;
 }
 
 #texto-empleado1{
@@ -39,9 +44,10 @@
     margin-top: 16vh;
     display: flex;
     flex-direction: row-reverse;
-    column-gap: 3vw;
+    column-gap: 20vw;
     justify-content: center;
-    margin-right: 8vw;
+    align-items: center;
+    margin-bottom: 3vh;
 }
 
 #texto-empleado2{
@@ -58,4 +64,33 @@
 
 #section3{
     height: 160vh;
+}
+
+#generar-usuario{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    margin-top: 2vh;
+    padding: 2vh;
+    border-radius: 3%;
+}
+
+
+#contenido3 img {
+    width: 25vw; 
+    height: auto; 
+}
+
+#contenido2 img {
+    width: 25vw; 
+    height: auto; 
+}
+
+#usuario-info{
+    display: flex;
+    flex-direction: row;
+}
+
+.usuario-datos{
+    font-size: 2rem;
 }

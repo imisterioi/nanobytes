@@ -198,3 +198,113 @@ async function mostrarProductos() {
 }
 
 
+/**************** API USUARIOS ************************/
+
+function limpiarContenido3() {
+    const contenido3 = document.getElementById('contenido3');
+    contenido3.innerHTML = '';
+    const contenido2 = document.getElementById('contenido2');
+    contenido2.innerHTML = '';
+}
+
+function generarUsuario() {
+    limpiarContenido3();
+
+    fetch('https://randomuser.me/api/')
+        .then(response => response.json())
+        .then(data => {
+            const usuario = data.results[0];
+            const contenido3 = document.getElementById('contenido3');
+            const usuarioDiv = document.createElement('div');
+            usuarioDiv.classList.add('usuario');
+
+            const imagen = document.createElement('img');
+            imagen.src = usuario.picture.large;
+            imagen.classList.add('usuario-imagen');
+
+            const datos = document.createElement('div');
+            datos.classList.add('usuario-datos');
+
+            const nombre = document.createElement('p');
+            nombre.innerHTML = `<strong>Nombre:</strong> ${usuario.name.first} ${usuario.name.last}`;
+
+            const edad = document.createElement('p');
+            edad.innerHTML = `<strong>Edad:</strong> ${usuario.dob.age}`;
+
+            const correo = document.createElement('p');
+            correo.innerHTML = `<strong>Correo:</strong> ${usuario.email}`;
+
+            const celular = document.createElement('p');
+            celular.innerHTML = `<strong>Celular:</strong> ${usuario.cell}`;
+
+            const genero = document.createElement('p');
+            genero.innerHTML = `<strong>Género:</strong> ${usuario.gender}`;
+
+            const nacionalidad = document.createElement('p');
+            nacionalidad.innerHTML = `<strong>Nacionalidad:</strong> ${usuario.nat}`;
+
+            datos.appendChild(nombre);
+            datos.appendChild(edad);
+            datos.appendChild(correo);
+            datos.appendChild(celular);
+            datos.appendChild(genero);
+            datos.appendChild(nacionalidad);
+
+            usuarioDiv.appendChild(imagen);
+            contenido3.appendChild(usuarioDiv);
+            contenido3.appendChild(datos);
+        })
+        .catch(error => console.error('Error al obtener el usuario:', error));
+
+        fetch('https://randomuser.me/api/')
+        .then(response => response.json())
+        .then(data => {
+            const usuario = data.results[0];
+            const contenido3 = document.getElementById('contenido2');
+            const usuarioDiv = document.createElement('div');
+            usuarioDiv.classList.add('usuario');
+
+            const imagen = document.createElement('img');
+            imagen.src = usuario.picture.large;
+            imagen.classList.add('usuario-imagen');
+
+            const datos = document.createElement('div');
+            datos.classList.add('usuario-datos');
+
+            const nombre = document.createElement('p');
+            nombre.innerHTML = `<strong>Nombre:</strong> ${usuario.name.first} ${usuario.name.last}`;
+
+            const edad = document.createElement('p');
+            edad.innerHTML = `<strong>Edad:</strong> ${usuario.dob.age}`;
+
+            const correo = document.createElement('p');
+            correo.innerHTML = `<strong>Correo:</strong> ${usuario.email}`;
+
+            const celular = document.createElement('p');
+            celular.innerHTML = `<strong>Celular:</strong> ${usuario.cell}`;
+
+            const genero = document.createElement('p');
+            genero.innerHTML = `<strong>Género:</strong> ${usuario.gender}`;
+
+            const nacionalidad = document.createElement('p');
+            nacionalidad.innerHTML = `<strong>Nacionalidad:</strong> ${usuario.nat}`;
+
+            datos.appendChild(nombre);
+            datos.appendChild(edad);
+            datos.appendChild(correo);
+            datos.appendChild(celular);
+            datos.appendChild(genero);
+            datos.appendChild(nacionalidad);
+
+            usuarioDiv.appendChild(imagen);
+            contenido3.appendChild(usuarioDiv);
+            contenido3.appendChild(datos);
+        })
+        .catch(error => console.error('Error al obtener el usuario:', error));
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    const generarUsuarioBtn = document.getElementById('generar-usuario');
+
+    generarUsuarioBtn.addEventListener('click', generarUsuario);
+});
