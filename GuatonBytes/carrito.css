@@ -204,6 +204,11 @@ select{
 
 
 @media (max-width: 800px){
+    
+    #titulos > #segundo {
+        margin-left: 0;
+    }
+    
     .subtotal-producto {
         margin-left: 0;
     }
@@ -211,4 +216,6 @@ select{
     .nombre-producto {
         flex: auto;
     }
+
+
 } 
