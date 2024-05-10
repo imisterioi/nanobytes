@@ -591,6 +591,42 @@ a {
     }
 }
 
+@media (max-width: 1120px){
+    .input-datos{
+        width: 20vw !important;
+    }
+}
+
+@media (max-width: 960px){
+    #div-separacion2-paso-2{
+        margin-top: 4vh;
+    }
+
+    #input-number{
+        width: 7rem;
+        margin-left: 6.5vw;
+    }
+
+    #div-separacion3-paso-2{
+        margin-top: 1vh;
+    }
+
+    .btn-enviar{
+        
+        width: 20vw !important;
+    }
+}
+
+@media (max-width: 800px){
+    .input-datos{
+        width: 27vw !important;
+    }
+
+    #subir-archivo{
+        width: 20vw;
+    }
+}
+
 
 #boton-enviar{
     margin-top: 5vh;
@@ -641,11 +677,6 @@ input#input-number-2::-webkit-inner-spin-button,
 input#input-number-2::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
-}
-
-input#input-number-2 {
-    -moz-appearance: textfield;
-
 }
 
 input#input-number::-webkit-inner-spin-button,

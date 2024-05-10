@@ -253,7 +253,7 @@
             <strong>
               <p>$</p>
             </strong>
-            <input type="number" min="0" rows="1" id="presupuesto" placeholder="450000" onkeyup="validarPresupuesto()" oninput="filterInput(event)">
+            <input type="number" min="0" rows="1" id="presupuesto" placeholder="450000" onkeyup="validarPresupuesto()" onkeypress="return validarTecla(event)">
             <p><strong></strong>CLP</strong></p>
             <div id="tu-presupuesto">
               <p>Tu presupuesto en dólares: </p>
@@ -293,7 +293,7 @@
             <strong>
               <p>+56</p>
             </strong>
-            <input type="number" id="celular" onkeyup="validarArmadoCelular()" oninput="filterInput(event)" placeholder="912345678"></textarea> 
+            <input type="number" id="celular" onkeyup="validarArmadoCelular()" onkeypress="return validarTecla(event)" placeholder="912345678"></textarea> 
             <strong>
               <p id="error-celular">Debe ingresar un teléfono / celular válido.</p>
             </strong>
@@ -392,17 +392,15 @@
 </body>
 
 <script>
-  function filterInput(event) {
-      // Obtener el valor actual del input
-      let value = event.target.value;
-      
-      // Reemplazar cualquier ocurrencia de "e" o "-" con una cadena vacía
-      value = value.replace(/e/gi, ''); // "gi" hace que sea insensible a mayúsculas y minúsculas
-      value = value.replace(/-/g, '');
+  function validarTecla(event) {
+      var charCode = (event.which) ? event.which : event.keyCode;
   
-      // Actualizar el valor del input
-      event.target.value = value;
+      if (charCode < 48 || charCode > 57) {
+          event.preventDefault();
+          return false;
+      }
+      return true;
   }
-</script>
+  </script>
 
 </html>

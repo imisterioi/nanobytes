@@ -165,7 +165,7 @@
                                 <div id="div-pregunta-parpadeos">
                                     <label id="label-number" for="">Indique la cantidad de parpadeos:</label>
                                 </div>
-                                <input id="input-number" type="number" min="0" oninput="filterInput(event)">
+                                <input id="input-number" type="number" min="0" onkeypress="return validarTecla(event)">
                          
                             </div>   
                     </div>
@@ -320,7 +320,7 @@
                         </div>
                         <div id="div-celular">
                             <h1 class="datos-titulos">Número de celular: </h1>
-                            <input class="input-datos" id="input-number-2"  type="number" min="0" style="color: black;" oninput="filterInput(event)">
+                            <input class="input-datos" id="input-number-2"  type="number" min="0" style="color: black;" onkeypress="return validarTecla(event)">
                         </div>
                         <div id="div-email">
                             <h1 class="datos-titulos">E-mail: </h1>
@@ -438,27 +438,23 @@
 
         imagenes.forEach((imagen) => {
             imagen.addEventListener("click", function() {
-                // Obtener el atributo 'alt' de la imagen seleccionada
                 const textoImagen = this.alt;
-                // Actualizar el texto del label con el texto de la imagen seleccionada
                 tituloImagenes.textContent = textoImagen;
             });
         });
     });
 </script>
 <script>
-    function filterInput(event) {
-        // Obtener el valor actual del input
-        let value = event.target.value;
-        
-        // Reemplazar cualquier ocurrencia de "e" o "-" con una cadena vacía
-        value = value.replace(/e/gi, ''); // "gi" hace que sea insensible a mayúsculas y minúsculas
-        value = value.replace(/-/g, '');
+    function validarTecla(event) {
+        var charCode = (event.which) ? event.which : event.keyCode;
     
-        // Actualizar el valor del input
-        event.target.value = value;
+        if (charCode < 48 || charCode > 57) {
+            event.preventDefault();
+            return false;
+        }
+        return true;
     }
-</script>
+    </script>
 
 
 </html>
