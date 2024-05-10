@@ -221,9 +221,12 @@ select {
     #titulos>#segundo {
         margin-left: 0;
     }
+    #titulos>#tercero {
+        margin-left: 2.6vw;
+    }
 
     #titulos>#cuarto {
-        margin-left: -6vw;
+        margin-left: 1vw;
     }
 
     .subtotal-producto {
@@ -231,7 +234,7 @@ select {
     }
 
     .nombre-producto {
-        flex: auto;
+        width: 2vw;
     }
 
     .btn-pagar {
@@ -241,5 +244,9 @@ select {
 
     .producto {
         font-size: 1.4rem;
+    }
+
+    #titulos {
+        column-gap: 7vw;
     }
 }
