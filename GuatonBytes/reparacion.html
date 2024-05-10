@@ -87,20 +87,11 @@
 
 
                     <h1 class="pregunta-titulo" id="pregunta-paso-2">2.- Segundo paso</h1>
-                    <div id="div-subtitulos-paso-2">
-                        <div id="div-pregunta-luces">
-                            <h2 id="pregunta-complementaria">¿Sabes que luces son?</h2>
-                            <h4 id="pregunta-complementaria-2">(responde solo si sabes la respuesta)</h4>
-                        </div>
-                        <div id="div-pregunta-parpadeos">
-                            <label id="label-number" for="">Indique la cantidad de parpadeos:</label>
-                        </div>
-                        
-                    </div>
+                    
                     
                     
                     <div id="div-paso-2">
-                        <div id="div-separacion-paso-2">
+                        <div id="div-luces-separacion-paso-2">
                             <div class="preunta-check-separacion">
                                 <input class="form-check-input" class="primer-pregunta-check" type="checkbox" >
                                 <label class="pregunta-2" for="pregunta">Prende luces</label>
@@ -132,6 +123,14 @@
                             </div>      
                         </div>
                         <div id="div-separacion2-paso-2">
+                            <div id="div-subtitulos-paso-2">
+                                <div id="div-pregunta-luces">
+                                    <h2 id="pregunta-complementaria">¿Sabes que luces son?</h2>
+                                    <h4 id="pregunta-complementaria-2">(responde solo si sabes la respuesta)</h4>
+                                </div>
+                                
+                                
+                            </div>
                             <div class="preunta-check-separacion">
                                 <input class="form-check-input" class="pregunta-check-2" type="checkbox" >
                                 <label class="pregunta-2" for="pregunta">Luz botón de encendido</label>
@@ -163,7 +162,10 @@
                             </div>   
                         </div>
                             <div id="div-separacion3-paso-2">
-                            <input id="input-number" type="number" min="0" oninput="filterInput(event)">
+                                <div id="div-pregunta-parpadeos">
+                                    <label id="label-number" for="">Indique la cantidad de parpadeos:</label>
+                                </div>
+                                <input id="input-number" type="number" min="0" oninput="filterInput(event)">
                          
                             </div>   
                     </div>

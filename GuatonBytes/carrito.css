@@ -135,7 +135,7 @@ input{
 .btn-quitar{
     background-color: #D9534F;
     color: #ffffff;
-    width: 5vw;
+    width: auto;
     text-align: center;
     font-size: 1.2rem;
     border: 2px solid #000000;
@@ -174,36 +174,48 @@ select{
 /******************** RESPONSIVIDAD *********************/
 
 @media (max-width: 1350px){
-    .producto{
-        column-gap: 3vw;
+    #contenedor-carrito {
+        margin-top: 18vh;
+    }
+    
+    .producto {
+        column-gap: 6vw;
     }
 
+    .precio-producto {
+        margin-right: -1vw;
+    }
     #titulos{
-        column-gap: 9vw;
+        column-gap: 11vw;
     }
 
-    #titulos > #segundo{
-        margin-left: 32.5vw;
+    #titulos > #segundo {
+        margin-left: 13.5vw;
     }
 
+    #titulos > #tercero {
+        margin-left: -3.5vw;
+    }
+    
+    #titulos > #cuarto {
+        margin-left: 0;
+    }
 }
+
 
 @media (max-width: 800px){
-    #titulos > #segundo{
-        margin-left: 7.5vw;
+    
+    #titulos > #segundo {
+        margin-left: 0;
+    }
+    
+    .subtotal-producto {
+        margin-left: 0;
     }
 
-    .btn-pagar{
-        width: 42vw;
-        margin-right: 31%;
-
+    .nombre-producto {
+        flex: auto;
     }
 
-    .btn-quitar{
-        padding: 1px 1px;
-    }
 
-    .producto{
-        font-size: 1.1rem;
-    }
-}
+} 
