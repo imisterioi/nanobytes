@@ -92,9 +92,16 @@ nav {
     column-gap: 2rem;
     font-size: 1.2rem;
     justify-content: flex-start;
+    font-family: "Public Sans", sans-serif;
     /* margin-right: 3vw; */
     /* letter-spacing: 1.5px; */
 
+}
+
+/********** RESALTAR NAV ************/
+
+.active{
+    color: #2fc5e0;
 }
 
 
@@ -133,6 +140,10 @@ nav {
 
 #header7:hover img {
     filter: invert(43%) sepia(14%) saturate(2633%) hue-rotate(184deg) brightness(87%) contrast(87%);
+}
+
+#header8:hover {
+    color: #2fc5e0;
 }
 
 /* #header7 {
@@ -592,12 +603,12 @@ button:hover{
 #boton-armado{
     color: rgb(255, 255, 255);
     display: flex;
-    font-size: 3rem;
+    font-size: 2rem;
     margin-top: 2vh;
     /* background-color: rgb(58, 58, 58); */
     border: 0.09rem solid white;
     padding: 1rem 1rem;
-    width: 50rem;
+    width: 35rem;
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -857,13 +868,6 @@ button:hover{
     
 }
 
-#tercer-parrafo{
-    display: flex;
-    margin-top: 5vh;
-    justify-content: center;
-    font-size: 1.6rem;
-}
-
 #parrafo3{
     width: 50%;
     text-align: center;
@@ -936,12 +940,10 @@ button:hover{
 
 #sectioncomponentes {
     background-color: rgb(255, 255, 255);
-    height: 120vh;
-    /* border-bottom: solid 1px rgb(65, 63, 63); */
+    height: 116vh;
     background-image: url();
     background-repeat: repeat-x;
-    border: 0.2rem solid rgb(0, 0, 0);
-    background-image: url(assets/muro-hormigon-blanco.jpg);
+    background-image: url(assets2/muro-hormigon-blanco.jpg);
     background-attachment: fixed;
 
 }
@@ -954,7 +956,6 @@ button:hover{
     /* padding-bottom: 4vh; */
     margin-left: 5%;
     margin-right: 5%;
-    margin-top: 6vh;
     height: 65vh;
     
     /* padding: 10vh 0 8vh; */
@@ -1053,15 +1054,15 @@ button:hover{
     background-attachment: fixed;
     background-size: cover;
     height: fit-content;
-    padding: 5vh 0px;
-    background-image: url(assets/muro-hormigon-blanco.jpg);
+    background-image: url(assets2/muro-hormigon-blanco.jpg);
 
 }
 
 #mapas{
     display: flex;
-    background-color: #000000;
     flex-direction: column;
+    row-gap: 4vh;
+    margin-bottom: 4vh;
 }
 
 #formulario-contacto{
@@ -1130,17 +1131,18 @@ input {
     color: black;
     display: flex;
     width: 100%;
-    margin-left: 18.6%;
+    margin-top: 8vh;
+    margin-left: 10.5%;
 }
 
 #ubicacion1{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-top: 5vh;
 
 }
 
 #ubicacion2{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 
 #titulo-ubicaciones{
@@ -1152,7 +1154,6 @@ input {
     display: flex;
     text-align: center;
     margin-left: 1%;
-    margin-top: 2%;
     height: 40vh;
     transition: transform 0.3s;
     border-bottom: solid 0.2rem rgb(65, 63, 63);
@@ -1210,7 +1211,8 @@ input {
     justify-content:center ;
     background-color: #000000;
     column-gap: 1%;
-    padding-bottom: 5vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
     
 }
 
@@ -1335,7 +1337,7 @@ input {
 #videos{
     display: flex;
     flex-direction: column;
-    background-image: url(assets/muro-hormigon-blanco.jpg);
+    background-image: url(assets2/muro-hormigon-blanco.jpg);
     background-attachment: fixed;
     background-repeat: repeat-y;
  

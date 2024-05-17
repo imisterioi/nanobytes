@@ -308,3 +308,39 @@ document.addEventListener('DOMContentLoaded', function () {
 
     generarUsuarioBtn.addEventListener('click', generarUsuario);
 });
+
+
+/**************************** RESALTAR BOTÓN NAV ***********************/
+
+function resaltarBotonNav() {
+    var sections = document.querySelectorAll('section');
+
+    sections.forEach(function(section) {
+        var sectionTop = section.offsetTop;
+        var sectionHeight = section.clientHeight;
+
+        // Calcular un offset de desplazamiento para resaltar el botón cuando el usuario está más cerca del centro
+        var offset = sectionHeight * 0.25; // Por ejemplo, resaltar cuando el usuario está dentro del 25% del centro de la sección
+
+        if (window.scrollY >= sectionTop - offset && window.scrollY < sectionTop + sectionHeight - offset) {
+            var sectionId = section.getAttribute('id');
+            var navLink = document.querySelector('a[href="#' + sectionId + '"]');
+            
+            document.querySelectorAll('#barrasuperior a').forEach(function(link) {
+                link.classList.remove('active');
+            });
+
+            if (navLink) {
+                navLink.classList.add('active');
+            }
+        }
+    });
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    resaltarBotonNav(); // Llamar a la función cuando se carga la página
+});
+
+// Llamar a la función cuando se produce un evento de desplazamiento
+window.addEventListener('scroll', resaltarBotonNav);
