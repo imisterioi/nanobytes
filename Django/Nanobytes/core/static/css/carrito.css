@@ -1,0 +1,252 @@
+#carrito {
+    height: 80vh;
+}
+
+#contenedor-carrito {
+    margin-top: 12vh;
+    height: 65vh;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#contenedor-carrito>h1 {
+    font-style: italic;
+    font-size: 3.5rem;
+    text-align: left;
+    margin-left: 1.5vw;
+
+}
+
+#lista-productos {
+    margin-top: 2vh;
+    /* background-color: rgb(114, 135, 135); */
+    height: 45vh;
+    max-height: 45vh;
+}
+
+#productos {
+    overflow-y: auto;
+    max-height: 35vh;
+}
+
+#titulos {
+    display: flex;
+    font-size: 2.2rem;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    padding-top: 2vh;
+    column-gap: 18vw;
+    padding-bottom: 2vh;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+#titulos>#primero {
+    margin-left: 2vw;
+}
+
+#titulos>#segundo {
+    margin-left: 4.5vw;
+}
+
+#titulos>#tercero {
+    margin-left: -6.5vw;
+}
+
+#titulos>#cuarto {
+    margin-left: -2.5vw;
+}
+
+/* PRODUCTO */
+
+.producto {
+    display: flex;
+    font-size: 1.6rem;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    padding-top: 2vh;
+    column-gap: 12vw;
+    padding-bottom: 2vh;
+    border-bottom: 1px solid #D9D9D9;
+    align-items: center;
+
+}
+
+.nombre-producto {
+    margin-left: 2vw;
+    flex: 2;
+}
+
+.precio-producto {
+    margin-right: -3vw;
+}
+
+
+
+.cantidad-producto {
+    margin-right: -3vw;
+
+}
+
+input {
+    text-align: center;
+}
+
+.subtotal-producto {
+    margin-left: 2.5vw;
+}
+
+#botones {
+    display: flex;
+    justify-content: right;
+}
+
+#total {
+    display: flex;
+    justify-content: right;
+    font-size: 1.8rem;
+    column-gap: 5vw;
+    margin-top: 3vh;
+    margin-right: 3vw;
+    font-weight: bold;
+}
+
+.btn-pagar {
+    background-color: black;
+    color: #ffffff;
+    width: 10vw;
+    text-align: center;
+    font-size: 1.7rem;
+    border: 2px solid #000000;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    transition: all 0.3s ease;
+    margin-top: 2%;
+    margin-right: 2%;
+    border-radius: 0.2rem;
+}
+
+.btn-pagar:hover {
+    background-color: rgba(21, 21, 21, 0.864);
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+.btn-quitar {
+    background-color: #D9534F;
+    color: #ffffff;
+    width: auto;
+    text-align: center;
+    font-size: 1.2rem;
+    border: 2px solid #000000;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    transition: all 0.3s ease;
+    border-radius: 0.2rem;
+}
+
+.btn-quitar:hover {
+    background-color: rgba(21, 21, 21, 0.864);
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+/****************** TIPO MONEDA *******************/
+
+#tipo-moneda {
+    display: flex;
+    column-gap: 2vw;
+    margin-left: 5vw;
+
+
+}
+
+select {
+    display: flex;
+    width: 12vw;
+    height: 4vh;
+    font-size: 1.5rem;
+    text-align: center;
+    border: 3px solid black;
+}
+
+/******************** RESPONSIVIDAD *********************/
+
+@media (max-width: 1350px) {
+    #contenedor-carrito>h1 {
+        font-size: 3rem;
+    }
+
+    #contenedor-carrito {
+        margin-top: 18vh;
+    }
+
+    .btn-pagar {
+        width: auto;
+        scale: 0.94;
+    }
+    .producto {
+        column-gap: 6vw;
+        font-size: 1.55rem;
+    }
+
+    .precio-producto {
+        margin-right: -1vw;
+    }
+
+    #titulos {
+        column-gap: 13vw;
+    }
+
+    #titulos>#segundo {
+        margin-left: 13.5vw;
+    }
+
+    #titulos>#tercero {
+        margin-left: -4.5vw;
+    }
+
+    #titulos>#cuarto {
+        margin-left: -3vw;
+    }
+}
+
+
+@media (max-width: 800px) {
+    #contenedor-carrito>h1 {
+        font-size: 2.5rem;
+    }
+
+    #titulos>#segundo {
+        margin-left: 0;
+    }
+    #titulos>#tercero {
+        margin-left: 2.6vw;
+    }
+
+    #titulos>#cuarto {
+        margin-left: 1vw;
+    }
+
+    .subtotal-producto {
+        margin-left: 0;
+    }
+
+    .nombre-producto {
+        width: 2vw;
+    }
+
+    .btn-pagar {
+        width: auto;
+        scale: 0.9;
+    }
+
+    .producto {
+        font-size: 1.4rem;
+    }
+
+    #titulos {
+        column-gap: 7vw;
+    }
+}

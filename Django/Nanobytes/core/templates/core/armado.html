@@ -1,0 +1,409 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NanoBytes</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/armado.css' %}">
+
+
+</head>
+
+<body>
+
+  <header id="principal">
+    <div id="arriba">
+
+      <div>
+        <a class="logo" href="index.html">
+          <img src="{% static assets/icon.jpg %}" alt="icon" class="icon">
+          <h1 id="nano">Nano</h1>
+          <h1 id="bytes">Bytes</h1>
+        </a>
+      </div>
+
+      <nav id="barrasuperior">
+        <a href="index.html" id="header1">Inicio</a>
+        <a href="index.html" id="header2">Servicios</a>
+        <a href="index.html" id="header8">Nuestros trabajos</a>
+        <a href="armado.html" id="header3">Arma tu equipo</a>
+        <a href="index.html" id="header5">Componentes</a>
+        <a href="index.html" id="header6">Contáctanos</a>
+        <a href="nosotros.html" id="header4">Quíenes sómos</a>
+        <a href="carrito.html" id="header7">
+          <span>Carrito</span>
+          <img src="{% static 'assets/shopping_cart_30px.png' %}" alt="carrito">
+        </a>
+      </nav>
+
+    </div>
+  </header>
+
+  <section id="armado">
+    <div id="contenedor-armado">
+      <div id="contenedor-primero">
+        <h1 id="titulo"><em>Arma tu próximo PC Gamer a tu medida</em></h1>
+        <div id="contenedor-imagenes">
+          <img src="{% static 'assets/tier3.jpg' %} " alt="">
+          <img src="{% static 'assets/assets/tier3.jpg' %}" alt="">
+        </div>
+      </div>
+      <div id="contenedor-opciones">
+        <p id="categoria1"><strong>Categoría / Tipo</strong></p>
+        <div id="opciones1">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="categoria1" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Gaming Inicial / Tu primera PC
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="categoria1" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Gamer Entusiasta / Aficionado
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="categoria1" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Gamer Avanzado / Streamer
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="categoria1" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              eSports / Productividad
+            </label>
+          </div>
+        </div>
+        <p id="categoria2-1"><strong>Resolución preferida</strong></p>
+        <div id="opciones2">
+          <div id="opciones2-1">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="categoria2" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
+                768p HD
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="categoria2" id="flexRadioDefault2" checked>
+              <label class="form-check-label" for="flexRadioDefault2">
+                1080p FULL HD
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="categoria2" id="flexRadioDefault2" checked>
+              <label class="form-check-label" for="flexRadioDefault2">
+                1440p QUAD HD
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="categoria2" id="flexRadioDefault2" checked>
+              <label class="form-check-label" for="flexRadioDefault2">
+                2140p 4K
+              </label>
+            </div>
+          </div>
+          <p id="categoria2-2"><strong>Calidad preferida</strong></p>
+          <div id="opciones2-2">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="categoria2-2" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
+                Baja
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="categoria2-2" id="flexRadioDefault2" checked>
+              <label class="form-check-label" for="flexRadioDefault2">
+                Media
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="categoria2-2" id="flexRadioDefault2" checked>
+              <label class="form-check-label" for="flexRadioDefault2">
+                Alta
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="categoria2-2" id="flexRadioDefault2" checked>
+              <label class="form-check-label" for="flexRadioDefault2">
+                Ultra / Épico
+              </label>
+            </div>
+          </div>
+        </div>
+        <p id="categoria3"><strong>FPS minimos, Hz Máximos</strong></p>
+        <div id="opciones3">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="categoria3" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              75 FPS / HZ
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="categoria3" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              120 FPS / HZ
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="categoria3" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              144 FPS / HZ
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="categoria3" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              165 FPS / HZ
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="categoria3" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              240 FPS / HZ
+            </label>
+          </div>
+        </div>
+        <p id="categoria4"><strong>Juegos favoritos</strong></p>
+        <p id="escribe-juegos">Escribe a continuación 3 juegos que esperas correr con los requisitos ingresados:</p>
+        <div id="opciones4">
+          <input class="juegos" placeholder="World of Warcraft: The War Within">
+          <input class="juegos" placeholder="Battlefield V">
+          <input class="juegos" placeholder="League of Legends">
+        </div>
+
+        <p id="categoria5"><strong>Periféricos</strong></p>
+        <div id="opciones5">
+          <div id="opciones5-1">
+            <div class="form-check-perifericos">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Pantalla
+              </label>
+            </div>
+            <div class="form-check-perifericos">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+              <label class="form-check-label" for="flexCheckChecked">
+                Teclado Membrana
+              </label>
+            </div>
+            <div class="form-check-perifericos">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Teclado Mecánico
+              </label>
+            </div>
+            <div class="form-check-perifericos">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+              <label class="form-check-label" for="flexCheckChecked">
+                Cámara
+              </label>
+            </div>
+          </div>
+          <div id="opciones5-2">
+            <div class="form-check-perifericos">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+              <label class="form-check-label" for="flexCheckChecked">
+                Mouse Cableado
+              </label>
+            </div>
+            <div class="form-check-perifericos">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+              <label class="form-check-label" for="flexCheckChecked">
+                Mouse Inalámbrico
+              </label>
+            </div>
+            <div class="form-check-perifericos">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+              <label class="form-check-label" for="flexCheckChecked">
+                WiFi USB
+              </label>
+            </div>
+            <div class="form-check-perifericos">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+              <label class="form-check-label" for="flexCheckChecked">
+                Micrófono
+              </label>
+            </div>
+
+          </div>
+          <div id="opciones5-3">
+            <div class="form-check-perifericos">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+              <label class="form-check-label" for="flexCheckChecked">
+                Audífonos
+              </label>
+            </div>
+
+          </div>
+
+
+
+        </div>
+        <div id="opciones6">
+          <strong>
+            <p>Presupuesto disponible</p>
+          </strong>
+          <div id="contenedor-presupuesto">
+            <strong>
+              <p>$</p>
+            </strong>
+            <input type="number" min="0" rows="1" id="presupuesto" placeholder="450000" onkeyup="validarPresupuesto()" onkeypress="return validarTecla(event)">
+            <p><strong></strong>CLP</strong></p>
+            <div id="tu-presupuesto">
+              <p>Tu presupuesto en dólares: </p>
+              <div id="presupuesto-dolares">
+            </div>
+              
+            </div>
+          </div>
+          <strong>
+            <p id="error-presupuesto">Debe ingresar un presupuesto válido, con un valor mínimo de $100.000 CLP.</p>
+          </strong>
+        </div>
+
+        <p id="informacion"><strong>Una vez recibida tu planilla de armado se te entregará un presupuesto formal para tu
+            confirmación o
+            modificación, y así proceder a la compra de componentes.</p></strong>
+        <div id="planilla-contacto">
+          <strong>
+            <p>A continuación valida tu planilla enviando tu contacto:</p>
+            <p>Nombre completo</p>
+          </strong>
+          <input id="nombre-completo" onkeyup="validarArmadoNombre()">
+          <strong>
+            <p id="error-nombre">Debe rellenar este campo.</p>
+          </strong>
+          <strong>
+            <p>Dirección de correo</p>
+          </strong>
+          <input type="email" id="correo" onkeyup="validarArmadoCorreo()">
+          <strong>
+            <p id="error-correo">Debe rellenar este campo.</p>
+          </strong>
+          <strong>
+            <p>Teléfono / Celular</p>
+          </strong>
+          <div id="contenedor-telefono">
+            <strong>
+              <p>+56</p>
+            </strong>
+            <input type="number" id="celular" onkeyup="validarArmadoCelular()" onkeypress="return validarTecla(event)" placeholder="912345678"></textarea> 
+            <strong>
+              <p id="error-celular">Debe ingresar un teléfono / celular válido.</p>
+            </strong>
+          </div>
+        </div>
+
+        <div id="boton-enviar">
+
+          <button type="button" class="btn-enviar btn-primary" onclick="validarFormulario()" data-bs-target="#staticBackdrop">
+            Enviar
+          </button>
+
+
+          <div class="modal fade" id="modalEnviar" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">¡Gracias por elegirnos!</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Una vez que recibamos tu planilla de armado nos contactaremos contigo para confirmar los detalles y te
+                  enviaremos un presupuesto con las mejores opciones para ti.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Entendido</button>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+    </div>
+  </section>
+
+
+
+
+
+
+  <footer>
+    <div id="footer-iconos">
+      <a href="https://twitter.com/joseantoniokast?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" id="twitter-icon"></a>
+      <a href="https://www.instagram.com/lamaldito/?hl=es" id="instagram-icon"></a>
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" id="whatsapp-icon"></a>
+      <a href="https://www.facebook.com/dicarcocarnes/?locale=es_LA" id="facebook-icon"></a>
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" id="correo-icon"></a>
+  </div>
+    <div id="footer-superior">
+
+      <div id="footer1" class="clase-footer">
+        <h3 class="footer-titulo">Visítanos</h3>
+        <a href="https://maps.app.goo.gl/u4Aj8uriiURbmHKT7">Lago Vichuquén #1875</a>
+                <a href="https://maps.app.goo.gl/hQdXovheHFJkvHSk7">Adolfo Larraín Valdivieso #442</a>
+    </div>
+    <div id="footer2" class="clase-footer">
+        <h3 class="footer-titulo">Nuestras redes</h3>
+        <a href="https://www.youtube.com/watch?v=ZZ5LpwO-An4">Instagram</a>
+        <a href="https://www.youtube.com/watch?v=ZZ5LpwO-An4">Facebook</a>
+        <a href="https://www.youtube.com/watch?v=ZZ5LpwO-An4">WhatsApp</a>
+    </div>
+    <div id="footer3" class="clase-footer">
+        <h3 class="footer-titulo">Legal</h3>
+        <a href="https://www.youtube.com/watch?v=ZZ5LpwO-An4">Nuestra marca</a>
+        <a href="https://www.youtube.com/watch?v=ZZ5LpwO-An4">Garantías</a>
+    </div>
+    <div id="footer4" class="clase-footer">
+        <h3 class="footer-titulo">Nuestros servicios</h3>
+        <a href="https://www.youtube.com/watch?v=ZZ5LpwO-An4">Armado de computadores</a>
+        <a href="https://www.youtube.com/watch?v=ZZ5LpwO-An4">Reparación de equipos</a>
+        <a href="https://www.youtube.com/watch?v=ZZ5LpwO-An4">Mejora de equipos</a>
+        <a href="https://www.youtube.com/watch?v=ZZ5LpwO-An4">Cálculo de presupuestos</a>
+        <a href="https://www.youtube.com/watch?v=ZZ5LpwO-An4">Vistas a domicilio</a>
+    </div>
+</div>
+<div id="footer-inferior">
+    <div id="pie-footer">
+        <a href="https://www.youtube.com/watch?v=ZZ5LpwO-An4">Terminos y condiciones</a>
+        <a href="https://www.youtube.com/watch?v=ZZ5LpwO-An4">BW Proyectos</a>
+        <a href="https://www.youtube.com/watch?v=ZZ5LpwO-An4">Política de privacidad</a>
+    </div>
+
+    </div>
+    <p id="derechos-reservados">© 2024 Derechos reservados</p>
+</footer>
+  <script src="js/funciones.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+<script>
+  function validarTecla(event) {
+      var charCode = (event.which) ? event.which : event.keyCode;
+  
+      if (charCode < 48 || charCode > 57) {
+          event.preventDefault();
+          return false;
+      }
+      return true;
+  }
+  </script>
+
+</html>
