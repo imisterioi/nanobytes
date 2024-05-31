@@ -34,8 +34,6 @@
                 <a href="#sectioncomponentes" id="header5">Componentes</a>
                 <a href="#sectionopiniones" id="header6">Contáctanos</a>
                 <a href="{% url 'nosotros' %}" id="header4">Quíenes sómos</a>
-                <a href="{% url 'carrito' %}" id="header7">
-
                 {% if user.is_authenticated %}
                     <div class="usuario">{{ user.username }}</div>
                     <form action="{% url 'logout' %}" method="post">
@@ -45,6 +43,9 @@
                 {% else %}
                     <a href="{% url 'login' %}">Login</a>
                 {% endif %}
+                <a href="{% url 'carrito' %}" id="header7">
+
+                
                     <span>Carrito</span>
                     <img src="{% static 'assets/shopping_cart_30px.png' %}" alt="carrito">
                 </a>
