@@ -115,3 +115,33 @@ input:hover{
 span {
     color: #01EEFF;
 }
+
+.form-login{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+    align-items: center;
+    margin: 5vh 0px;
+}
+
+.form-login>div{
+    width: 60%;
+    display: flex;
+}
+
+div>label, div>input{
+    width: 50% !important;
+    display: block;
+}
+
+div>input{
+    height: 2rem;
+    padding: 0px 10px;
+    border: 1px #01EEFF;
+    border-radius: 10px;
+}
+
+.form-login>button{
+    width: 60%;
+}
