@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -8,9 +10,9 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/catalogo.css">
-    <script src="js/funciones.js"></script>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/catalogo.css'} ">
+    <script src="{% static 'js/funciones.js' %}"></script>
 </head>
 
 <body>
@@ -20,7 +22,7 @@
 
             <div>
                 <a class="logo" href="index.html">
-                    <img src="assets/icon.jpg" alt="icon" class="icon">
+                    <img src="{% static 'assets/icon.jpg' %}" alt="icon" class="icon">
                     <h1 id="nano">Nano</h1>
                     <h1 id="bytes">Bytes</h1>
                 </a>
@@ -36,7 +38,7 @@
                 <a href="nosotros.html" id="header4">Quíenes sómos</a>
                 <a href="carrito.html" id="header7">
                     <span>Carrito</span>
-                    <img src="assets/shopping_cart_30px.png" alt="carrito">
+                    <img src="{% static 'assets/shopping_cart_30px.png' %}" alt="carrito">
                 </a>
             </nav>
 
@@ -50,7 +52,7 @@
         </div>
         <div id="cards-catalogo">
             <div class="card" id="cards" style="width: 18rem;">
-                <img src="assets/disco-duro.JPG" class="card-img-top" alt="...">
+                <img src="{% static 'assets/disco-duro.JPG' %}" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Almacenamiento</h5>
                     <p class="card-text"><strong>SSD's, Discos duros externos, pendrives</strong></p>
@@ -58,7 +60,7 @@
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
-                <img src="assets/tarjeta-grafica2.JPG" class="card-img-top" alt="...">
+                <img src="{% static 'assets/tarjeta-grafica2.JPG' %}" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Tarjetas gráficas</h5>
                     <p class="card-text"><strong>Tarjetas con RTX NVIDIA 3050, 3060TI, 1050, 4060</strong>
@@ -67,7 +69,7 @@
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
-                <img src="assets/procesador.jpg" class="card-img-top" alt="...">
+                <img src="{% static 'assets/procesador.jpg' %}" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Memorias RAM</h5>
                     <p class="card-text"><strong>Memorias de 4gb, 8gb y 16gb</strong></p>
@@ -89,7 +91,7 @@
                     <div class="product">
                         <div class="product-content">
                             <div class="product-info">
-                                <img src="assets/SECCION 1 PRODUCTOS/ALMACENAMIENTO/Discos Sólidos Sata 2,5/Hikvision_E100_128GB.png" alt="Producto 1">
+                                <img src="{% static 'assets/SECCION 1 PRODUCTOS/ALMACENAMIENTO/Discos Sólidos Sata 2,5/Hikvision_E100_128GB.png' %}" alt="Producto 1">
                                 <h2>Hikvision E100 128GB</h2>
                                 <p>$20.000 CLP</p>
                                 <button class="add-to-cart-btn">Agregar al carrito</button>
@@ -99,7 +101,7 @@
                     <div class="product">
                         <div class="product-content">
                             <div class="product-info">
-                                <img src="assets/SECCION 1 PRODUCTOS/ALMACENAMIENTO/Discos Sólidos Sata 2,5/TeamGroup_CX2_256GB_1.png" alt="Producto 1">
+                                <img src="{% static 'assets/SECCION 1 PRODUCTOS/ALMACENAMIENTO/Discos Sólidos Sata 2,5/TeamGroup_CX2_256GB_1.png' %}" alt="Producto 1">
                                 <h2>TeamGroup CX2 256GB</h2>
                                 <p>$30.000 CLP</p>
                                 <button class="add-to-cart-btn">Agregar al carrito</button>
@@ -113,7 +115,7 @@
                     <div class="product">
                         <div class="product-content">
                             <div class="product-info">
-                                <img src="assets/SECCION 1 PRODUCTOS/ALMACENAMIENTO/Discos Sólidos m.2 Nvme/Crucial_P5_PLUS_2280_1TB_gen4_1.png" alt="Producto 1">
+                                <img src="{% static 'assets/SECCION 1 PRODUCTOS/ALMACENAMIENTO/Discos Sólidos m.2 Nvme/Crucial_P5_PLUS_2280_1TB_gen4_1.png' %}" alt="Producto 1">
                                 <h2>Crucial P5 PLUS 2280  1TB gen4</h2>
                                 <p>$100</p>
                                 <button class="add-to-cart-btn">Agregar al carrito</button>
@@ -124,7 +126,7 @@
                     <div class="product">
                         <div class="product-content">
                             <div class="product-info">
-                                <img src="assets/SECCION 1 PRODUCTOS/ALMACENAMIENTO/Discos Sólidos m.2 Nvme/Toshiba_2280_512GB_gen3.png" alt="Producto 1">
+                                <img src="{% static 'assets/SECCION 1 PRODUCTOS/ALMACENAMIENTO/Discos Sólidos m.2 Nvme/Toshiba_2280_512GB_gen3.png' %}" alt="Producto 1">
                                 <h2>Toshiba 2280 512GB gen3</h2>
                                 <p>$100</p>
                                 <button class="add-to-cart-btn">Agregar al carrito</button>
@@ -134,7 +136,7 @@
                     <div class="product">
                         <div class="product-content">
                             <div class="product-info">
-                                <img src="assets/cat2.webp" alt="Producto 1">
+                                <img src="{% static 'assets/cat2.webp' %}" alt="Producto 1">
                                 <h2>SK Hynix 2230 512GB gen4</h2>
                                 <p>$100</p>
                                 <button class="add-to-cart-btn">Agregar al carrito</button>
@@ -144,7 +146,7 @@
                     <div class="product">
                         <div class="product-content">
                             <div class="product-info">
-                                <img src="assets/cat3.jpeg" alt="Producto 1">
+                                <img src="{% static 'assets/cat3.jpeg' %}" alt="Producto 1">
                                 <h2>Western Digital SN740 2230 512GB gen4</h2>
                                 <p>$100</p>
                                 <button class="add-to-cart-btn">Agregar al carrito</button>
@@ -158,7 +160,7 @@
                     <div class="product">
                         <div class="product-content">
                             <div class="product-info">
-                                <img src="assets/SECCION 1 PRODUCTOS/ALMACENAMIENTO/Discos Sólidos m.2 Sata/Hikvision_E100N_128Gb_1.png" alt="Producto 1">
+                                <img src="{% static 'assets/SECCION 1 PRODUCTOS/ALMACENAMIENTO/Discos Sólidos m.2 Sata/Hikvision_E100N_128Gb_1.png' %}" alt="Producto 1">
                                 <h2>Hikvision E100N 128Gb</h2>
                                 <p>$100</p>
                                 <button class="add-to-cart-btn">Agregar al carrito</button>
@@ -168,7 +170,7 @@
                     <div class="product">
                         <div class="product-content">
                             <div class="product-info">
-                                <img src="assets/cat.webp" alt="Producto 1">
+                                <img src="{% static 'assets/cat.webp' %}" alt="Producto 1">
                                 <h2>Teamgroup 256Gb</h2>
                                 <p>$119.990</p>
                                 <button class="add-to-cart-btn">Agregar al carrito</button>
@@ -185,7 +187,7 @@
                 <div class="product">
                     <div class="product-content">
                         <div class="product-info">
-                            <img src="assets/SECCION 1 PRODUCTOS/CABLES Y ADAPTADORES/Cable_HDMI_1,5_Metros.png" alt="Producto 1">
+                            <img src="{% static 'assets/SECCION 1 PRODUCTOS/CABLES Y ADAPTADORES/Cable_HDMI_1,5_Metros.png' %}" alt="Producto 1">
                             <h2>Cable HDMI 1,5 Metros</h2>
                             <p>$100</p>
                             <button class="add-to-cart-btn">Agregar al carrito</button>
@@ -195,7 +197,7 @@
                 <div class="product">
                     <div class="product-content">
                         <div class="product-info">
-                            <img src="assets/SECCION 1 PRODUCTOS/CABLES Y ADAPTADORES/Cable_VGA_1,2_Metros.png" alt="Producto 1">
+                            <img src="{% static 'assets/SECCION 1 PRODUCTOS/CABLES Y ADAPTADORES/Cable_VGA_1,2_Metros.png' %}" alt="Producto 1">
                             <h2>Cable VGA 1,2 Metros</h2>
                             <p>$100</p>
                             <button class="add-to-cart-btn">Agregar al carrito</button>
@@ -205,7 +207,7 @@
                 <div class="product">
                     <div class="product-content">
                         <div class="product-info">
-                            <img src="assets/SECCION 1 PRODUCTOS/CABLES Y ADAPTADORES/Cable_Red_Ethernet_5E_1,2_Metro.png" alt="Producto 1">
+                            <img src="{% static 'assets/SECCION 1 PRODUCTOS/CABLES Y ADAPTADORES/Cable_Red_Ethernet_5E_1,2_Metro.png' %}" alt="Producto 1">
                             <h2>Cable Red Ethernet 5E 1,2 Metro</h2>
                             <p>$100</p>
                             <button class="add-to-cart-btn">Agregar al carrito</button>
@@ -215,7 +217,7 @@
                 <div class="product">
                     <div class="product-content">
                         <div class="product-info">
-                            <img src="assets/SECCION 1 PRODUCTOS/CABLES Y ADAPTADORES/Adaptador_DisplayPort_a_VGA_blanco.png" alt="Producto 1">
+                            <img src="{% static 'assets/SECCION 1 PRODUCTOS/CABLES Y ADAPTADORES/Adaptador_DisplayPort_a_VGA_blanco.png' %}" alt="Producto 1">
                             <h2>Adaptador DisplayPort a VGA blanco</h2>
                             <p>$100</p>
                             <button class="add-to-cart-btn">Agregar al carrito</button>
@@ -225,7 +227,7 @@
                 <div class="product">
                     <div class="product-content">
                         <div class="product-info">
-                            <img src="assets/SECCION 1 PRODUCTOS/CABLES Y ADAPTADORES/Adaptador_HDMI_a_VGA_negro.png" alt="Producto 1">
+                            <img src="{% static 'assets/SECCION 1 PRODUCTOS/CABLES Y ADAPTADORES/Adaptador_HDMI_a_VGA_negro.png' %}" alt="Producto 1">
                             <h2>Adaptador HDMI a VGA negro</h2>
                             <p>$100</p>
                             <button class="add-to-cart-btn">Agregar al carrito</button>
@@ -235,7 +237,7 @@
                 <div class="product">
                     <div class="product-content">
                         <div class="product-info">
-                            <img src="assets/SECCION 1 PRODUCTOS/CABLES Y ADAPTADORES/Cable_Adaptador_DisplayPort_a_DVI.png" alt="Producto 1">
+                            <img src="{% static 'assets/SECCION 1 PRODUCTOS/CABLES Y ADAPTADORES/Cable_Adaptador_DisplayPort_a_DVI.png' %}" alt="Producto 1">
                             <h2>Cable Adaptador DisplayPort a DVI</h2>
                             <p>$100</p>
                             <button class="add-to-cart-btn">Agregar al carrito</button>
@@ -252,7 +254,7 @@
                     <div class="product">
                         <div class="product-content">
                             <div class="product-info">
-                                <img src="assets/SECCION 1 PRODUCTOS/MEMORIAS RAM/DDR3L/Adata_4GB_PC3L_12800S.png" alt="Producto 1">
+                                <img src="{% static 'assets/SECCION 1 PRODUCTOS/MEMORIAS RAM/DDR3L/Adata_4GB_PC3L_12800S.png' %}" alt="Producto 1">
                                 <h2>Adata 4GB PC3L 12800S</h2>
                                 <p>$20.000 CLP</p>
                                 <button class="add-to-cart-btn">Agregar al carrito</button>
@@ -262,7 +264,7 @@
                     <div class="product">
                         <div class="product-content">
                             <div class="product-info">
-                                <img src="assets/SECCION 1 PRODUCTOS/MEMORIAS RAM/DDR3L/Zorq_8GB_PC3L_12800S.png" alt="Producto 1">
+                                <img src="{% static 'assets/SECCION 1 PRODUCTOS/MEMORIAS RAM/DDR3L/Zorq_8GB_PC3L_12800S.png' %}" alt="Producto 1">
                                 <h2>Zorq 8GB PC3L 12800S</h2>
                                 <p>$35.000 CLP</p>
                                 <button class="add-to-cart-btn">Agregar al carrito</button>
@@ -272,7 +274,7 @@
                     <div class="product">
                         <div class="product-content">
                             <div class="product-info">
-                                <img src="assets/SECCION 1 PRODUCTOS/MEMORIAS RAM/DDR3L/Samsung_4GB_PC3L_12800S.jpg" alt="Producto 1">
+                                <img src="{% static 'assets/SECCION 1 PRODUCTOS/MEMORIAS RAM/DDR3L/Samsung_4GB_PC3L_12800S.jpg' %}" alt="Producto 1">
                                 <h2>Samsung 4GB PC3L 12800S</h2>
                                 <p>$20.000 CLP</p>
                                 <button class="add-to-cart-btn">Agregar al carrito</button>
@@ -282,7 +284,7 @@
                     <div class="product">
                         <div class="product-content">
                             <div class="product-info">
-                                <img src="assets/SECCION 1 PRODUCTOS/MEMORIAS RAM/DDR3L/" alt="Producto 1">
+                                <img src="{% static 'assets/SECCION 1 PRODUCTOS/MEMORIAS RAM/DDR3L/' %}" alt="Producto 1">
                                 <h2>Micron 4GB PC3L 12800S</h2>
                                 <p>$20.000 CLP</p>
                                 <button class="add-to-cart-btn">Agregar al carrito</button>
@@ -292,7 +294,7 @@
                     <div class="product">
                         <div class="product-content">
                             <div class="product-info">
-                                <img src="assets/SECCION 1 PRODUCTOS/MEMORIAS RAM/" alt="Producto 1">
+                                <img src="{% static 'assets/SECCION 1 PRODUCTOS/MEMORIAS RAM/' %}" alt="Producto 1">
                                 <h2>SK Hynix 4GB PC3L 12800S</h2>
                                 <p>$20.000 CLP</p>
                                 <button class="add-to-cart-btn">Agregar al carrito</button>
@@ -306,7 +308,7 @@
                     <div class="product">
                         <div class="product-content">
                             <div class="product-info">
-                                <img src="assets/SECCION 1 PRODUCTOS/MEMORIAS RAM/DDR4/" alt="Producto 1">
+                                <img src="{% static 'assets/SECCION 1 PRODUCTOS/MEMORIAS RAM/DDR4/' %}" alt="Producto 1">
                                 <h2>Adata 4GB PC4 2400T</h2>
                                 <p>$20.000 CLP</p>
                                 <button class="add-to-cart-btn">Agregar al carrito</button>
@@ -316,7 +318,7 @@
                     <div class="product">
                         <div class="product-content">
                             <div class="product-info">
-                                <img src="assets/SECCION 1 PRODUCTOS/MEMORIAS RAM/DDR4/" alt="Producto 1">
+                                <img src="{% static 'assets/SECCION 1 PRODUCTOS/MEMORIAS RAM/DDR4/' %}" alt="Producto 1">
                                 <h2>Samsung 4GB PC4-2400</h2>
                                 <p>$20.000 CLP</p>
                                 <button class="add-to-cart-btn">Agregar al carrito</button>
@@ -326,7 +328,7 @@
                     <div class="product">
                         <div class="product-content">
                             <div class="product-info">
-                                <img src="assets/SECCION 1 PRODUCTOS/MEMORIAS RAM/DDR4/Samsung_4GB_PC4_2666.png" alt="Producto 1">
+                                <img src="{% static 'assets/SECCION 1 PRODUCTOS/MEMORIAS RAM/DDR4/Samsung_4GB_PC4_2666.png' %}" alt="Producto 1">
                                 <h2>Samsung 4GB PC4 2666</h2>
                                 <p>$20.000 CLP</p>
                                 <button class="add-to-cart-btn">Agregar al carrito</button>
@@ -336,7 +338,7 @@
                     <div class="product">
                         <div class="product-content">
                             <div class="product-info">
-                                <img src="assets/SECCION 1 PRODUCTOS/MEMORIAS RAM/DDR4/Ramaxel_2GB_PC4_2400.png" alt="Producto 1">
+                                <img src="{% static 'assets/SECCION 1 PRODUCTOS/MEMORIAS RAM/DDR4/Ramaxel_2GB_PC4_2400.png' %}" alt="Producto 1">
                                 <h2>Ramaxel 2GB PC4 2400</h2>
                                 <p>$12.000 CLP</p>
                                 <button class="add-to-cart-btn">Agregar al carrito</button>
@@ -346,7 +348,7 @@
                     <div class="product">
                         <div class="product-content">
                             <div class="product-info">
-                                <img src="assets/SECCION 1 PRODUCTOS/MEMORIAS RAM/DDR4/Ramaxel_4GB_PC4_3200.png" alt="Producto 1">
+                                <img src="{% static 'assets/SECCION 1 PRODUCTOS/MEMORIAS RAM/DDR4/Ramaxel_4GB_PC4_3200.png' %}" alt="Producto 1">
                                 <h2>Ramaxel 4GB PC4 3200</h2>
                                 <p>$20.000 CLP</p>
                                 <button class="add-to-cart-btn">Agregar al carrito</button>
@@ -356,7 +358,7 @@
                     <div class="product">
                         <div class="product-content">
                             <div class="product-info">
-                                <img src="assets/SECCION 1 PRODUCTOS/MEMORIAS RAM/DDR4/" alt="Producto 1">
+                                <img src="{% static 'assets/SECCION 1 PRODUCTOS/MEMORIAS RAM/DDR4/' %}" alt="Producto 1">
                                 <h2>SK Hynix 4GB PC4 3200</h2>
                                 <p>$20.000 CLP</p>
                                 <button class="add-to-cart-btn">Agregar al carrito</button>
@@ -366,7 +368,7 @@
                     <div class="product">
                         <div class="product-content">
                             <div class="product-info">
-                                <img src="assets/SECCION 1 PRODUCTOS/MEMORIAS RAM/DDR4/SK_Hynix_16GB_PC4_3200.png" alt="Producto 1">
+                                <img src="{% static 'assets/SECCION 1 PRODUCTOS/MEMORIAS RAM/DDR4/SK_Hynix_16GB_PC4_3200.png' %}" alt="Producto 1">
                                 <h2>SK Hynix 16GB PC4 3200</h2>
                                 <p>$55.000 CLP</p>
                                 <button class="add-to-cart-btn">Agregar al carrito</button>
@@ -376,7 +378,7 @@
                     <div class="product">
                         <div class="product-content">
                             <div class="product-info">
-                                <img src="assets/SECCION 1 PRODUCTOS/MEMORIAS RAM/DDR4/Micron_8GB_PC4_3200.png" alt="Producto 1">
+                                <img src="{% static 'assets/SECCION 1 PRODUCTOS/MEMORIAS RAM/DDR4/Micron_8GB_PC4_3200.png' %}" alt="Producto 1">
                                 <h2>Micron 8GB PC4 3200</h2>
                                 <p>$35.000 CLP</p>
                                 <button class="add-to-cart-btn">Agregar al carrito</button>
@@ -386,7 +388,7 @@
                     <div class="product">
                         <div class="product-content">
                             <div class="product-info">
-                                <img src="assets/SECCION 1 PRODUCTOS/MEMORIAS RAM/DDR4/" alt="Producto 1">
+                                <img src="{% static 'assets/SECCION 1 PRODUCTOS/MEMORIAS RAM/DDR4/' %}" alt="Producto 1">
                                 <h2>Crucial 4GB PC4 2666</h2>
                                 <p>$20.000 CLP</p>
                                 <button class="add-to-cart-btn">Agregar al carrito</button>
@@ -396,7 +398,7 @@
                     <div class="product">
                         <div class="product-content">
                             <div class="product-info">
-                                <img src="assets/SECCION 1 PRODUCTOS/MEMORIAS RAM/DDR4/" alt="Producto 1">
+                                <img src="{% static 'assets/SECCION 1 PRODUCTOS/MEMORIAS RAM/DDR4/' %}" alt="Producto 1">
                                 <h2>Kingston 8GB PC4 3200</h2>
                                 <p>$35.000 CLP</p>
                                 <button class="add-to-cart-btn">Agregar al carrito</button>
@@ -410,7 +412,7 @@
                     <div class="product">
                         <div class="product-content">
                             <div class="product-info">
-                                <img src="assets/SECCION 1 PRODUCTOS/MEMORIAS RAM/DDR3/" alt="Producto 1">
+                                <img src="{% static 'assets/SECCION 1 PRODUCTOS/MEMORIAS RAM/DDR3/' %}" alt="Producto 1">
                                 <h2>Samsung 1GB PC3 8500S</h2>
                                 <p>$5.000 CLP</p>
                                 <button class="add-to-cart-btn">Agregar al carrito</button>
@@ -420,7 +422,7 @@
                     <div class="product">
                         <div class="product-content">
                             <div class="product-info">
-                                <img src="assets/SECCION 1 PRODUCTOS/MEMORIAS RAM/DDR3/Samsung_2GB_PC3_8500S.png" alt="Producto 1">
+                                <img src="{% static 'assets/SECCION 1 PRODUCTOS/MEMORIAS RAM/DDR3/Samsung_2GB_PC3_8500S.png' %}" alt="Producto 1">
                                 <h2>Samsung 2GB PC3 8500S</h2>
                                 <p>$12.000 CLP</p>
                                 <button class="add-to-cart-btn">Agregar al carrito</button>
@@ -430,7 +432,7 @@
                     <div class="product">
                         <div class="product-content">
                             <div class="product-info">
-                                <img src="assets/SECCION 1 PRODUCTOS/MEMORIAS RAM/DDR3/Adata_2GB_PC3_10600S.png" alt="Producto 1">
+                                <img src="{% static 'assets/SECCION 1 PRODUCTOS/MEMORIAS RAM/DDR3/Adata_2GB_PC3_10600S.png' %}" alt="Producto 1">
                                 <h2>Adata 2GB PC3 10600S</h2>
                                 <p>$12.000 CLP</p>
                                 <button class="add-to-cart-btn">Agregar al carrito</button>
@@ -440,7 +442,7 @@
                     <div class="product">
                         <div class="product-content">
                             <div class="product-info">
-                                <img src="assets/SECCION 1 PRODUCTOS/MEMORIAS RAM/DDR3/GSkill_4GB_12800S.png" alt="Producto 1">
+                                <img src="{% static 'assets/SECCION 1 PRODUCTOS/MEMORIAS RAM/DDR3/GSkill_4GB_12800S.png' %}" alt="Producto 1">
                                 <h2>G.Skill 4GB 12800</h2>
                                 <p>$20.000 CLP</p>
                                 <button class="add-to-cart-btn">Agregar al carrito</button>
@@ -450,7 +452,7 @@
                     <div class="product">
                         <div class="product-content">
                             <div class="product-info">
-                                <img src="assets/SECCION 1 PRODUCTOS/MEMORIAS RAM/DDR3/SK_Hynix_2GB_PC3_12800S.png" alt="Producto 1">
+                                <img src="{% static 'assets/SECCION 1 PRODUCTOS/MEMORIAS RAM/DDR3/SK_Hynix_2GB_PC3_12800S.png' %}" alt="Producto 1">
                                 <h2>SK Hynix 2GB PC3 12800S</h2>
                                 <p>$12.000 CLP</p>
                                 <button class="add-to-cart-btn">Agregar al carrito</button>
@@ -460,7 +462,7 @@
                     <div class="product">
                         <div class="product-content">
                             <div class="product-info">
-                                <img src="assets/SECCION 1 PRODUCTOS/MEMORIAS RAM/DDR3/SK_Hynix_4GB_PC3_12800S.png" alt="Producto 1">
+                                <img src="{% static 'assets/SECCION 1 PRODUCTOS/MEMORIAS RAM/DDR3/SK_Hynix_4GB_PC3_12800S.png' %}" alt="Producto 1">
                                 <h2>SK Hynix 4GB PC3 12800S</h2>
                                 <p>$20.000 CLP</p>
                                 <button class="add-to-cart-btn">Agregar al carrito</button>
@@ -470,7 +472,7 @@
                     <div class="product">
                         <div class="product-content">
                             <div class="product-info">
-                                <img src="assets/SECCION 1 PRODUCTOS/MEMORIAS RAM/DDR3/" alt="Producto 1">
+                                <img src="{% static 'assets/SECCION 1 PRODUCTOS/MEMORIAS RAM/DDR3/' %}" alt="Producto 1">
                                 <h2>ELPIDA 1GB PC3 10600S</h2>
                                 <p>$5.000 CLP</p>
                                 <button class="add-to-cart-btn">Agregar al carrito</button>
@@ -480,7 +482,7 @@
                     <div class="product">
                         <div class="product-content">
                             <div class="product-info">
-                                <img src="assets/SECCION 1 PRODUCTOS/MEMORIAS RAM/DDR3/ELPIDA_2GB_PC3_12800S.png" alt="Producto 1">
+                                <img src="{% static 'assets/SECCION 1 PRODUCTOS/MEMORIAS RAM/DDR3/ELPIDA_2GB_PC3_12800S.png' %}" alt="Producto 1">
                                 <h2>ELPIDA 2GB PC3 12800S</h2>
                                 <p>$12.000 CLP</p>
                                 <button class="add-to-cart-btn">Agregar al carrito</button>
@@ -490,7 +492,7 @@
                     <div class="product">
                         <div class="product-content">
                             <div class="product-info">
-                                <img src="assets/SECCION 1 PRODUCTOS/MEMORIAS RAM/DDR3/" alt="Producto 1">
+                                <img src="{% static 'assets/SECCION 1 PRODUCTOS/MEMORIAS RAM/DDR3/' %}" alt="Producto 1">
                                 <h2>Kingston 2GB 1333</h2>
                                 <p>$12.000 CLP</p>
                                 <button class="add-to-cart-btn">Agregar al carrito</button>
@@ -505,7 +507,7 @@
                     <div class="product">
                         <div class="product-content">
                             <div class="product-info">
-                                <img src="assets/SECCION 1 PRODUCTOS/MEMORIAS RAM/" alt="Producto 1">
+                                <img src="{% static 'assets/SECCION 1 PRODUCTOS/MEMORIAS RAM/' %}" alt="Producto 1">
                                 <h2>SKHynix 8GB PC5 4800</h2>
                                 <p>$50.000 CLP</p>
                                 <button class="add-to-cart-btn">Agregar al carrito</button>
@@ -522,7 +524,7 @@
                 <div class="product">
                     <div class="product-content">
                         <div class="product-info">
-                            <img src="assets/SECCION 1 PRODUCTOS/Tarjetas Graficas/" alt="Producto 1">
+                            <img src="{% static 'assets/SECCION 1 PRODUCTOS/Tarjetas Graficas/' %}" alt="Producto 1">
                             <h2>2060 Super 8 Gb Gigabyte OC Windforce</h2>
                             <p>$50.000 CLP</p>
                             <button class="add-to-cart-btn">Agregar al carrito</button>
@@ -532,7 +534,7 @@
                 <div class="product">
                     <div class="product-content">
                         <div class="product-info">
-                            <img src="assets/SECCION 1 PRODUCTOS/Tarjetas Graficas/" alt="Producto 1">
+                            <img src="{% static 'assets/SECCION 1 PRODUCTOS/Tarjetas Graficas/' %}" alt="Producto 1">
                             <h2>3070 Zotac Twin Edge</h2>
                             <p>$50.000 CLP</p>
                             <button class="add-to-cart-btn">Agregar al carrito</button>
