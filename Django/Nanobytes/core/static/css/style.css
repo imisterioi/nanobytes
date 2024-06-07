@@ -1154,9 +1154,9 @@ input {
     display: flex;
     text-align: center;
     margin-left: 1%;
-    height: 40vh;
+    /* height: 40vh; */
     transition: transform 0.3s;
-    border-bottom: solid 0.2rem rgb(65, 63, 63);
+    /* border-bottom: solid 0.2rem rgb(65, 63, 63); */
 }
 
 

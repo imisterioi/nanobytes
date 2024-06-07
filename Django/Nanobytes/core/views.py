@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.views import logout_then_login
+from .models import *
 
 # Create your views here.
 def home(request):
@@ -10,6 +11,13 @@ def carrito(request):
 
 def nosotros(request):
     return render(request, 'core/nosotros.html')
+
+def catalogo(request):
+    productos = Producto.objects.all()
+    return render(request, 'core/catalogo.html', {'productos':productos})
+
+def login(request):
+    return render(request, 'core/login.html')
 
 def logout(request):
     return logout_then_login(request, login_url="home")
@@ -37,7 +45,7 @@ def addToCar(request, id):
 
 def carrito(request):
     carrito = request.session.get("carrito", [])
-    return render(request, 'carrito.html', ("carrito":carrito))
+    return render(request, 'carrito.html', {"carrito":carrito})
 
 def borrarSesion(request):
     request.session.flush()

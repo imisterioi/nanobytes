@@ -21,7 +21,7 @@
         <div id="arriba">
 
             <div>
-                <a class="logo" href="index.html">
+                <a class="logo" href="{% url 'home' %}">
                     <img src="{% static 'assets/icon.jpg' %}" alt="icon" class="icon">
                     <h1 id="nano">Nano</h1>
                     <h1 id="bytes">Bytes</h1>
@@ -29,14 +29,14 @@
             </div>
 
             <nav id="barrasuperior">
-                <a href="index.html" id="header1">Inicio</a>
-                <a href="index.html" id="header2">Servicios</a>
-                <a href="index.html" id="header8">Nuestros trabajos</a>
-                <a href="index.html" id="header3">Arma tu equipo</a>
-                <a href="index.html" id="header5">Componentes</a>
-                <a href="index.html" id="header6">Contáctanos</a>
-                <a href="nosotros.html" id="header4">Quíenes sómos</a>
-                <a href="carrito.html" id="header7">
+                <a href="{% url 'home' %}" id="header1">Inicio</a>
+                <a href="{% url 'home' %}" id="header2">Servicios</a>
+                <a href="{% url 'home' %}" id="header8">Nuestros trabajos</a>
+                <a href="{% url 'home' %}" id="header3">Arma tu equipo</a>
+                <a href="{% url 'home' %}" id="header5">Componentes</a>
+                <a href="{% url 'home' %}" id="header6">Contáctanos</a>
+                <a href="{% url 'home' %}" id="header4">Quíenes sómos</a>
+                <a href="{% url 'carrito' %}" id="header7">
                     <span>Carrito</span>
                     <img src="{% static 'assets/shopping_cart_30px.png' %}" alt="carrito">
                 </a>
@@ -81,11 +81,24 @@
         <section id="productos"></section>
        
        <div class="catalog-container">
+
+        {% for p in productos %}
+        <div class="card" style="width: 18rem;">
+            <img src="{{p.imagen}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{p.detalle}}</h5>
+                <p>{{p.stock}}</p>
+                <p class="tachado" >{{p.tachado}}</p>
+                <p>{{p.precio}}</p>
+                <a href="#tarjetas" class="btn btn-dark">Añadir</a>
+            </div>
+        </div>
+        {% endfor %}
            
            <!----------- ALMACENAMIENTO ---------------->
-           <h3>Almacenamiento</h3>
+           <!-- <h3>Almacenamiento</h3>
            <div id="almacenamiento">
-                <!-- DISCOS SOLIDOS SATA 2,5 -->
+                DISCOS SOLIDOS SATA 2,5
                 <h4 class='subtitulo'>Discos sólidos Sata 2,5</h4>
                 <div id="discos-solidos-sata-2-5" class="subcategoria">
                     <div class="product">
@@ -110,7 +123,7 @@
                     </div>
                 </div>
                 <!-- DISCOS SOLIDOS M2 NVME -->
-                <h4 class='subtitulo'>Discos sólidos m.2 Nvme</h4>
+                <!-- <h4 class='subtitulo'>Discos sólidos m.2 Nvme</h4>
                 <div id="discos-solidos-m-2-nvme" class="subcategoria">
                     <div class="product">
                         <div class="product-content">
@@ -153,9 +166,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <!-- DISCOS SOLIDOS M2 SATA -->
-                <h4 class='subtitulo'>Discos sólidos m.2 Sata</h4>
+                <!-- <h4 class='subtitulo'>Discos sólidos m.2 Sata</h4>
                 <div id="discos-solidos-m-2-sata" class="subcategoria">
                     <div class="product">
                         <div class="product-content">
@@ -180,9 +193,9 @@
                 </div>
                 
                 
-            </div>
+            </div> -->
             <!------------------- CABLES Y ADAPTADORES ------------------->           
-            <h3>Cables y Adaptadores</h3>
+            <!-- <h3>Cables y Adaptadores</h3>
             <div id="cables-adaptadores">
                 <div class="product">
                     <div class="product-content">
@@ -244,11 +257,11 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!------------------------- MEMORIAS RAM ---------------------------->
-            <h3>Memorias RAM</h3>
+            <!-- <h3>Memorias RAM</h3>
             <div id="memorias-ram">
-                <!--DDR3L-->
+                DDR3L
                 <h4 class='subtitulo'>DDR3L</h4>
                 <div id="ddr3l" class="subcategoria">
                     <div class="product">
@@ -302,7 +315,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- DDR4 -->
+                <!-- DDR4 
                 <h4 class='subtitulo'>DDR4</h4>
                 <div id="ddr4" class="subcategoria">
                     <div class="product">
@@ -406,7 +419,7 @@
                         </div>
                     </div>
                 </div>
-                <!--DDR3-->
+                DDR3
                 <h4 class='subtitulo'>DDR3</h4>
                 <div id="ddr3" class="subcategoria">
                     <div class="product">
@@ -500,9 +513,9 @@
                         </div>
                     </div>
 
-                </div>
+                </div> -->
                 <!-- DDR5 -->
-                <h4 class='subtitulo'>DDR5</h4>
+                <!-- <h4 class='subtitulo'>DDR5</h4>
                 <div id="ddr5" class="subcategoria">
                     <div class="product">
                         <div class="product-content">
@@ -516,10 +529,10 @@
                     </div>
                    
                 </div>
-            </div>
+            </div> -->
 
             <!------------------------- TARJETAS GRÁFICAS ---------------------------->
-            <h3>Tarjetas Gráficas</h3>
+            <!-- <h3>Tarjetas Gráficas</h3>
             <div id="tarjetas-graficas">
                 <div class="product">
                     <div class="product-content">
@@ -541,7 +554,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>  -->
         </div>
 
     </section> 
