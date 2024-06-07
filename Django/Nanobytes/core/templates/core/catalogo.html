@@ -81,7 +81,7 @@
         <section id="productos"></section>
        
        <div class="catalog-container">
-
+{% comment %} esto es un for de models.py  {% endcomment %}
         {% for p in productos %}
         <div class="card" style="width: 18rem;">
             <img src="{{p.imagen}}" class="card-img-top" alt="...">

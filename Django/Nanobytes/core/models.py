@@ -8,11 +8,11 @@ class Producto(models.Model):
     oferta = models.BooleanField()
     imagen = models.CharField(max_length=200)
 
-def tachado(self):
-    if self.oferta:
-        return "$"+str(round(self.precio * 1.2))
-    return ""
+    def tachado(self):
+        if self.oferta:
+            return "$"+str(round(self.precio * 1.2))
+        return ""
 
-def __str__(self):
-    return self.detalle+" ("+self.id+")"
+    def __str__(self):
+        return self.detalle+" ("+self.id+")"
 
