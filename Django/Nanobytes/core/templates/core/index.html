@@ -47,7 +47,7 @@
                 <a href="{% url 'carrito' %}" id="header7">
 
                 
-                    <span>Carrito</span>
+                    <span>Carrito ({{ request.session.carrito|length }})</span>
                     <img src="{% static 'assets/shopping_cart_30px.png' %}" alt="carrito">
                 </a>
             </nav>

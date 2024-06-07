@@ -45,7 +45,7 @@
                 <a href="{% url 'carrito' %}" id="header7">
 
                 <a href="carrito.html" id="header7">
-                    <span>Carrito</span>
+                    <span>Carrito ({{ request.session.carrito|length }})</span>
                     <img src="{% static 'assets/shopping_cart_30px.png' %}" alt="carrito">
                 </a>
             </nav>
@@ -54,6 +54,14 @@
     </header>
 
     <section id="carrito">
+        {% if request.session.carrito|length > 0 %}
+
+                {% for item in request.session.carrito %}
+
+                {% comment %} dentro de un href {% url 'delToCar' item.id %} eliminar {% endcomment %}
+                {% endfor %}
+            
+        {% endif %}
         <div id="contenedor-carrito">
             <h1>Tu carrito</h1>
             <div id="lista-productos">

@@ -1,13 +1,11 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.views import logout_then_login
 from .models import *
+from django.urls import reverse
 
 # Create your views here.
 def home(request):
     return render(request, 'core/index.html')
-
-def carrito(request):
-    return render(request, 'core/carrito.html')
 
 def nosotros(request):
     return render(request, 'core/nosotros.html')
@@ -43,9 +41,22 @@ def addToCar(request, id):
     print(carrito)
     return redirect(to="home")
 
+def delToCar(request, id):
+    carrito = request.session.get("carrito", [])
+    for p in carrito:
+        if p["id"] == id:
+            if p["cantidad"] > 1:
+                p["cantidad"] -= 1
+                p["total"] = p["precio"] * p["cantidad"]
+            else:
+                carrito.remove(p)
+            break
+    request.session["carrito"] = carrito
+    return redirect (reverse('carrito') + '#contenido') # cambiar el por id de la seccion
+
 def carrito(request):
     carrito = request.session.get("carrito", [])
-    return render(request, 'carrito.html', {"carrito":carrito})
+    return render(request, 'core/carrito.html', {"carrito":carrito})
 
 def borrarSesion(request):
     request.session.flush()
