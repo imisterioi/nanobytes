@@ -36,6 +36,18 @@
                 <a href="{% url 'home' %}" id="header5">Componentes</a>
                 <a href="{% url 'home' %}" id="header6">Contáctanos</a>
                 <a href="{% url 'home' %}" id="header4">Quíenes sómos</a>
+                <a href="{% url 'nosotros' %}" id="header4">Quíenes sómos</a>
+                {% if user.is_authenticated %}
+                    <div class="usuario">{{ user.username }}</div>
+                    <form action="{% url 'logout' %}" method="post">
+                        {% csrf_token %}
+                        <button type="submit">Salir</button>
+                    </form>
+                {% else %}
+                    <a href="{% url 'login' %}">Login</a>
+                {% endif %}
+                <a href="{% url 'carrito' %}" id="header7">
+
                 <a href="{% url 'carrito' %}" id="header7">
                     <span>Carrito</span>
                     <img src="{% static 'assets/shopping_cart_30px.png' %}" alt="carrito">

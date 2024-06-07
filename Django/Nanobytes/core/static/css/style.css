@@ -176,6 +176,9 @@ a {
     
 }
 
+.usuario{
+    color: white;
+}
 
 
 #obtener1-container{
@@ -1002,11 +1005,6 @@ button:hover{
     justify-content: center; 
     padding: 1rem; 
 }
-@media (max-width: 1500px){
-    #catalogoprincipal > h1{
-        margin-top: 15vh !important;
-    }
-}
 
 @media (max-width: 1350px){
     .product{
@@ -1387,6 +1385,7 @@ input {
     }
 
     #barrasuperior{
+        column-gap: 20px;
         font-size: 1rem;
     }
 
