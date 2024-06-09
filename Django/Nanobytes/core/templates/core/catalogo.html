@@ -49,7 +49,7 @@
                 <a href="{% url 'carrito' %}" id="header7">
 
                 <a href="{% url 'carrito' %}" id="header7">
-                    <span>Carrito</span>
+                    <span>Carrito ({{ request.session.carrito|length }})</span>
                     <img src="{% static 'assets/shopping_cart_30px.png' %}" alt="carrito">
                 </a>
             </nav>
@@ -93,7 +93,7 @@
         <section id="productos"></section>
        
        <div class="catalog-container">
-{% comment %} esto es un for de models.py  {% endcomment %}
+
         {% for p in productos %}
         <div class="card" style="width: 18rem;">
             <img src="{{p.imagen}}" class="card-img-top" alt="...">
@@ -102,10 +102,12 @@
                 <p>{{p.stock}}</p>
                 <p class="tachado" >{{p.tachado}}</p>
                 <p>{{p.precio}}</p>
-                <a href="#tarjetas" class="btn btn-dark">Añadir</a>
+                <a href="{% url 'addToCar' p.id %}" class="btn btn-dark">Añadir</a>
             </div>
         </div>
         {% endfor %}
+
+        
            
            <!----------- ALMACENAMIENTO ---------------->
            <!-- <h3>Almacenamiento</h3>

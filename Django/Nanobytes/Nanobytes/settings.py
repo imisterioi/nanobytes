@@ -38,6 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'core',
+    'crispy_forms',
+    'crispy_bootstrap4',
+    'api',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -113,6 +117,8 @@ USE_I18N = True
 USE_TZ = True
 
 LOGIN_REDIRECT_URL = 'home'
+
+CRISPY_TEMPLATE_PACK = "bootstrap4"
 
 
 # Static files (CSS, JavaScript, Images)

@@ -250,3 +250,22 @@ select {
         column-gap: 7vw;
     }
 }
+
+.comprar{
+    width: 95%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.comprar > a{
+    line-height: 40px;
+    background-color: black;
+    color: #ffffff;
+    width: 200px;
+    text-decoration: none;
+    text-align: center;
+}
+.comprar > a:hover{
+    background-color: orange;
+    
+}
