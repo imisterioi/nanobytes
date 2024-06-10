@@ -6,6 +6,8 @@ urlpatterns = [
     path('', home, name="home"),
     path('logout', logout, name="logout"),
     path('carrito', carrito, name="carrito"),
+    path('armado', armado, name="armado"),
+    path('reparacion', reparacion, name="reparacion"),
     path('nosotros', nosotros, name="nosotros"),
     path('login', LoginView.as_view(template_name="core/login.html"), name="login"),
     path('addToCar/<id>', addToCar, name="addToCar"),

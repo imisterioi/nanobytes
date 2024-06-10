@@ -107,3 +107,8 @@ def carrito(request):
 def borrarSesion(request):
     request.session.flush()
     return redirect(to="home")
+
+def armado(request):
+    return render(request, 'core/armado.html')
+def reparacion(request):
+    return render(request, 'core/reparacion.html')

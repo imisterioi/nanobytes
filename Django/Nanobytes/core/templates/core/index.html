@@ -28,13 +28,13 @@
             </div>
 
             <nav id="barrasuperior">
-                <a href="#principal" id="header1">Inicio</a>
-                <a href="#sectionservicios" id="header2">Servicios</a>
-                <a href="#nuestros-trabajos" id="header8">Nuestros trabajos</a>
-                <a href="#armadopc" id="header3">Arma tu equipo</a>
-                <a href="#sectioncomponentes" id="header5">Componentes</a>
-                <a href="#sectionopiniones" id="header6">Contáctanos</a>
-                {% comment %} <a href="{% url 'nosotros' %}" id="header4">Quíenes sómos</a> {% endcomment %}
+                <a href="#principal">Inicio</a>
+                <a href="#section-servicios">Servicios</a>
+                <a href="#nuestros-trabajos">Nuestros trabajos</a>
+                <a href="#armadopc">Arma tu equipo</a>
+                <a href="#sectioncomponentes">Componentes</a>
+                <a href="#sectionopiniones">Contáctanos</a>
+                <!-- {% comment %} <a href="{% url 'nosotros' %}">Quíenes sómos</a> {% endcomment %} -->
                 {% if user.is_authenticated %}
                 <div class="usuario">{{ user.username }}</div>
                 <form action="{% url 'logout' %}" method="post">
@@ -44,10 +44,10 @@
                 {% else %}
                 <a href="{% url 'login' %}">Login</a>
                 {% endif %}
-                <a href="{% url 'carrito' %}" id="header7">
+                <a href="{% url 'carrito' %}" id="carro-img">
                     <i class="bi bi-cart"></i>
                     <p>({{ request.session.carrito|length }})</p>
-                    </a>
+                </a>
             </nav>
 
         </div>
@@ -89,7 +89,7 @@
                     <img src="{% static 'assets/antes-despues.png'%}" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <div id="obtener3-container">
-                            <!-- <a href="#" id="obtener3">Obtener más información</a> -->
+                            {% comment %} <a href="#" id="obtener3">Obtener más información</a>  {% endcomment %}
                         </div>
 
                     </div>
@@ -107,7 +107,8 @@
             </button>
         </div>
     </section>
-    <section id="sectionservicios">
+    
+    <section id="section-servicios">
         <div id="servicios">
             <h1>Nuestros servicios</h1>
             <div class="line-container">
@@ -121,12 +122,12 @@
                         respectivos costos para que TÚ las apruebes.
                     </P>
                     <nav id="botonservicios">
-                        <a href="reparacion.html" id="rep">Reparaciones</a>
-                        <a href="#armadopc" id="arm">Arma tu equipo</a>
-                        <a href="#sectioncomponentes" id="comp">Componentes</a>
+                        <a href="{% url 'reparacion'%}" class="btn-servicios" >Reparaciones</a>
+                        <a href="{% url 'armado'%}" class="btn-servicios" >Arma tu equipo</a>
+                        <a href="#sectioncomponentes" class="btn-servicios" >Componentes</a>
                         <!-- <a href="#" id="upg">Upgrades</a> -->
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        <button type="button" class="btn-servicios" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
                             Upgrades
                         </button>
@@ -195,7 +196,7 @@
         <h2>¿Quieres armar tu primer PC Gamer?</h2>
         <div id="contenido-armado">
             <div id="cards-armado">
-                <div class="card-armado" id="cards">
+                <div class="card-armado" >
                     <img src="{% static 'assets/equipo-tier.png' %}" class="card-img-top" alt="...">
                     <div class="card-body-armado">
                         <h5 class="card-title-armado">TIER 1</h5>
@@ -223,13 +224,9 @@
             </div>
             <div id="cuerpo-armado">
                 <p>¿Ninguna de las opciones te convence? ¡Armamos tu equipo a tu medida!</p>
-                <a href="armado.html" id="boton-armado">¡Vamos allá!</a>
+                <a href="{% url 'armado'%}" id="boton-armado">¡Vamos allá!</a>
             </div>
-
-
         </div>
-
-
     </section>
 
     <section id="sectioncomponentes">
@@ -240,7 +237,7 @@
             <a href="{% url 'catalogo' %}" id="catalogo">Catálogo</a>
         </div>
         <div id="cards-catalogo">
-            <div class="card" id="cards">
+            <div class="card" >
                 <img src="{% static 'assets/disco-duro.JPG' %}" class="card-img-top" alt="...">
                 <div class="card-body-principal">
                     <h5 class="card-title">Disco duro MD</h5>
@@ -268,7 +265,7 @@
                     <a href="https://g.co/kgs/fDCnATb" class="btn btn-dark">Revisar</a>
                 </div>
             </div>
-            <div class="card" id="cards">
+            <div class="card" >
                 <img src="{% static 'assets/tarjeta-grafica2.JPG'%}" class="card-img-top" alt="...">
                 <div class="card-body-principal">
                     <h5 class="card-title">Almacenamiento</h5>
@@ -309,11 +306,12 @@
             <div id="formulario-contacto">
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label label-opiniones">Asunto</label>
-                    <input type="text" class="form-control type-opiniones" id="asuntoInputContacto" placeholder="Consulta de precios."
-                        onkeyup="validarAsuntoContacto()">
+                    <input type="text" class="form-control type-opiniones" id="asuntoInputContacto"
+                        placeholder="Consulta de precios." onkeyup="validarAsuntoContacto()">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label label-opiniones">Detallanos tu caso</label>
+                    <label for="exampleFormControlTextarea1" class="form-label label-opiniones">Detallanos tu
+                        caso</label>
                     <textarea class="form-control type-opiniones2" id="exampleFormControlTextarea1" rows="10"
                         placeholder="Estoy interesado en mejorar los componentes de mi equipo."></textarea>
                     <a href="https://g.co/kgs/fDCnATb" class="btn btn-dark" id="btn-contacto">Envíar</a>
@@ -333,12 +331,12 @@
             <div id="mapas">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3319.9522524140034!2d-71.23225118889404!3d-33.684300509414776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x966255d61f76cb99%3A0x81d47a10451b62b0!2sNANOBYTES%20Los%20Lagos%20Formateo%20y%20Mantenciones%20PC!5e0!3m2!1ses!2scl!4v1712091208285!5m2!1ses!2scl"
-                     allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade" id="mapa-ubicacion-1"></iframe>
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    id="mapa-ubicacion-1"></iframe>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d415.00208582553404!2d-71.2358621!3d-33.6826321!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x966255cc44504745%3A0x4aa171a2a7fef3d3!2sNANOBYTES%20Florencia%20Formateo%20PC%20%2B%20Microsoft%20Office!5e0!3m2!1ses-419!2scl!4v1713917207283!5m2!1ses-419!2scl"
-                     allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade" id="mapa-ubicacion-1"></iframe>
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    id="mapa-ubicacion-1"></iframe>
             </div>
         </div>
 

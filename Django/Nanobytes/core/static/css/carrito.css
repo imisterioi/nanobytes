@@ -1,4 +1,4 @@
-#carrito {
+/* #carrito {
     height: 80vh;
 }
 
@@ -15,12 +15,12 @@
     text-align: left;
     margin-left: 1.5vw;
 
-}
+} */
 
-#lista-productos {
-    margin-top: 2vh;
+/* #lista-productos {
+    margin-top: 2vh; */
     /* background-color: rgb(114, 135, 135); */
-    height: 45vh;
+    /* height: 45vh;
     max-height: 45vh;
 }
 
@@ -29,7 +29,7 @@
     max-height: 35vh;
 }
 
-#titulos {
+#titulo-carros {
     display: flex;
     font-size: 2.2rem;
     margin-left: 2vw;
@@ -40,24 +40,24 @@
     border-bottom: 1px solid #D9D9D9;
 }
 
-#titulos>#primero {
+#titulo-carros>#primero {
     margin-left: 2vw;
 }
 
-#titulos>#segundo {
+#titulo-carros>#segundo {
     margin-left: 4.5vw;
 }
 
-#titulos>#tercero {
+#titulo-carros>#tercero {
     margin-left: -6.5vw;
 }
 
-#titulos>#cuarto {
-    margin-left: -2.5vw;
-}
+#titulo-carros>#cuarto {
+    margin-left: -2.5vw; */
+/* } */
 
 /* PRODUCTO */
-
+/* 
 .producto {
     display: flex;
     font-size: 1.6rem;
@@ -150,9 +150,9 @@ input {
     background-color: rgba(21, 21, 21, 0.864);
     color: #ffffff;
     transform: scale(1.1);
-}
+} */
 
-/****************** TIPO MONEDA *******************/
+/* ***************** TIPO MONEDA ******************
 
 #tipo-moneda {
     display: flex;
@@ -172,7 +172,7 @@ select {
 }
 
 /******************** RESPONSIVIDAD *********************/
-
+/* 
 @media (max-width: 1350px) {
     #contenedor-carrito>h1 {
         font-size: 3rem;
@@ -186,6 +186,7 @@ select {
         width: auto;
         scale: 0.94;
     }
+
     .producto {
         column-gap: 6vw;
         font-size: 1.55rem;
@@ -195,19 +196,19 @@ select {
         margin-right: -1vw;
     }
 
-    #titulos {
+    #titulo-carros {
         column-gap: 13vw;
     }
 
-    #titulos>#segundo {
+    #titulo-carros>#segundo {
         margin-left: 13.5vw;
     }
 
-    #titulos>#tercero {
+    #titulo-carros>#tercero {
         margin-left: -4.5vw;
     }
 
-    #titulos>#cuarto {
+    #titulo-carros>#cuarto {
         margin-left: -3vw;
     }
 }
@@ -218,14 +219,15 @@ select {
         font-size: 2.5rem;
     }
 
-    #titulos>#segundo {
+    #titulo-carros>#segundo {
         margin-left: 0;
     }
-    #titulos>#tercero {
+
+    #titulo-carros>#tercero {
         margin-left: 2.6vw;
     }
 
-    #titulos>#cuarto {
+    #titulo-carros>#cuarto {
         margin-left: 1vw;
     }
 
@@ -246,18 +248,18 @@ select {
         font-size: 1.4rem;
     }
 
-    #titulos {
+    #titulo-carros {
         column-gap: 7vw;
     }
 }
 
-.comprar{
+.comprar {
     width: 95%;
     display: flex;
     justify-content: flex-end;
 }
 
-.comprar > a{
+.comprar>a {
     line-height: 40px;
     background-color: black;
     color: #ffffff;
@@ -265,7 +267,107 @@ select {
     text-decoration: none;
     text-align: center;
 }
-.comprar > a:hover{
+
+.comprar>a:hover {
     background-color: orange;
-    
+
+} */ 
+
+/**------------------CARRITO NUEVO ESTILOS-----------------------*/
+
+
+body > h1{
+    margin-top: 10vh;
+}
+#compras-de-hoy {
+    width: 80%;
+    overflow-y: scroll;
+    max-height: 55vh;
+    margin: 2% 10% 4% 10%;
+}
+
+thead {
+    position: sticky;
+    top: 0;
+    background-color: #f2f2f2;
+    padding: 10%;
+}
+
+
+.estilo-tabla {
+    width: 100%;
+    border: 3px solid #ddd;
+}
+
+.estilo-tabla th,
+.estilo-tabla td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.estilo-tabla th {
+    background-color: #f2f2f2;
+}
+
+.estilo-tabla tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.titulo-carro{
+    padding: 1%;
+}
+.button-quitar {
+    background-color: #900000ea;
+    color: rgba(255, 255, 255, 0.905);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.td-comprar {
+    width: auto;
+}
+
+
+.a-comprar {
+    padding: 5% 9%;
+    background-color: black;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.a-comprar:hover {
+    background-color: orange;
+}
+
+.td-sub {
+    text-align: start !important;
+}
+
+
+.btn-quitar {
+    background-color: #D9534F;
+    color: #ffffff;
+    width: auto;
+    text-align: center;
+    font-size: 1.2rem;
+    border: 2px solid #000000;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    transition: all 0.3s ease;
+    border-radius: 0.2rem;
+}
+
+.btn-quitar:hover {
+    background-color: rgba(21, 21, 21, 0.864);
+    color: #ffffff;
+    transform: scale(1.1);
+} 
+tfoot {
+   padding: 4%; 
+}
+.tdfooter{
+    position: sticky;
+    bottom: 0;
+    background-color: #f2f2f2;
 }
