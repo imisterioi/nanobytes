@@ -32,11 +32,11 @@
 
       <nav id="barrasuperior">
         <a href="{% url 'home'%}">Inicio</a>
-        <a href="#sectionservicios">Servicios</a>
-        <a href="#nuestros-trabajos">Nuestros trabajos</a>
+        <a href="{% url 'home' %}#sectionservicios">Servicios</a>
+        <a href="{% url 'home' %}#nuestros-trabajos">Nuestros trabajos</a>
         <a href="{% url 'armado'%}">Arma tu equipo</a>
-        <a href="#sectioncomponentes">Componentes</a>
-        <a href="#sectionopiniones">Contáctanos</a>
+        <a href="{% url 'catalogo' %}">Componentes</a>
+        <a href="{% url 'home' %}#sectionopiniones">Contáctanos</a>
         <!-- {% comment %} <a href="{% url 'nosotros' %}">Quíenes sómos</a> {% endcomment %} -->
         {% if user.is_authenticated %}
         <div class="usuario">{{ user.username }}</div>

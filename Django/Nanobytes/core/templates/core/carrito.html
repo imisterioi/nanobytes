@@ -27,27 +27,27 @@
             </div>
 
             <nav id="barrasuperior">
-                <a href="#principal">Inicio</a>
-                <a href="#section-servicios">Servicios</a>
-                <a href="#nuestros-trabajos">Nuestros trabajos</a>
-                <a href="#armadopc">Arma tu equipo</a>
-                <a href="#sectioncomponentes">Componentes</a>
-                <a href="#sectionopiniones">Contáctanos</a>
+                <a href="{% url 'home'%}">Inicio</a>
+                <a href="{% url 'home' %}#sectionservicios">Servicios</a>
+                <a href="{% url 'home' %}#nuestros-trabajos">Nuestros trabajos</a>
+                <a href="{% url 'armado'%}">Arma tu equipo</a>
+                <a href="{% url 'catalogo' %}">Componentes</a>
+                <a href="{% url 'home' %}#sectionopiniones">Contáctanos</a>
                 <!-- {% comment %} <a href="{% url 'nosotros' %}">Quíenes sómos</a> {% endcomment %} -->
                 {% if user.is_authenticated %}
                 <div class="usuario">{{ user.username }}</div>
                 <form action="{% url 'logout' %}" method="post">
-                    {% csrf_token %}
-                    <button type="submit">Salir</button>
+                  {% csrf_token %}
+                  <button type="submit">Salir</button>
                 </form>
                 {% else %}
                 <a href="{% url 'login' %}">Login</a>
                 {% endif %}
                 <a href="{% url 'carrito' %}" id="carro-img">
-                    <i class="bi bi-cart"></i>
-                    <p>({{ request.session.carrito|length }})</p>
+                  <i class="bi bi-cart"></i>
+                  <p>({{ request.session.carrito|length }})</p>
                 </a>
-            </nav>
+              </nav>
 
         </div>
     </header>

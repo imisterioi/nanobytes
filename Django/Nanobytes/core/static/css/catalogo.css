@@ -11,15 +11,15 @@ body{
     font-weight: bolder;
     margin: 1.5rem 1.5rem;
 }
-.card1 {
+/* .card1 {
     border: 1px solid white;
     border-radius: 0.5rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
-}
-.card img {
+} */
+/* .card img {
     max-width: 100%;
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
@@ -31,4 +31,21 @@ body{
 .tachado {
     text-decoration: line-through;
     color: red;
+} */
+
+.card{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    width: 18vw;
+    transition: transform 0.3s;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+}
+
+
+.card-img{
+    height: 50%;
 }

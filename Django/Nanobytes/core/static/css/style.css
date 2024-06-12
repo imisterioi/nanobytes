@@ -15,26 +15,24 @@ html {
 
 #principal {
     background-color: #000000;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 #arriba {
-    position: fixed;
-    background-color: black;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    z-index: 100;
-    background-color: black;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     height: auto;
     padding: 1rem 0rem;
     color: white;
     border-bottom: solid 1px rgb(63, 57, 57);
 }
 
-
+#contenedor-logo{
+    margin-left: 6.5%;
+}
 
 
 #contenedor-logo h1 {
@@ -58,18 +56,17 @@ html {
 
 .icon {
     border-radius: 100%;
-    width: 5vw;
-    margin-right: 1vw;
+    width: 3.5vw;
+    margin: 0.5vw 1vw 0.5vw 0;
 }
 
 #barrasuperior {
-    font-size: 1.4vw;
-    color: rgb(0, 0, 0);
+    font-size: 1.2vw;
     display: flex;
-    column-gap: 2rem;
-    justify-content: flex-start;
+    column-gap: 1.5rem;
     font-family: "Public Sans", sans-serif;
     align-items: center;
+    margin-right: 2%;
 }
 
 #barrasuperior>a:hover {
@@ -79,6 +76,11 @@ html {
 #carro-img {
     display: flex;
     align-items: center;
+}
+
+#btn-salir{
+    width: 3vw;
+    font-size: 1.1vw;
 }
 
 a {
@@ -92,7 +94,7 @@ a {
 
 /*TODO:-------------------BANNER-CAROUSEL------------------- */
 #sectionbanner {
-    padding-top: 8rem;
+    /* padding-top: 8rem; */
     height: auto;
     border-bottom: solid 1px rgb(0, 0, 0);
     background-repeat: round;
@@ -186,6 +188,9 @@ a {
     transform: scale(1.1);
 }
 
+.mb-3{
+    margin: 0 !important;
+}
 /* #obtener3 {
     background-color: transparent;
     border: 0.2rem solid white;
@@ -242,7 +247,7 @@ footer {
 .footer-titulo {
     display: flex;
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 1.55vw;
 }
 
 .clase-footer {
@@ -264,18 +269,18 @@ footer {
 #pie-footer {
     display: flex;
     column-gap: 3vw;
-    font-size: 0.85vw;
+    font-size: 1vw;
 }
 
 #derechos-reservados {
     display: flex;
     justify-content: center;
-    font-size: 0.8vw;
+    font-size: 0.9vw;
     margin-top: 2%;
 }
 
 .a-footer {
-    font-size: 0.93vw;
+    font-size: 1.2vw;
 }
 
 #footer-iconos {
@@ -314,7 +319,7 @@ footer {
 }
 
 #servicios>h1 {
-    padding-top: 5vh;
+    padding-top: 5%;
     font-size: 4vw;
     color: white;
     display: flex;
@@ -362,7 +367,7 @@ footer {
     background-color: transparent;
     border: 0.09rem solid white;
     padding: 3%;
-    font-size: 2.1vw;
+    font-size: 1.8vw;
     width: 20vw;
     text-align: center;
     transition: all 0.3s ease;
@@ -385,7 +390,7 @@ footer {
     background-color: transparent;
     border: 0.09rem solid white;
     padding: 3%;
-    font-size: 2.1vw;
+    font-size: 1.8vw;
     width: 20vw;
     text-align: center;
     transition: all 0.3s ease;
@@ -448,7 +453,7 @@ footer {
 #videos>h2 {
     font-weight: bold;
     font-size: 4vw;
-    padding-top: 6vh;
+    padding-top: 5%;
     color: rgb(0, 0, 0);
     text-align: center;
     margin-bottom: 2%;
@@ -529,10 +534,11 @@ footer {
 
 .card-title-armado {
     font-size: 1.3vw;
+    margin: 5% 0;
 }
 
 .btn-armado {
-    margin-bottom: -3vh;
+    /* margin-bottom: -3vh; */
     background-color: black;
     color: #ffffff;
     text-align: center;
@@ -541,7 +547,7 @@ footer {
     padding: 3% 9%;
     cursor: pointer;
     transition: all 0.3s ease;
-    margin-top: 10%;
+    margin-top: 8%;
     border-radius: 0.2rem;
 }
 
@@ -623,7 +629,7 @@ footer {
 #armadopc>h2 {
     display: flex;
     justify-content: center;
-    padding-top: 8%;
+    padding-top: 5%;
     font-size: 4vw;
     color: white;
 
@@ -788,7 +794,7 @@ footer {
     display: flex;
     font-size: 4vw;
     color: rgb(0, 0, 0);
-    padding-top: 8%;
+    padding-top: 5%;
     text-align: center;
     justify-content: center;
     margin-top: 0;
@@ -877,7 +883,7 @@ footer {
 .precio {
     font-size: 1.4vw;
     color: #000000;
-    margin: 0;
+    margin: 5% 0;
 }
 
 .card>img {
@@ -977,12 +983,16 @@ footer {
 #formulario-contacto {
     display: flex;
     align-items: flex-start;
-    font-size: 2rem;
+    /* font-size: 2rem; */ /*! CREA PROBLEMAS DE RESPONSIVIDAD*/
     width: 41vw;
     flex-direction: column;
     /* margin-top: 5vh; */
 }
 
+.form-contaco{
+    margin: 0 !important;
+    padding-top: 10%;
+}
 /* .card-body {
     display: flex;
     flex-direction: column;
@@ -1044,13 +1054,14 @@ input {
 }
 
 #ubicacion1 {
-    font-size: 1.35vw;
+    font-size: 1.45vw;
     margin-top: 5%;
 
 }
 
 #ubicacion2 {
-    font-size: 1.35vw;
+    font-size: 1.45vw;
+    padding-bottom: 5%;
 }
 
 #titulo-ubicaciones {
@@ -1287,7 +1298,10 @@ input {
 @media (max-width: 1200px) {
     #arriba {
         flex-direction: column;
-        gap: 1vh;
+        padding: 2%;
+    }
+    #contenedor-logo{
+        margin: 0;
     }
 
     #cards-catalogo {
@@ -1299,6 +1313,7 @@ input {
     #barrasuperior{
         column-gap: 3vw;
         font-size: 1.8vw;
+        margin: 0;
     }
 }
 

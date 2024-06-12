@@ -39,7 +39,7 @@
                 <div class="usuario">{{ user.username }}</div>
                 <form action="{% url 'logout' %}" method="post">
                     {% csrf_token %}
-                    <button type="submit">Salir</button>
+                    <button id="btn-salir" type="submit">Salir</button>
                 </form>
                 {% else %}
                 <a href="{% url 'login' %}">Login</a>
@@ -304,12 +304,12 @@
         <div id="opiniones">
             <h1 id="clientes">Contáctanos</h1>
             <div id="formulario-contacto">
-                <div class="mb-3">
+                <div class="mb-3 form-contaco">
                     <label for="exampleFormControlInput1" class="form-label label-opiniones">Asunto</label>
                     <input type="text" class="form-control type-opiniones" id="asuntoInputContacto"
                         placeholder="Consulta de precios." onkeyup="validarAsuntoContacto()">
                 </div>
-                <div class="mb-3">
+                <div class="mb-3 form-contaco">
                     <label for="exampleFormControlTextarea1" class="form-label label-opiniones">Detallanos tu
                         caso</label>
                     <textarea class="form-control type-opiniones2" id="exampleFormControlTextarea1" rows="10"
