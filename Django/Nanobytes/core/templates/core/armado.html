@@ -22,13 +22,14 @@
   <header id="principal">
     <div id="arriba">
 
-      <div>
-        <a class="logo" href="index.html">
-          <img src="{% static 'assets/icon.jpg' %}" alt="icon" class="icon">
-          <h1 id="nano">Nano</h1>
-          <h1 id="bytes">Bytes</h1>
-        </a>
+      <div id="contenedor-logo">
+          <a class="logo" href="{% url 'home'%}">
+              <img src="{% static 'assets/icon.jpg' %}" alt="icon" class="icon">
+              <h1 id="nano">Nano</h1>
+              <h1 id="bytes">Bytes</h1>
+          </a>
       </div>
+
 
       <nav id="barrasuperior">
         <a href="{% url 'home'%}">Inicio</a>

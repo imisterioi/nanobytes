@@ -21,8 +21,8 @@
     <header id="principal">
         <div id="arriba">
 
-            <div>
-                <a class="logo" href="index.html">
+            <div id="contenedor-logo">
+                <a class="logo" href="{% url 'home'%}">
                     <img src="{% static 'assets/icon.jpg' %}" alt="icon" class="icon">
                     <h1 id="nano">Nano</h1>
                     <h1 id="bytes">Bytes</h1>
@@ -57,7 +57,7 @@
 
     <section id="section-nosotros">
         <div id="section1" class="section">
-            <h1 id="titulo">Sobre nosotros</h1>
+            </h1 id="titulo">Sobre nosotros</h1>
             <div id="primeros-parrafo">
                 <p id="parrafo1">Somos un servicio técnico de Melipilla fundado por dos jóvenes entusiastas de la
                     computación y la tecnología, con más de 15 años en el mundo digital y 7 años ofreciendo servicios

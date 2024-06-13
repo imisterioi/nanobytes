@@ -18,8 +18,8 @@
     <header id="principal">
         <div id="arriba">
 
-            <div>
-                <a class="logo" href="index.html">
+            <div id="contenedor-logo">
+                <a class="logo" href="{% url 'home'%}">
                     <img src="{% static 'assets/icon.jpg' %}" alt="icon" class="icon">
                     <h1 id="nano">Nano</h1>
                     <h1 id="bytes">Bytes</h1>
@@ -154,7 +154,11 @@
     {% comment %}* ----------------------CARRO NUEVO -----------------------------------{% endcomment %}
 
     <h1>Carrito de compras</h1>
+    {% if not carro %}
+    <h2>Tu carrito está vacio!</h2>
+    {% else %}
     <section id="compras-de-hoy">
+        
         <table class="estilo-tabla">
             <thead>
                 <tr class="titulo-carro">
@@ -184,17 +188,16 @@
                 <tr class="tdfooter">
                     <td class="td-sub" colspan="5">Subtotal:</td>
                     <td id="subtotal" colspan="1">$49494</td>
-                    {% if not carro %}
-                    <h2>Tu carrito está vacio!</h2>
-                    {% else %}
+                    
                     <td colspan="0" class="td-comprar">
                         <a class="a-comprar" href="{% url 'comprar' %}">Comprar</a>
                     </td>
-                    {% endif %}
+                    
                 </tr>
             </tfoot>
         </table>
     </section>
+    {% endif %}
     <!-- {% if not carro %}
     <h2>Tu carrito está vacio!</h2>
     {% else %}

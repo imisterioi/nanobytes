@@ -20,7 +20,7 @@
         <div id="arriba">
 
             <div id="contenedor-logo">
-                <a class="logo" href="https://www.youtube.com/watch?v=PGNiXGX2nLU">
+                <a class="logo" href="{% url 'home'%}">
                     <img src="{% static 'assets/icon.jpg' %}" alt="icon" class="icon">
                     <h1 id="nano">Nano</h1>
                     <h1 id="bytes">Bytes</h1>
@@ -193,8 +193,8 @@
     </section>
 
     <section id="armadopc">
-        <h2>¿Quieres armar tu primer PC Gamer?</h2>
         <div id="contenido-armado">
+            <h2>¿Quieres armar tu primer PC Gamer?</h2>
             <div id="cards-armado">
                 <div class="card-armado" >
                     <img src="{% static 'assets/equipo-tier.png' %}" class="card-img-top" alt="...">
@@ -231,7 +231,7 @@
 
     <section id="sectioncomponentes">
         <div id="componentes">
-            <h1>Componentes</h1>
+            <h2>Componentes</h2>
             <p>Ya sea que necesites un repuesto para tu computador o si necesitas instalar uno que ya tienes, acá te
                 presentamos un catálogo de nuestros componentes y servicios. </p>
             <a href="{% url 'catalogo' %}" id="catalogo">Catálogo</a>
