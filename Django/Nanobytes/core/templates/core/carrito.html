@@ -38,7 +38,7 @@
                 <div class="usuario">{{ user.username }}</div>
                 <form action="{% url 'logout' %}" method="post">
                   {% csrf_token %}
-                  <button type="submit">Salir</button>
+                  <button id="btn-salir" type="submit">Salir</button>
                 </form>
                 {% else %}
                 <a href="{% url 'login' %}">Login</a>
@@ -153,10 +153,12 @@
 
     {% comment %}* ----------------------CARRO NUEVO -----------------------------------{% endcomment %}
 
-    <h1>Carrito de compras</h1>
     {% if not carro %}
-    <h2>Tu carrito está vacio!</h2>
+    <h1 style='text-align: center   '>Carrito de compras</h1>
+    <h2 style='text-align: center'>Tu carrito está vacio!</h2>
+    <div style='height: 30svh'></div>
     {% else %}
+    <h1 style='text-align: center   '>Carrito de compras</h1>
     <section id="compras-de-hoy">
         
         <table class="estilo-tabla">

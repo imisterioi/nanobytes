@@ -41,7 +41,7 @@
                 <div class="usuario">{{ user.username }}</div>
                 <form action="{% url 'logout' %}" method="post">
                     {% csrf_token %}
-                    <button type="submit">Salir</button>
+                    <button id="btn-salir" type="submit">Salir</button>
                 </form>
                 {% else %}
                 <a href="{% url 'login' %}">Login</a>
