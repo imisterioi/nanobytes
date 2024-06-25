@@ -9,20 +9,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <link rel="stylesheet" href="{% static 'css/registro.css' %}">
 </head>
 
 <body>
-
-    <section id="login">
+    <section id="registro">
+        <div id="contenedor-registro">
             <form class="form-login" action="" method="post">
                 {% csrf_token %}
                 {{ form | crispy }}
-                <button type="submit" class="btn-login">Registrarse</button>
+                <button type="submit" class="btn">Registrarse</button>
             </form>
+        </div>
     </section>
 
-
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            document.querySelector('#id_username').placeholder = "Nombre de usuario";
+            document.querySelector('#id_first_name').placeholder = "Nombre";
+            document.querySelector('#id_last_name').placeholder = "Apellido";
+            document.querySelector('#id_email').placeholder = "Ejemplo@gmail.com";
+            document.querySelector('#id_password1').placeholder = "*****";
+            document.querySelector('#id_password2').placeholder = "*****"
+        });
+    </script>
 </body>
 
 </html>

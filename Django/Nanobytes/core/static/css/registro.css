@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Public Sans", sans-serif;
+    background-color: beige;
+}
+
+#registro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
+}
+
+label{
+    
+    font-weight: bolder;
+}
+
+#contenedor-registro {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    background-color: white;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;    
+    width: 100%;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+}
+
+
+input, button{
+    border-radius: 4px;
+    border: unset;
+    padding: 5px 10px;
+    font-size: large;
+}
+
+.btn {
+    background-color: #6495ed;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}

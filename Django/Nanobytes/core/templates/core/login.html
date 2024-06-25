@@ -29,15 +29,22 @@
                     <a href="https://g.co/kgs/fDCnATb" class="btn btn-dark" id="btn-login">Entrar</a>
                 </div>
             </div> -->
-
+            <div id="contenedor-login">
+            <h1>Iniciar Sesión</h1>
+            <p>Ingresa tus datos para iniciar sesión.</p>
             <form class="form-login" action="" method="post">
                 {% csrf_token %}
-                {{ form | crispy }}
-                <button type="submit" class="btn-login">Login</button>
+                {{ form | crispy }}                <button type="submit" class="btn">Login</button>
             </form>
+            <p id="p">¿Todavía no tienes cuenta? - <a href="{% url 'registro'%}">Registrate</a></p>
+        </div>
     </section>
-
-
+    <script>
+        window.addEventListener('DOMContentLoaded', ()=>{
+            document.querySelector('#id_username').placeholder = "Usuario";
+            document.querySelector('#id_password').placeholder = "*******";
+        })
+    </script>
 </body>
 
 </html>
