@@ -45,7 +45,7 @@
                 {% endif %}
                 <a href="{% url 'carrito' %}" id="carro-img">
                   <i class="bi bi-cart"></i>
-                  <p>({{ request.session.carrito|length }})</p>
+                  <p>({{ request.session.carro|length }})</p>
                 </a>
               </nav>
 
@@ -189,7 +189,7 @@
             <tfoot>
                 <tr class="tdfooter">
                     <td class="td-sub" colspan="5">Subtotal:</td>
-                    <td id="subtotal" colspan="1">$49494</td>
+                    <td id="subtotal" colspan="1">${{ subtotal }}</td>
                     
                     <td colspan="0" class="td-comprar">
                         <a class="a-comprar" href="{% url 'comprar' %}">Comprar</a>

@@ -85,7 +85,6 @@ def addToCar(request, id):
                         "total":producto.precio
                         })
     request.session["carro"] = carro
-    print(carro)
     return redirect(to="catalogo")
 
 def delToCar(request, id):
@@ -99,10 +98,12 @@ def delToCar(request, id):
                 carro.remove(p)
             break
     request.session["carro"] = carro
-    return redirect (reverse('carrito') + '#compras-de-hoy') # cambiar el por id el de la seccion
+    return redirect (reverse('carrito') ) # cambiar el por id el de la seccion
 
 def carrito(request):
-    return render(request, 'core/carrito.html', {"carro":request.session.get("carro", [])})
+    carro = request.session.get("carro", [])
+    subtotal = sum(item["total"] for item in carro)
+    return render(request, 'core/carrito.html', {"carro": carro, "subtotal": subtotal})
 
 def borrarSesion(request):
     request.session.flush()
