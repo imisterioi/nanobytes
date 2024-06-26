@@ -100,9 +100,9 @@
                 <img src="{{p.imagen}}" class="card-img" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">{{p.detalle}}</h5>
-                    <p>{{p.stock}}</p>
+                    <p>Stock: {{p.stock}}</p>
                     <p class="tachado">{{p.tachado}}</p>
-                    <p>{{p.precio}}</p>
+                    <p>Precio: {{p.precio}}</p>
                     <a href="{% url 'addToCar' p.id %}" class="btn btn-dark">Añadir</a>
                 </div>
             </div>
