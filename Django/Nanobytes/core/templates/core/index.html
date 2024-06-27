@@ -36,13 +36,16 @@
                 <a href="#sectionopiniones">Contáctanos</a>
                 <!-- {% comment %} <a href="{% url 'nosotros' %}">Quíenes sómos</a> {% endcomment %} -->
                 {% if user.is_authenticated %}
-                <div class="usuario">{{ user.username }}</div>
-                <form action="{% url 'logout' %}" method="post">
-                    {% csrf_token %}
-                    <button id="btn-salir" type="submit">Salir</button>
-                </form>
+                
+                    <div class="usuario">{{ user.username }}</div>
+                    <form action="{% url 'logout' %}" method="post">
+                        {% csrf_token %}
+                        <button id="btn-salir" type="submit">Salir</button>
+                    </form>
+                
+                
                 {% else %}
-                <a href="{% url 'login' %}">Login</a>
+                 <a href="{% url 'login' %}"><button class="btn-login">Login</button></a> 
                 {% endif %}
                 <a href="{% url 'carrito' %}" id="carro-img">
                     <i class="bi bi-cart"></i>

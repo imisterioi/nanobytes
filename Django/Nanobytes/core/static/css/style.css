@@ -78,9 +78,32 @@ html {
     align-items: center;
 }
 
+.btn-login{
+    height: 4.5vh;
+    width: 8vw;
+    border-radius: 2px ;
+    
+}
+
+.btn-login a{
+    color: #000000;
+}
+
 #btn-salir{
     width: 3vw;
+    height: 4vh;
     font-size: 1.1vw;
+    border: none;
+    /* margin-bottom: 1vh; */
+}
+
+#fondo-usuario{
+    display: flex;
+    align-items: center;
+    background-color: red    ;
+    width: 10vw;
+    justify-content: center;
+
 }
 
 a {

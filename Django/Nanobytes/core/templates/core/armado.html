@@ -46,7 +46,8 @@
           <button id="btn-salir" type="submit">Salir</button>
         </form>
         {% else %}
-        <a href="{% url 'login' %}">Login</a>
+        <button class="btn-login"> <a href="{% url 'login' %}">Login</a> </button>
+
         {% endif %}
         <a href="{% url 'carrito' %}" id="carro-img">
           <i class="bi bi-cart"></i>

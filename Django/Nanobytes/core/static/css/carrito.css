@@ -19,8 +19,8 @@
 
 /* #lista-productos {
     margin-top: 2vh; */
-    /* background-color: rgb(114, 135, 135); */
-    /* height: 45vh;
+/* background-color: rgb(114, 135, 135); */
+/* height: 45vh;
     max-height: 45vh;
 }
 
@@ -271,14 +271,15 @@ select {
 .comprar>a:hover {
     background-color: orange;
 
-} */ 
+} */
 
 /**------------------CARRITO NUEVO ESTILOS-----------------------*/
 
 
-body > h1{
+body>h1 {
     margin-top: 10vh;
 }
+
 #compras-de-hoy {
     width: 80%;
     overflow-y: scroll;
@@ -287,7 +288,7 @@ body > h1{
 }
 
 thead {
-    
+
     background-color: #f2f2f2;
     padding: 10%;
 }
@@ -309,18 +310,23 @@ thead {
     background-color: #f2f2f2;
 }
 
-.estilo-tabla tbody tr:nth-child(even) {
+/* .estilo-tabla tbody tr:nth-child(even) {
     background-color: #f2f2f2;
-}
-.titulo-carro{position: sticky;
+} */
+
+.titulo-carro {
+    position: sticky;
     top: 0;
     padding: 1%;
+    
 }
+
 .button-quitar {
     background-color: #900000ea;
     color: rgba(255, 255, 255, 0.905);
     border-radius: 10px;
     cursor: pointer;
+    
 }
 
 .td-comprar {
@@ -329,10 +335,15 @@ thead {
 
 
 .a-comprar {
-    padding: 5% 9%;
+    padding: 3% 6%;
+    font-size: 1rem;
     background-color: black;
     color: #ffffff;
     text-decoration: none;
+    border: 2px solid #000000;
+    border-radius: 0.2rem;
+
+
 }
 
 .a-comprar:hover {
@@ -349,9 +360,9 @@ thead {
     color: #ffffff;
     width: auto;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     border: 2px solid #000000;
-    padding: 10px 20px;
+    padding: 3.5% 7.2%;
     cursor: pointer;
     transition: background-color 0.3s;
     transition: all 0.3s ease;
@@ -362,11 +373,13 @@ thead {
     background-color: rgba(21, 21, 21, 0.864);
     color: #ffffff;
     transform: scale(1.1);
-} 
-tfoot {
-   padding: 4%; 
 }
-.tdfooter{
+
+tfoot {
+    height: 7vh;
+}
+
+.tdfooter {
     position: sticky;
     bottom: 0;
     background-color: #f2f2f2;

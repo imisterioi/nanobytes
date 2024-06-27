@@ -28,10 +28,11 @@ body{
     padding: 1rem;
     row-gap: 0;
 }
+} */
 .tachado {
     text-decoration: line-through;
     color: red;
-} */
+}
 
 .card{
     display: flex;

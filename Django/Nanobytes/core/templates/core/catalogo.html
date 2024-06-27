@@ -45,7 +45,8 @@
                   <button id="btn-salir" type="submit">Salir</button>
                 </form>
                 {% else %}
-                <a href="{% url 'login' %}">Login</a>
+                <button class="btn-login"> <a href="{% url 'login' %}">Login</a> </button>
+
                 {% endif %}
                 <a href="{% url 'carrito' %}" id="carro-img">
                   <i class="bi bi-cart"></i>
@@ -101,8 +102,8 @@
                 <div class="card-body">
                     <h5 class="card-title">{{p.detalle}}</h5>
                     <p>Stock: {{p.stock}}</p>
-                    <p class="tachado">{{p.tachado}}</p>
-                    <p>Precio: {{p.precio}}</p>
+                    
+                    <p>Precio: {{p.precio}} <span class="tachado">{{p.tachado}}</span></p>
                     <a href="{% url 'addToCar' p.id %}" class="btn btn-dark">Añadir</a>
                 </div>
             </div>
