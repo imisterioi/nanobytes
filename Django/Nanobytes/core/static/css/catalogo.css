@@ -60,7 +60,11 @@ body{
 }
 
 .card-img{
-    height: 50%;
+    height: 20vw !important;
+}
+
+.card-body a{
+    padding: 2% 4%;
 }
 
 #catalogoprincipal{
@@ -68,8 +72,8 @@ body{
     justify-content: center;
 }
 #catalogoprincipal > h1{
-    padding: 5vw 0;
-    font-size: 4vw;
+    padding: 3vw ;
+    font-size: 3.8vw;
 }
 
 .card-body {
