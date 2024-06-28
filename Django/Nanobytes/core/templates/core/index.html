@@ -49,7 +49,7 @@
                 {% endif %}
                 <a href="{% url 'carrito' %}" id="carro-img">
                     <i class="bi bi-cart"></i>
-                    <p>({{ request.session.carro|length }})</p>
+                    <div class="circulo"><p>({{ request.session.carro|length }})</p></div>
                 </a>
             </nav>
 

@@ -1,47 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 body {
     font-family: "Public Sans", sans-serif;
     background-color: rgb(119, 212, 255);
-        display: flex;
-        justify-content: center;
-        height: 90vh;
+    display: flex;
+    align-items: center;
 }
 
 
-label{
+label {
     font-size: 1vw;
     font-weight: bolder;
 }
 
-ul{
+ul {
     padding: 0 0 0 10%;
 }
+
 #contenedor-registro {
     width: 35vw;
     padding: 3% 6%;
     border-radius: 10px;
     background-color: white;
 }
-form{
+
+form {
     display: flex;
     flex-direction: column;
-    gap: 1vw;    
+    gap: 1vw;
     width: 100%;
 }
 
-small{
+small {
     font-size: 1vw;
 }
 
-form div{
+form div {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
 
 
-input, button{
+input,
+button {
     border-radius: 4px;
     font-size: 1.2vw;
 }
@@ -53,19 +64,40 @@ input, button{
     cursor: pointer;
 }
 
-@media (max-width: 1200px){
-    #contenedor-registro{
+@media (max-width: 1200px) {
+    #contenedor-registro {
         width: 35vw;
     }
 
-    label{
+    label {
         font-size: 1.5vw;
     }
-    input, button {
+
+    input,
+    button {
         font-size: 1.8vw;
     }
 
-    small{
+    small {
         font-size: 1.4vw;
+    }
+}
+
+@media (max-width: 800px) {
+    #contenedor-registro {
+        width: 50vw;
+    }
+
+    label {
+        font-size: 2vw;
+    }
+
+    input,
+    button {
+        font-size: 2.2vw;
+    }
+
+    small {
+        font-size: 1.9vw;
     }
 }
