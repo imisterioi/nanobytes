@@ -280,6 +280,17 @@ body>h1 {
     margin-top: 10vh;
 }
 
+#div-mensaje{
+    display: flex;
+    justify-content: center;
+}
+
+.messages{
+    font-size: 2rem;
+    padding-top: 3vh;
+    
+}
+
 #compras-de-hoy {
     width: 80%;
     overflow-y: scroll;

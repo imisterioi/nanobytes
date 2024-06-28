@@ -5,6 +5,7 @@ from django.urls import reverse
 from .forms import *
 from django.shortcuts import redirect 
 import requests
+from django.contrib import messages
 
 
 def comprar(request):
@@ -12,13 +13,23 @@ def comprar(request):
         return redirect(to="login")
     carro = request.session.get("carro", [])
     total = 0
-    for item in carro:
+    for item in carro:  
         total += item["total"]
     venta = Venta()
     venta.cliente = request.user
     venta.total = total
     venta.save()
     for item in carro:
+        producto = Producto.objects.get(id=item["id"])
+        
+        # Actualizar stock
+        if producto.stock < item["cantidad"]:
+            messages.error(request, f"¡No hay suficiente stock para {producto.detalle}! Solo quedan {producto.stock} unidades.")
+            return redirect(to="carrito")
+        
+        producto.stock -= item["cantidad"]
+        producto.save()
+
         detalle = DetalleVenta()
         detalle.producto = Producto.objects.get(id = item["id"])
         detalle.precio = item["precio"]
