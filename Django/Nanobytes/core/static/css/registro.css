@@ -3,33 +3,35 @@
 body {
     font-family: "Public Sans", sans-serif;
     background-color: rgb(119, 212, 255);
+        display: flex;
+        justify-content: center;
+        height: 90vh;
 }
 
-#registro{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100svh;
-}
 
 label{
-    
+    font-size: 1vw;
     font-weight: bolder;
 }
 
+ul{
+    padding: 0 0 0 10%;
+}
 #contenedor-registro {
-    display: flex;
-    justify-content: center;
-    width: 500px;
-    padding: 15px 30px;
+    width: 35vw;
+    padding: 3% 6%;
     border-radius: 10px;
     background-color: white;
 }
 form{
     display: flex;
     flex-direction: column;
-    gap: 20px;    
+    gap: 1vw;    
     width: 100%;
+}
+
+small{
+    font-size: 1vw;
 }
 
 form div{
@@ -41,8 +43,7 @@ form div{
 
 input, button{
     border-radius: 4px;
-    padding: 5px 10px;
-    font-size: large;
+    font-size: 1.2vw;
 }
 
 .btn {
@@ -50,4 +51,21 @@ input, button{
     color: white;
     font-weight: bold;
     cursor: pointer;
+}
+
+@media (max-width: 1200px){
+    #contenedor-registro{
+        width: 35vw;
+    }
+
+    label{
+        font-size: 1.5vw;
+    }
+    input, button {
+        font-size: 1.8vw;
+    }
+
+    small{
+        font-size: 1.4vw;
+    }
 }

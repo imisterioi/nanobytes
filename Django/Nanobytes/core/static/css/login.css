@@ -19,11 +19,20 @@ body {
 }
 
 #contenedor-login {
-    width: 500px;
-    padding: 15px 30px;
+    width: 35vw;
+    padding: 2% 5%;
     border-radius: 10px;
     background-color: white;
 }
+
+#contenedor-login h1 {
+    font-size: 2vw;
+}
+
+#contenedor-login p{
+    font-size: 1.3vw;
+}
+
 #p{
     text-align: center;
 }
@@ -38,7 +47,7 @@ body {
 }
 
 .form-login {
-    gap: 20px
+    gap: 1vw
 }
 
 .form-login div{
@@ -50,7 +59,7 @@ input, button{
     border-radius: 4px;
     border: unset;
     padding: 10px 20px;
-    font-size: large;
+    font-size: 1.2vw;
 }
 
 .btn {

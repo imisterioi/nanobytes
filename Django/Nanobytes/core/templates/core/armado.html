@@ -11,44 +11,7 @@
 
 <body>
 
-  <header id="principal">
-    <div id="arriba">
 
-      <div id="contenedor-logo">
-          <a class="logo" href="{% url 'home'%}">
-              <img src="{% static 'assets/icon.jpg' %}" alt="icon" class="icon">
-              <h1 id="nano">Nano</h1>
-              <h1 id="bytes">Bytes</h1>
-          </a>
-      </div>
-
-
-      <nav id="barrasuperior">
-        <a href="{% url 'home'%}">Inicio</a>
-        <a href="{% url 'home' %}#sectionservicios">Servicios</a>
-        <a href="{% url 'home' %}#nuestros-trabajos">Nuestros trabajos</a>
-        <a href="{% url 'armado'%}">Arma tu equipo</a>
-        <a href="{% url 'catalogo' %}">Componentes</a>
-        <a href="{% url 'home' %}#sectionopiniones">Contáctanos</a>
-        <!-- {% comment %} <a href="{% url 'nosotros' %}">Quíenes sómos</a> {% endcomment %} -->
-        {% if user.is_authenticated %}
-        <div class="usuario">{{ user.username }}</div>
-        <form action="{% url 'logout' %}" method="post">
-          {% csrf_token %}
-          <button id="btn-salir" type="submit">Salir</button>
-        </form>
-        {% else %}
-        <button class="btn-login"> <a href="{% url 'login' %}">Login</a> </button>
-
-        {% endif %}
-        <a href="{% url 'carrito' %}" id="carro-img">
-          <i class="bi bi-cart"></i>
-          <p>({{ request.session.carro|length }})</p>
-        </a>
-      </nav>
-
-    </div>
-  </header>
 
   <section id="armado">
     <div id="contenedor-armado">

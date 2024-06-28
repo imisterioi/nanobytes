@@ -6,10 +6,10 @@ body{
 .catalog-container {
     display: grid;
     grid-template-columns: repeat(4, 0fr); 
-    gap: 3rem; 
+    gap: 5vw; 
     justify-content: center;
     font-weight: bolder;
-    margin: 1.5rem 1.5rem;
+    padding-bottom: 5vw;
 }
 /* .card1 {
     border: 1px solid white;
@@ -29,6 +29,9 @@ body{
     row-gap: 0;
 }
 } */
+
+
+
 .tachado {
     text-decoration: line-through;
     color: red;
@@ -44,9 +47,17 @@ body{
     border-radius: 0.25rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     background-color: #fff;
-    height: 70vh;
 }
 
+.stock{
+    font-size: 1.05vw;
+    height: 1vw;
+    margin: 0;
+}
+
+.precio{
+    font-size: 1.05vw;
+}
 
 .card-img{
     height: 50%;
@@ -57,5 +68,10 @@ body{
     justify-content: center;
 }
 #catalogoprincipal > h1{
-    padding-top: 1.5rem;
+    padding: 5vw 0;
+    font-size: 4vw;
+}
+
+.card-body {
+    padding: 5%;
 }

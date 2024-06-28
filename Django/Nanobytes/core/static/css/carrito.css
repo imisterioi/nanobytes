@@ -277,7 +277,8 @@ select {
 
 
 body>h1 {
-    margin-top: 10vh;
+    padding: 4vw 0 2vw;
+    font-size: 3vw;
 }
 
 #div-mensaje{
@@ -319,6 +320,7 @@ thead {
 
 .estilo-tabla th {
     background-color: #f2f2f2;
+    font-size: 1.5vw;
 }
 
 /* .estilo-tabla tbody tr:nth-child(even) {
@@ -347,7 +349,6 @@ thead {
 
 .a-comprar {
     padding: 3% 6%;
-    font-size: 1rem;
     background-color: black;
     color: #ffffff;
     text-decoration: none;
@@ -365,13 +366,14 @@ thead {
     text-align: start !important;
 }
 
-
+tbody, td, tfoot, th, thead, tr {
+    font-size: 1.2vw;
+}
 .btn-quitar {
     background-color: #D9534F;
     color: #ffffff;
     width: auto;
     text-align: center;
-    font-size: 1rem;
     border: 2px solid #000000;
     padding: 3.5% 7.2%;
     cursor: pointer;
@@ -387,7 +389,7 @@ thead {
 }
 
 tfoot {
-    height: 7vh;
+    height: 3.5vw;
 }
 
 .tdfooter {

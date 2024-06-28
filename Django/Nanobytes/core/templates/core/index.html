@@ -36,16 +36,16 @@
                 <a href="#sectionopiniones">Contáctanos</a>
                 <!-- {% comment %} <a href="{% url 'nosotros' %}">Quíenes sómos</a> {% endcomment %} -->
                 {% if user.is_authenticated %}
-                
-                    <div class="usuario">{{ user.username }}</div>
-                    <form action="{% url 'logout' %}" method="post">
-                        {% csrf_token %}
-                        <button id="btn-salir" type="submit">Salir</button>
-                    </form>
-                
-                
+
+                <div class="usuario">{{ user.username }}</div>
+                <form action="{% url 'logout' %}" method="post">
+                    {% csrf_token %}
+                    <button id="btn-salir" type="submit">Salir</button>
+                </form>
+
+
                 {% else %}
-                 <a href="{% url 'login' %}"><button class="btn-login">Login</button></a> 
+                <a href="{% url 'login' %}"><button class="btn-login">Login</button></a>
                 {% endif %}
                 <a href="{% url 'carrito' %}" id="carro-img">
                     <i class="bi bi-cart"></i>
@@ -54,7 +54,7 @@
             </nav>
 
         </div>
-    </header>   
+    </header>
 
     <section id="sectionbanner">
 
@@ -92,7 +92,7 @@
                     <img src="{% static 'assets/antes-despues.png'%}" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <div id="obtener3-container">
-                            {% comment %} <a href="#" id="obtener3">Obtener más información</a>  {% endcomment %}
+                            {% comment %} <a href="#" id="obtener3">Obtener más información</a> {% endcomment %}
                         </div>
 
                     </div>
@@ -110,7 +110,7 @@
             </button>
         </div>
     </section>
-    
+
     <section id="section-servicios">
         <div id="servicios">
             <h1>Nuestros servicios</h1>
@@ -125,9 +125,9 @@
                         respectivos costos para que TÚ las apruebes.
                     </P>
                     <nav id="botonservicios">
-                        <a href="{% url 'reparacion'%}" class="btn-servicios" >Reparaciones</a>
-                        <a href="{% url 'armado'%}" class="btn-servicios" >Arma tu equipo</a>
-                        <a href="#sectioncomponentes" class="btn-servicios" >Componentes</a>
+                        <a href="{% url 'reparacion'%}" class="btn-servicios">Reparaciones</a>
+                        <a href="{% url 'armado'%}" class="btn-servicios">Arma tu equipo</a>
+                        <a href="#sectioncomponentes" class="btn-servicios">Componentes</a>
                         <!-- <a href="#" id="upg">Upgrades</a> -->
                         <!-- Button trigger modal -->
                         <button type="button" class="btn-servicios" data-bs-toggle="modal"
@@ -199,12 +199,12 @@
         <div id="contenido-armado">
             <h2>¿Quieres armar tu primer PC Gamer?</h2>
             <div id="cards-armado">
-                <div class="card-armado" >
+                <div class="card-armado">
                     <img src="{% static 'assets/equipo-tier.png' %}" class="card-img-top" alt="...">
                     <div class="card-body-armado">
                         <h5 class="card-title-armado">TIER 1</h5>
                         <p class="card-text-armado">El equipo perfecto para iniciar en el mundo de los videojuegos.</p>
-                        <a href="https://g.co/kgs/fDCnATb" class="btn-armado btn-dark">Ver más</a>
+                        <a href="{% url 'armado'%}" class="btn-armado btn-dark">Ver más</a>
                     </div>
                 </div>
                 <div class="card-armado">
@@ -213,7 +213,7 @@
                         <h5 class="card-title-armado">TIER 2</h5>
                         <p class="card-text-armado">Tarjetas con RTX NVIDIA 3050, 3060TI, 1050, 4060
                         </p>
-                        <a href="https://g.co/kgs/PUav5gc" class="btn-armado btn-dark">Ver más</a>
+                        <a href="{% url 'armado'%}" class="btn-armado btn-dark">Ver más</a>
                     </div>
                 </div>
                 <div class="card-armado">
@@ -221,7 +221,7 @@
                     <div class="card-body-armado">
                         <h5 class="card-title-armado">TIER 3</h5>
                         <p class="card-text-armado">Memorias de 4gb, 8gb y 16gb</p>
-                        <a href="https://g.co/kgs/fDCnATb" class="btn-armado btn-dark">Ver más</a>
+                        <a href="{% url 'armado'%}" class="btn-armado btn-dark">Ver más</a>
                     </div>
                 </div>
             </div>
@@ -240,7 +240,7 @@
             <a href="{% url 'catalogo' %}" id="catalogo">Catálogo</a>
         </div>
         <div id="cards-catalogo">
-            <div class="card" >
+            <div class="card">
                 <img src="{% static 'assets/disco-duro.JPG' %}" class="card-img-top" alt="...">
                 <div class="card-body-principal">
                     <h5 class="card-title">Disco duro MD</h5>
@@ -268,7 +268,7 @@
                     <a href="https://g.co/kgs/fDCnATb" class="btn btn-dark">Revisar</a>
                 </div>
             </div>
-            <div class="card" >
+            <div class="card">
                 <img src="{% static 'assets/tarjeta-grafica2.JPG'%}" class="card-img-top" alt="...">
                 <div class="card-body-principal">
                     <h5 class="card-title">Almacenamiento</h5>
@@ -362,36 +362,36 @@
             </div>
             <div id="footer2" class="clase-footer">
                 <h3 class="footer-titulo">Nuestras redes</h3>
-                <a class="a-footer" href="https://www.youtube.com/watch?v=ZZ5LpwO-An4">Instagram</a>
-                <a class="a-footer" href="https://www.youtube.com/watch?v=ZZ5LpwO-An4">Facebook</a>
-                <a class="a-footer" href="https://www.youtube.com/watch?v=ZZ5LpwO-An4">WhatsApp</a>
+                <a class="a-footer" href="">Instagram</a>
+                <a class="a-footer" href="">Facebook</a>
+                <a class="a-footer" href="">WhatsApp</a>
             </div>
             <div id="footer3" class="clase-footer">
                 <h3 class="footer-titulo">Legal</h3>
-                <a class="a-footer" href="https://www.youtube.com/watch?v=ZZ5LpwO-An4">Nuestra marca</a>
-                <a class="a-footer" href="https://www.youtube.com/watch?v=ZZ5LpwO-An4">Garantías</a>
+                <a class="a-footer" href="">Nuestra marca</a>
+                <a class="a-footer" href="">Garantías</a>
             </div>
             <div id="footer4" class="clase-footer">
                 <h3 class="footer-titulo">Nuestros servicios</h3>
-                <a class="a-footer" href="https://www.youtube.com/watch?v=ZZ5LpwO-An4">Armado de computadores</a>
-                <a class="a-footer" href="https://www.youtube.com/watch?v=ZZ5LpwO-An4">Reparación de equipos</a>
-                <a class="a-footer" href="https://www.youtube.com/watch?v=ZZ5LpwO-An4">Mejora de equipos</a>
-                <a class="a-footer" href="https://www.youtube.com/watch?v=ZZ5LpwO-An4">Cálculo de presupuestos</a>
-                <a class="a-footer" href="https://www.youtube.com/watch?v=ZZ5LpwO-An4">Vistas a domicilio</a>
+                <a class="a-footer" href="">Armado de computadores</a>
+                <a class="a-footer" href="">Reparación de equipos</a>
+                <a class="a-footer" href="">Mejora de equipos</a>
+                <a class="a-footer" href="">Cálculo de presupuestos</a>
+                <a class="a-footer" href="">Vistas a domicilio</a>
             </div>
         </div>
         <div id="footer-inferior">
             <div id="pie-footer">
-                <a href="https://www.youtube.com/watch?v=ZZ5LpwO-An4">Terminos y condiciones</a>
-                <a href="https://www.youtube.com/watch?v=ZZ5LpwO-An4">BW Proyectos</a>
-                <a href="https://www.youtube.com/watch?v=ZZ5LpwO-An4">Política de privacidad</a>
+                <a href="">Terminos y condiciones</a>
+                <a href="">BW Proyectos</a>
+                <a href="">Política de privacidad</a>
             </div>
 
         </div>
         <p id="derechos-reservados">© 2024 Derechos reservados</p>
     </footer>
 
-    
+
     <script src="https://www.youtube.com/iframe_api"></script>
     <script>
         onYouTubeIframeAPIReady();

@@ -79,7 +79,7 @@ html {
 }
 
 .btn-login{
-    height: 4.5vh;
+    height: 2.3vw;
     width: 8vw;
     border-radius: 2px ;
     
@@ -1331,6 +1331,10 @@ input {
     }
     #contenedor-logo{
         margin: 0;
+    }
+
+    .btn-login{
+        height: 3vw;
     }
 
     #cards-catalogo {
