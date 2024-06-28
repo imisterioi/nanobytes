@@ -2,19 +2,17 @@
 
 #opciones{
     /* padding-right: 50vw; */
-    position: relative;
     display: flex;
     /* height: 250vh; */
-    margin-top: 12vh;
+    margin-top: 5%;
     background-image: url();
     flex-wrap: wrap;
     flex-direction: column;
     background-color: white ;
-
     /* margin-left: 1vw; */
     /* margin-left: 100vw; */
     /* margin-right: 100vw; */
-    width: 117.2rem;
+    /* width: 117.2rem; */
     /* justify-content: center; */
     /* align-items: center; */
 

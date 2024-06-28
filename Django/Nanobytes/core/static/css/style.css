@@ -79,9 +79,8 @@ html {
 }
 
 .btn-login{
-    height: 2.3vw;
-    width: 8vw;
-    border-radius: 2px ;
+    width: 6vw;
+    border-radius: 3px;
     
 }
 
@@ -1343,10 +1342,7 @@ input {
         margin: 0;
     }
 
-    .btn-login{
-        height: 3vw;
-    }
-
+  
     #cards-catalogo {
         /* display: grid;
         grid-template-columns: repeat(3, 0fr); */
