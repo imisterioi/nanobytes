@@ -49,7 +49,7 @@
                 {% endif %}
                 <a href="{% url 'carrito' %}" id="carro-img">
                     <i class="bi bi-cart"></i>
-                    <div class="circulo"><p>({{ request.session.carro|length }})</p></div>
+                    <div class="circulo"><p>{{ request.session.carro|length }}</p></div>
                 </a>
             </nav>
 
@@ -174,21 +174,17 @@
             <h2>Nuestros trabajos</h2>
             <div id="primer-video">
                 <div id="video1"></div>
-                <p class="parrafo-video"><strong>Prueba de equipo con RTX 2060 + I3 13100F: </strong>Lorem ipsum, dolor
-                    sit amet consectetur adipisicing elit. Saepe est nihil dignissimos soluta autem
-                    dicta, similique impedit eum.</p>
+                <p class="parrafo-video"><strong>Prueba de equipo con RTX 2060 + I3 13100F: </strong>La combinación de la tarjeta gráfica RTX 2060 y el procesador i3 13100F ofrece un rendimiento sólido en juegos y tareas diarias. Con la potencia de la RTX 2060, disfrutarás de gráficos nítidos y fluidos, mientras que el i3 13100F proporciona un buen equilibrio entre rendimiento y precio. </p>
             </div>
             <div id="segundo-video">
                 <div id="video2"></div>
-                <p class="parrafo-video"><strong>Prueba de equipo con RTX 2060 SUPER + I5 10400: </strong>Lorem ipsum,
-                    dolor sit amet consectetur adipisicing elit. Saepe est nihil dignissimos soluta autem
-                    dicta, similique impedit eum.</p>
+                <p class="parrafo-video"><strong>Prueba de equipo con RTX 2060 SUPER + I5 10400: </strong>La combinación de una RTX 2060 SUPER y un i5 10400 ofrece un excelente rendimiento en juegos y aplicaciones gráficas. La RTX 2060 SUPER proporciona gráficos avanzados y capacidades de trazado de rayos, mientras que el i5 10400 asegura un rendimiento estable y eficiente. Ideal para gaming en 1080p y edición de video.
+
+                </p>
             </div>
             <div id="tercer-video">
                 <div id="video3"></div>
-                <p class="parrafo-video"><strong>Prueba de equipo con RX 570 + I3 13100F: </strong>Lorem ipsum, dolor
-                    sit amet consectetur adipisicing elit. Saepe est nihil dignissimos soluta autem
-                    dicta, similique impedit eum.</p>
+                <p class="parrafo-video"><strong>Prueba de equipo con RX 570 + I3 13100F: </strong>La RX 570 junto con el i3 13100F ofrece un rendimiento sólido para juegos en 1080p y tareas básicas de productividad. Esta combinación es asequible y eficiente, ideal para quienes buscan una buena experiencia de juego sin gastar demasiado.</p>
             </div>
 
 
@@ -246,7 +242,7 @@
                     <h5 class="card-title">Disco duro MD</h5>
                     <p class="card-text">SSD's, Discos duros externos, pendrives</p>
                     <p class="precio">$19.990</p>
-                    <a href="" class="btn btn-dark">Revisar</a>
+                    <a href="{% url 'catalogo' %}" class="btn btn-dark">Revisar</a>
                 </div>
             </div>
             <div class="card">
@@ -256,7 +252,7 @@
                     <p class="card-text">Tarjetas con RTX NVIDIA 3050, 3060TI, 1050, 4060
                     </p>
                     <p class="precio">$59.990</p>
-                    <a href="" class="btn btn-dark">Revisar</a>
+                    <a href="{% url 'catalogo' %}" class="btn btn-dark">Revisar</a>
                 </div>
             </div>
             <div class="card">
@@ -265,7 +261,7 @@
                     <h5 class="card-title">Memorias RAM</h5>
                     <p class="card-text">Memorias de 4gb, 8gb y 16gb</p>
                     <p class="precio">$9.990</p>
-                    <a href="" class="btn btn-dark">Revisar</a>
+                    <a href="{% url 'catalogo' %}" class="btn btn-dark">Revisar</a>
                 </div>
             </div>
             <div class="card">
@@ -274,7 +270,7 @@
                     <h5 class="card-title">Almacenamiento</h5>
                     <p class="card-text">SSD's, Discos duros externos, pendrives</p>
                     <p class="precio">$9.990</p>
-                    <a href="" class="btn btn-dark">Revisar</a>
+                    <a href="{% url 'catalogo' %}" class="btn btn-dark">Revisar</a>
                 </div>
             </div>
             <div class="card">
@@ -284,7 +280,7 @@
                     <p class="card-text">Tarjetas con RTX NVIDIA 3050, 3060TI, 1050, 4060
                     </p>
                     <p class="precio">$89.990</p>
-                    <a href="" class="btn btn-dark">Revisar</a>
+                    <a href="{% url 'catalogo' %}" class="btn btn-dark">Revisar</a>
                 </div>
             </div>
             <div class="card">
@@ -293,7 +289,7 @@
                     <h5 class="card-title">Memorias RAM</h5>
                     <p class="card-text">Memorias de 4gb, 8gb y 16gb</p>
                     <p class="precio">$39.990</p>
-                    <a href="" class="btn btn-dark">Revisar</a>
+                    <a href="{% url 'catalogo' %}" class="btn btn-dark">Revisar</a>
 
                 </div>
             </div>
@@ -375,9 +371,6 @@
                 <h3 class="footer-titulo">Nuestros servicios</h3>
                 <a class="a-footer" href="">Armado de computadores</a>
                 <a class="a-footer" href="">Reparación de equipos</a>
-                <a class="a-footer" href="">Mejora de equipos</a>
-                <a class="a-footer" href="">Cálculo de presupuestos</a>
-                <a class="a-footer" href="">Vistas a domicilio</a>
             </div>
         </div>
         <div id="footer-inferior">

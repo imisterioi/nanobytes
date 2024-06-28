@@ -48,7 +48,7 @@
                 {% endif %}
                 <a href="{% url 'carrito' %}" id="carro-img">
                     <i class="bi bi-cart"></i>
-                    <p>({{ request.session.carro|length }})</p>
+                    <div class="circulo"><p>{{ request.session.carro|length }}</p></div>
                 </a>
             </nav>
 
@@ -75,8 +75,8 @@
             <div id="footer2" class="clase-footer">
                 <h3 class="footer-titulo">Nuestras redes</h3>
                 <a class="a-footer" href="https://www.instagram.com/nanobytes.cl/">Instagram</a>
-                <a class="a-footer" href="">Facebook</a>
-                <a class="a-footer" href="">WhatsApp</a>
+                <a class="a-footer" href="https://www.facebook.com/?locale=es_LA">Facebook</a>
+                <a class="a-footer" href="https://www.whatsapp.com/?lang=es_LA">WhatsApp</a>
             </div>
             <div id="footer3" class="clase-footer">
                 <h3 class="footer-titulo">Legal</h3>
@@ -86,10 +86,7 @@
             <div id="footer4" class="clase-footer">
                 <h3 class="footer-titulo">Nuestros servicios</h3>
                 <a class="a-footer" href="{% url 'armado'%}">Armado de computadores</a>
-                <a class="a-footer" href="">Reparación de equipos</a>
-                <a class="a-footer" href="">Mejora de equipos</a>
-                <a class="a-footer" href="">Cálculo de presupuestos</a>
-                <a class="a-footer" href="">Vistas a domicilio</a>
+                <a class="a-footer" href="{% url 'reparacion'%}">Reparación de equipos</a>
             </div>
         </div>
         <div id="footer-inferior">

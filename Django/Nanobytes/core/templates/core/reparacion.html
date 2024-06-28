@@ -6,330 +6,338 @@
 
 
 
-    <link rel="stylesheet" href="{% static '' %}css/reparacion.css">
-    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static '' %}css/reparacion.css">
+<link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
 
 
 <body>
 
-    
 
 
-<!-- --------------------------------- -->
+
+    <!-- --------------------------------- -->
 
 
     <section id="pagina-mantencion">
-        
-            <div id="opciones">
-                <div id="pregunta">
-                    <h1 id="titulo-principal">¿Necesitas ayuda con tu equipo?</h1>
-                </div>
-                
-                
-                <div class="contenedor-imagenes">
-                    <img src="{% static 'assets/icons8-monitor-100.png' %}" id="imagen-1" class="m-imagen imagen" alt="Escritorio" data-clicked="{% static 'assets/icons8-monitor-100-n.png' %}">
-                    <img src="{% static 'assets/icons8-laptop-100-n.png' %}" id="imagen-2" class="m-imagen imagen" alt="Notebook" data-clicked="{% static 'assets/icons8-ordenador-portátil-100.png' %}">
-                    <img src="{% static 'assets/icons8-xbox-series-s-100.png' %}" id="imagen-3" class="m-imagen imagen" alt="PS5 / Xbox Series" data-clicked="{% static 'assets/icons8-consola-de-juego-100.png' %}">
-                </div>
-                <div id="div-titulo-imagenes">
-                    <h1 id="titulo-imagenes" for="">Selecciona tu dispositivo.</h1>
-                </div>
 
-                <div id="div-preguntas">
-                    <div id="div-paso-1">
-                        <h1 class="pregunta-titulo" id="titulo-paso-1">Primer paso</h1>
-                    
-                    <input class="form-check-input" class="primer-pregunta-check" type="checkbox" >
+        <div id="opciones">
+            <div id="pregunta">
+                <h1 id="titulo-principal">¿Necesitas ayuda con tu equipo?</h1>
+            </div>
+
+
+            <div class="contenedor-imagenes">
+                <img src="{% static 'assets/icons8-monitor-100.png' %}" id="imagen-1" class="m-imagen imagen"
+                    alt="Escritorio" data-clicked="{% static 'assets/icons8-monitor-100-n.png' %}">
+                <img src="{% static 'assets/icons8-laptop-100-n.png' %}" id="imagen-2" class="m-imagen imagen"
+                    alt="Notebook" data-clicked="{% static 'assets/icons8-ordenador-portátil-100.png' %}">
+                <img src="{% static 'assets/icons8-xbox-series-s-100.png' %}" id="imagen-3" class="m-imagen imagen"
+                    alt="PS5 / Xbox Series" data-clicked="{% static 'assets/icons8-consola-de-juego-100.png' %}">
+            </div>
+            <div id="div-titulo-imagenes">
+                <h1 id="titulo-imagenes" for="">Selecciona tu dispositivo.</h1>
+            </div>
+
+            <div id="div-preguntas">
+                <div id="div-paso-1">
+                    <h1 class="pregunta-titulo" id="titulo-paso-1">Primer paso</h1>
+
+                    <input class="form-check-input" class="primer-pregunta-check" type="checkbox">
                     <label class="pregunta" for="pregunta">No enciende</label>
-                    
 
-                    <input class="form-check-input" class="pregunta-check" type="checkbox" >
+
+                    <input class="form-check-input" class="pregunta-check" type="checkbox">
                     <label class="pregunta" for="pregunta">Si enciende</label>
-                    
-                    
-                    <input class="form-check-input" class="pregunta-check" type="checkbox" >
+
+
+                    <input class="form-check-input" class="pregunta-check" type="checkbox">
                     <label class="pregunta" for="pregunta">No lo sé</label>
 
-                    </div>
-                    
-                    
+                </div>
 
 
-                    <h1 class="pregunta-titulo" id="pregunta-paso-2">Segundo paso</h1>
-                    
-                    
-                    
-                    <div id="div-paso-2">
-                        <div id="div-luces-separacion-paso-2">
-                            <div class="preunta-check-separacion">
-                                <input class="form-check-input" class="primer-pregunta-check" type="checkbox" >
-                                <label class="pregunta-2" for="pregunta">Prende luces</label>
-                                
-                            </div>
-                        
-                            <div class="preunta-check-separacion">
-                                <input class="form-check-input" class="primer-pregunta-check" type="checkbox" >
-                                <label class="pregunta-2" for="pregunta">No prende luces</label>
-                                
-                            </div>
-                                
-                            <div class="preunta-check-separacion">
-                                <input class="form-check-input" class="primer-pregunta-check" type="checkbox" >
-                                <label class="pregunta-2" for="pregunta">Prende luces pero parpadean</label>
-                                
-                            </div>
-    
-                            <div class="preunta-check-separacion">
-                                <input class="form-check-input" class="primer-pregunta-check" type="checkbox" >
-                                <label class="pregunta-2" for="pregunta">Prende luces pero no parpadean</label>
-                                
-                            </div>
-    
-                            <div class="preunta-check-separacion">
-                                <input class="form-check-input" class="primer-pregunta-check"++ type="checkbox" >
-                                <label class="pregunta-2" for="pregunta">Prende luces pero se apagan de inmediato</label>
-                                
-                            </div>      
+
+
+                <h1 class="pregunta-titulo" id="pregunta-paso-2">Segundo paso</h1>
+
+
+
+                <div id="div-paso-2">
+                    <div id="div-luces-separacion-paso-2">
+                        <div class="preunta-check-separacion">
+                            <input class="form-check-input" class="primer-pregunta-check" type="checkbox">
+                            <label class="pregunta-2" for="pregunta">Prende luces</label>
+
                         </div>
-                        <div id="div-separacion2-paso-2">
-                            <div id="div-subtitulos-paso-2">
-                                <div id="div-pregunta-luces">
-                                    <h2 id="pregunta-complementaria">¿Sabes que luces son?</h2>
-                                    <h4 id="pregunta-complementaria-2">(responde solo si sabes la respuesta)</h4>
-                                </div>
-                                
-                                
-                            </div>
-                            <div class="preunta-check-separacion">
-                                <input class="form-check-input" class="pregunta-check-2" type="checkbox" >
-                                <label class="pregunta-2" for="pregunta">Luz botón de encendido</label>
-                                
-                            </div>
-                        
-                            <div class="preunta-check-separacion">
-                                <input class="form-check-input" class="pregunta-check-2" type="checkbox" >
-                                <label class="pregunta-2" for="pregunta">Luz en tecla SHIFT o MAYUS</label>
-                                
-                            </div>
-                                
-                            <div class="preunta-check-separacion">
-                                <input class="form-check-input" class="pregunta-check-2" type="checkbox" >
-                                <label class="pregunta-2" for="pregunta">Luz de cargador</label>
-                                
-                            </div>
-    
-                            <div class="preunta-check-separacion">
-                                <input class="form-check-input" class="pregunta-check-2" type="checkbox" >
-                                <label class="pregunta-2" for="pregunta">Luz en la pantalla </label>
-                                
-                            </div>
-    
-                            <div class="preunta-check-separacion">
-                                <input class="form-check-input" class="pregunta-check-2" type="checkbox" >
-                                <label class="pregunta-2" for="pregunta">Luz en el chasis del equipo</label>
-                                
-                            </div>   
+
+                        <div class="preunta-check-separacion">
+                            <input class="form-check-input" class="primer-pregunta-check" type="checkbox">
+                            <label class="pregunta-2" for="pregunta">No prende luces</label>
+
                         </div>
-                            <div id="div-separacion3-paso-2">
-                                <div id="div-pregunta-parpadeos">
-                                    <label id="label-number" for="">Indique la cantidad de parpadeos:</label>
-                                </div>
-                                <input id="input-number" type="number" min="0" onkeypress="return validarTecla(event)">
-                         
-                            </div>   
+
+                        <div class="preunta-check-separacion">
+                            <input class="form-check-input" class="primer-pregunta-check" type="checkbox">
+                            <label class="pregunta-2" for="pregunta">Prende luces pero parpadean</label>
+
+                        </div>
+
+                        <div class="preunta-check-separacion">
+                            <input class="form-check-input" class="primer-pregunta-check" type="checkbox">
+                            <label class="pregunta-2" for="pregunta">Prende luces pero no parpadean</label>
+
+                        </div>
+
+                        <div class="preunta-check-separacion">
+                            <input class="form-check-input" class="primer-pregunta-check" ++ type="checkbox">
+                            <label class="pregunta-2" for="pregunta">Prende luces pero se apagan de inmediato</label>
+
+                        </div>
                     </div>
-                        
-                    <h3 id="pregunta-paso-3" class="pregunta-titulo">Tercer paso</h3>
-                    <h5 id="pregunta-complementaria-paso-3" style="color: black;">Funcionamiento diario: </h5>
-
-                        
-                    <div id="div-paso-3">
-                        <div id="div-separacion-paso-2">  
-                            <div class="preunta-check-separacion">
-                                <input class="form-check-input" class="primer-pregunta-check" type="checkbox" >
-                                <label class="pregunta-2" for="pregunta">Funciona muy lento siempre</label>
-                                
-                            </div>
-                        
-                            <div class="preunta-check-separacion">
-                                <input class="form-check-input" class="primer-pregunta-check" type="checkbox" id="este">
-                                <label class="pregunta-2" class="form-check-label" for="flexCheckDefault">Se pega mientras lo uso</label>
-                                
-                            </div>
-                                
-                            <div class="preunta-check-separacion">
-                                <input class="form-check-input" class="primer-pregunta-check" type="checkbox" >
-                                <label class="pregunta-2" for="pregunta">Se calienta mucho</label>
-                                
+                    <div id="div-separacion2-paso-2">
+                        <div id="div-subtitulos-paso-2">
+                            <div id="div-pregunta-luces">
+                                <h2 id="pregunta-complementaria">¿Sabes que luces son?</h2>
+                                <h4 id="pregunta-complementaria-2">(responde solo si sabes la respuesta)</h4>
                             </div>
 
-                            <div class="preunta-check-separacion">
-                                <input class="form-check-input" class="primer-pregunta-check" type="checkbox" >
-                                <label class="pregunta-2" for="pregunta">Le cayó agua y no funciona</label>
-                                
-                            </div>
 
-                            <div class="preunta-check-separacion">
-                                <input class="form-check-input" class="primer-pregunta-check" type="checkbox" >
-                                <label class="pregunta-2" for="pregunta">Se apaga mientras lo uso</label>
-                                
-                            </div>
-                            <div class="preunta-check-separacion">
-                                <input class="form-check-input" class="primer-pregunta-check" type="checkbox" >
-                                <label class="pregunta-2" for="pregunta">Teclado / pantalla / batería no funciona bien</label>
-                                
-                            </div>
-                        </div> 
+                        </div>
+                        <div class="preunta-check-separacion">
+                            <input class="form-check-input" class="pregunta-check-2" type="checkbox">
+                            <label class="pregunta-2" for="pregunta">Luz botón de encendido</label>
+
+                        </div>
+
+                        <div class="preunta-check-separacion">
+                            <input class="form-check-input" class="pregunta-check-2" type="checkbox">
+                            <label class="pregunta-2" for="pregunta">Luz en tecla SHIFT o MAYUS</label>
+
+                        </div>
+
+                        <div class="preunta-check-separacion">
+                            <input class="form-check-input" class="pregunta-check-2" type="checkbox">
+                            <label class="pregunta-2" for="pregunta">Luz de cargador</label>
+
+                        </div>
+
+                        <div class="preunta-check-separacion">
+                            <input class="form-check-input" class="pregunta-check-2" type="checkbox">
+                            <label class="pregunta-2" for="pregunta">Luz en la pantalla </label>
+
+                        </div>
+
+                        <div class="preunta-check-separacion">
+                            <input class="form-check-input" class="pregunta-check-2" type="checkbox">
+                            <label class="pregunta-2" for="pregunta">Luz en el chasis del equipo</label>
+
+                        </div>
+                    </div>
+                    <div id="div-separacion3-paso-2">
+                        <div id="div-pregunta-parpadeos">
+                            <label id="label-number" for="">Indique la cantidad de parpadeos:</label>
+                        </div>
+                        <input id="input-number" type="number" min="0" onkeypress="return validarTecla(event)">
 
                     </div>
-                    
-                    <div id="div-paso-3-complemento">
-                        <div id="contenedor-complemento-pantalla">
-                            <label id="titulo-pantalla" id="titulo-paso-3-complemento" for="">Pantalla</label>
-                        <div id="div-separacion-paso-2">  
+                </div>
+
+                <h3 id="pregunta-paso-3" class="pregunta-titulo">Tercer paso</h3>
+                <h5 id="pregunta-complementaria-paso-3" style="color: black;">Funcionamiento diario: </h5>
+
+
+                <div id="div-paso-3">
+                    <div id="div-separacion-paso-2">
+                        <div class="preunta-check-separacion">
+                            <input class="form-check-input" class="primer-pregunta-check" type="checkbox">
+                            <label class="pregunta-2" for="pregunta">Funciona muy lento siempre</label>
+
+                        </div>
+
+                        <div class="preunta-check-separacion">
+                            <input class="form-check-input" class="primer-pregunta-check" type="checkbox" id="este">
+                            <label class="pregunta-2" class="form-check-label" for="flexCheckDefault">Se pega mientras
+                                lo uso</label>
+
+                        </div>
+
+                        <div class="preunta-check-separacion">
+                            <input class="form-check-input" class="primer-pregunta-check" type="checkbox">
+                            <label class="pregunta-2" for="pregunta">Se calienta mucho</label>
+
+                        </div>
+
+                        <div class="preunta-check-separacion">
+                            <input class="form-check-input" class="primer-pregunta-check" type="checkbox">
+                            <label class="pregunta-2" for="pregunta">Le cayó agua y no funciona</label>
+
+                        </div>
+
+                        <div class="preunta-check-separacion">
+                            <input class="form-check-input" class="primer-pregunta-check" type="checkbox">
+                            <label class="pregunta-2" for="pregunta">Se apaga mientras lo uso</label>
+
+                        </div>
+                        <div class="preunta-check-separacion">
+                            <input class="form-check-input" class="primer-pregunta-check" type="checkbox">
+                            <label class="pregunta-2" for="pregunta">Teclado / pantalla / batería no funciona
+                                bien</label>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="div-paso-3-complemento">
+                    <div id="contenedor-complemento-pantalla">
+                        <label id="titulo-pantalla" id="titulo-paso-3-complemento" for="">Pantalla</label>
+                        <div id="div-separacion-paso-2">
                             <div class="preunta-check-separacion">
-                                <input class="form-check-input" class="primer-pregunta-check" type="checkbox" >
+                                <input class="form-check-input" class="primer-pregunta-check" type="checkbox">
                                 <label class="pregunta-2" for="pregunta">Está con lineas / colores anormales</label>
-                                
-                            </div>
-                        
-                            <div class="preunta-check-separacion">
-                                <input class="form-check-input" class="primer-pregunta-check" type="checkbox" >
-                                <label class="pregunta-2" for="pregunta">Se aplastó / recibió un golpe y se ve mal o no se ve</label>
-                                
-                            </div>
-                                
-                            <div class="preunta-check-separacion">
-                                <input class="form-check-input" class="primer-pregunta-check" type="checkbox" >
-                                <label class="pregunta-2" for="pregunta">Se rompieron las bisagras</label>                       
+
                             </div>
 
-                        </div> 
-                        </div>
-                        
-                        <div id="contenedor-complemento-bateria">
-                            <label id="titulo-bateria" id="titulo-paso-3-complemento" for="">Batería y cargador</label>
-                            <div id="div-separacion-paso-2">  
-                                <div class="preunta-check-separacion">
-                                    <input class="form-check-input" class="separacion-pregunta-check-3" type="checkbox" >
-                                    <label class="pregunta-2" for="pregunta">No carga mi batería</label>
-                                    
-                                </div>
-                            
-                                <div class="preunta-check-separacion">
-                                    <input class="form-check-input" class="separacion-pregunta-check-3" type="checkbox" >
-                                    <label class="pregunta-2" for="pregunta">Mi cargador funciona mal / está roto</label>
-                                    
-                                </div>
-                                    
-                                <div class="preunta-check-separacion">
-                                    <input class="form-check-input" class="separacion-pregunta-check-3" type="checkbox" >
-                                    <label class="pregunta-2" for="pregunta">Mi batería dura poco</label>
-                                    
-                                </div>
-    
-                                
-                            </div> 
-                        </div>
-                        <div id="contenedor-complemento-windows">
-                            <label id="titulo-paso-3-complemento-1" for="">Sistema operativo</label>
-                            <h1 id="subtitulo-paso-3-complemento" for="">(windows / mac)</h1>
-                            <div id="div-separacion-paso-2">  
-                                <div class="preunta-check-separacion">
-                                    <input class="form-check-input" class="primer-pregunta-check" type="checkbox" >
-                                    <label class="pregunta-2" for="pregunta">No tengo sistema operativo</label>
-                                    
-                                </div>
-                            
-                                <div class="preunta-check-separacion">
-                                    <input class="form-check-input" class="primer-pregunta-check" type="checkbox" >
-                                    <label class="pregunta-2" for="pregunta">Recuperacion de información de un disco duro / SSD</label>
-                                    
-                                </div>
-                                    
-                                <div class="preunta-check-separacion">
-                                    <input class="form-check-input" class="primer-pregunta-check" type="checkbox" >
-                                    <label class="pregunta-2" for="pregunta">Quiero formatear mi pc</label>
-                                    
-                                </div>
-    
-                                <div class="preunta-check-separacion">
-                                    <input class="form-check-input" class="primer-pregunta-check" type="checkbox" >
-                                    <label class="pregunta-2" for="pregunta">Tengo pantallazos azules / quiero reinstalar SO</label>
-                                    
-                                </div>
-    
-                            </div> 
-                        </div>
-                       
+                            <div class="preunta-check-separacion">
+                                <input class="form-check-input" class="primer-pregunta-check" type="checkbox">
+                                <label class="pregunta-2" for="pregunta">Se aplastó / recibió un golpe y se ve mal o no
+                                    se ve</label>
 
+                            </div>
+
+                            <div class="preunta-check-separacion">
+                                <input class="form-check-input" class="primer-pregunta-check" type="checkbox">
+                                <label class="pregunta-2" for="pregunta">Se rompieron las bisagras</label>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div id="contenedor-complemento-bateria">
+                        <label id="titulo-bateria" id="titulo-paso-3-complemento" for="">Batería y cargador</label>
+                        <div id="div-separacion-paso-2">
+                            <div class="preunta-check-separacion">
+                                <input class="form-check-input" class="separacion-pregunta-check-3" type="checkbox">
+                                <label class="pregunta-2" for="pregunta">No carga mi batería</label>
+
+                            </div>
+
+                            <div class="preunta-check-separacion">
+                                <input class="form-check-input" class="separacion-pregunta-check-3" type="checkbox">
+                                <label class="pregunta-2" for="pregunta">Mi cargador funciona mal / está roto</label>
+
+                            </div>
+
+                            <div class="preunta-check-separacion">
+                                <input class="form-check-input" class="separacion-pregunta-check-3" type="checkbox">
+                                <label class="pregunta-2" for="pregunta">Mi batería dura poco</label>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div id="contenedor-complemento-windows">
+                        <label id="titulo-paso-3-complemento-1" for="">Sistema operativo</label>
+                        <h1 id="subtitulo-paso-3-complemento" for="">(windows / mac)</h1>
+                        <div id="div-separacion-paso-2">
+                            <div class="preunta-check-separacion">
+                                <input class="form-check-input" class="primer-pregunta-check" type="checkbox">
+                                <label class="pregunta-2" for="pregunta">No tengo sistema operativo</label>
+
+                            </div>
+
+                            <div class="preunta-check-separacion">
+                                <input class="form-check-input" class="primer-pregunta-check" type="checkbox">
+                                <label class="pregunta-2" for="pregunta">Recuperacion de información de un disco duro /
+                                    SSD</label>
+
+                            </div>
+
+                            <div class="preunta-check-separacion">
+                                <input class="form-check-input" class="primer-pregunta-check" type="checkbox">
+                                <label class="pregunta-2" for="pregunta">Quiero formatear mi pc</label>
+
+                            </div>
+
+                            <div class="preunta-check-separacion">
+                                <input class="form-check-input" class="primer-pregunta-check" type="checkbox">
+                                <label class="pregunta-2" for="pregunta">Tengo pantallazos azules / quiero reinstalar
+                                    SO</label>
+
+                            </div>
+
+                        </div>
                     </div>
 
 
-                    <label class="pregunta-titulo" id="titulo-paso-4" for="">Cuarto paso</label>
-                    <label class="titulo-archivos" id="titulo-adjuntar" for="">¿Quieres adjuntar videos o fotos del problema?</label>
-                    <label class="titulo-archivos" id="titulo-aqui" for="">Hazlo aquí.</label>
-                    <div id="div-paso-4">
-                        
-                        <div id="div-separacion-paso-2">  
-                            <input id="subir-archivo" type="file">
-                        </div> 
-
-                    </div>
-                    
                 </div>
 
 
+                <label class="pregunta-titulo" id="titulo-paso-4" for="">Cuarto paso</label>
+                <label class="titulo-archivos" id="titulo-adjuntar" for="">¿Quieres adjuntar videos o fotos del
+                    problema?</label>
+                <label class="titulo-archivos" id="titulo-aqui" for="">Hazlo aquí.</label>
+                <div id="div-paso-4">
 
-                <div id="div-usuario-boton">
-                    <div id="datos-usuario">
-                        <div id="div-nombre">
-                            <h1 class="datos-titulos">Ingrese su nombre</h1>
-                            <input class="input-datos" type="text" style="color: black;">
-                        </div>
-                        <div id="div-celular">
-                            <h1 class="datos-titulos">Número de celular</h1>
-                            <input class="input-datos" id="input-number-2"  type="number" min="0" style="color: black;" onkeypress="return validarTecla(event)">
-                        </div>
-                        <div id="div-email">
-                            <h1 class="datos-titulos">Dirección de correo</h1>
-                        <input class="input-datos" type="text" style="color: black;">
-                        </div>
-                        
+                    <div id="div-separacion-paso-2">
+                        <input id="subir-archivo" type="file">
                     </div>
-    
-                    <div id="boton-enviar">
-                        <a class="btn-enviar btn-dark">Enviar</a>
-                      </div>
 
                 </div>
-                
- 
+
             </div>
-            
-        
-        
-        
+
+
+
+            <div id="div-usuario-boton">
+                <div id="datos-usuario">
+                    <div id="div-nombre">
+                        <h1 class="datos-titulos">Ingrese su nombre</h1>
+                        <input class="input-datos" type="text" style="color: black;">
+                    </div>
+                    <div id="div-celular">
+                        <h1 class="datos-titulos">Número de celular</h1>
+                        <input class="input-datos" id="input-number-2" type="number" min="0" style="color: black;"
+                            onkeypress="return validarTecla(event)">
+                    </div>
+                    <div id="div-email">
+                        <h1 class="datos-titulos">Dirección de correo</h1>
+                        <input class="input-datos" type="text" style="color: black;">
+                    </div>
+
+                </div>
+
+                <div id="boton-enviar">
+                    <a class="btn-enviar btn-dark">Enviar</a>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+
     </section>
 
-    {% endblock %}
-        
-</body>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 
     <script id="P-M-efectos_de_imagen">
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             const imagenes = document.querySelectorAll(".imagen");
             let imagenActiva = null;
 
             imagenes.forEach((imagen) => {
-                imagen.addEventListener("click", function() {
+                imagen.addEventListener("click", function () {
                     if (imagenActiva && imagenActiva !== this) {
                         imagenActiva.src = imagenActiva.dataset.original;
                     }
@@ -338,7 +346,7 @@
                     imagenActiva = this;
                 });
 
-                imagen.addEventListener("mousedown", function() {
+                imagen.addEventListener("mousedown", function () {
                     if (!this.dataset.original) {
                         this.dataset.original = this.src;
                     }
@@ -348,7 +356,7 @@
                     }
                 });
 
-                imagen.addEventListener("dragstart", function() {
+                imagen.addEventListener("dragstart", function () {
                     const originalSrc = this.dataset.original;
                     if (originalSrc) {
                         this.src = originalSrc;
@@ -358,30 +366,33 @@
         });
     </script>
 
-<script>
-        document.addEventListener("DOMContentLoaded", function() {
-        const imagenes = document.querySelectorAll(".imagen");
-        const tituloImagenes = document.getElementById("titulo-imagenes");
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const imagenes = document.querySelectorAll(".imagen");
+            const tituloImagenes = document.getElementById("titulo-imagenes");
 
-        imagenes.forEach((imagen) => {
-            imagen.addEventListener("click", function() {
-                const textoImagen = this.alt;
-                tituloImagenes.textContent = textoImagen;
+            imagenes.forEach((imagen) => {
+                imagen.addEventListener("click", function () {
+                    const textoImagen = this.alt;
+                    tituloImagenes.textContent = textoImagen;
+                });
             });
         });
-    });
-</script>
-<script>
-    function validarTecla(event) {
-        var charCode = (event.which) ? event.which : event.keyCode;
-    
-        if (charCode < 48 || charCode > 57) {
-            event.preventDefault();
-            return false;
-        }
-        return true;
-    }
     </script>
+    <script>
+        function validarTecla(event) {
+            var charCode = (event.which) ? event.which : event.keyCode;
+
+            if (charCode < 48 || charCode > 57) {
+                event.preventDefault();
+                return false;
+            }
+            return true;
+        }
+    </script>
+
+</body>
 
 
 </html>
+{% endblock %}
