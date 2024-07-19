@@ -85,6 +85,28 @@
     justify-content: center;    
 }
 
+#formContacto{
+    padding-left: 10vw;
+}
+
+.labelFormulario{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 3%;
+    margin-top: 7%;
+}
+
+#idCelular{
+    width: 12.5vw;
+}
+
+
+
+#idDireccion, #campoTexto{
+    width: 15vw;
+}
+
 #div-nombre{
     padding-top: 10vh;
     padding-bottom: 3vh;
@@ -229,7 +251,7 @@
 
 #div-usuario-boton{
     display: flex;
-    /* justify-content: center; */
+    
 }
 
 #div-paso-3-complemento{
@@ -392,7 +414,6 @@
     }
 
     .btn-enviar{
-        
         width: 20vw !important;
     }
 }
@@ -422,18 +443,19 @@
 .btn-enviar{
     background-color: black;
     color: #ffffff;
-    width: 10vw;
+    /* width: 15vw; */
     text-align: center;
-    font-size: 1.2rem;
+    /* font-size: 1.7rem; */
     border: 2px solid #000000;
-    padding: 1.7vh;
+    padding: 10px 20px;
     cursor: pointer;
     transition: background-color 0.3s;
     transition: all 0.3s ease;
-    /* margin-top: -10%; */
-    margin-right: 2%;
+    margin-left: 20%;    
+    margin-top: 4%;
     border-radius: 0.2rem;
     margin-bottom: 3vh;
+    width: 50%;
 
 }
 
@@ -441,6 +463,12 @@
     background-color: rgba(21, 21, 21, 0.864);
     color: #ffffff;
     transform: scale(1.1);
+}
+
+input#idCelular::-webkit-inner-spin-button,
+input#idCelular::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .form-check-input{

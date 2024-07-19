@@ -184,6 +184,10 @@ input#presupuesto {
 
 /************************* PLANILLA DE CONTACTO *********************/
 
+.labelFormulario{
+    font-size: 2rem !important;
+}
+
 #nombre-completo, #correo, #celular{
     box-shadow: none !important;
 }
@@ -214,14 +218,13 @@ input#presupuesto {
     height: 4vh;
 }
 
-input#celular::-webkit-inner-spin-button,
-input#celular::-webkit-outer-spin-button {
+input#idCelular::-webkit-inner-spin-button,
+input#idCelular::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
 
-/* Ocultar las flechas en Firefox */
-input#celular {
+input#idCelular {
     -moz-appearance: textfield;
 
 }
@@ -274,8 +277,8 @@ input#celular {
     cursor: pointer;
     transition: background-color 0.3s;
     transition: all 0.3s ease;
-    margin-left: 5%;
-    margin-top: -7%;
+    margin-left: 75%;    
+    margin-top: 4%;
 
     border-radius: 0.2rem;
     margin-bottom: 3vh;
@@ -286,6 +289,18 @@ input#celular {
     background-color: rgba(21, 21, 21, 0.864);
     color: #ffffff;
     transform: scale(1.1);
+}
+
+.labelFormulario{
+    font-weight: bold;
+    margin-bottom: 1%;
+    margin-top: 5%;
+    font-size: 1.5rem;
+}
+
+#idDireccion, #campoTexto{
+    width: 35vw;
+    height: 7vh;
 }
 
 

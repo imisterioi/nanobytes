@@ -339,8 +339,19 @@ function resaltarBotonNav() {
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    resaltarBotonNav(); // Llamar a la función cuando se carga la página
+    resaltarBotonNav(); 
 });
 
-// Llamar a la función cuando se produce un evento de desplazamiento
+
 window.addEventListener('scroll', resaltarBotonNav);
+
+document.addEventListener('DOMContentLoaded', function() {
+    var formulario = document.getElementById('formContacto');
+
+    formulario.addEventListener('submit', function(event) {
+         
+
+        alert('¡Gracias por elegirnos!');
+        alert('Pronto nos pondremos en contacto contigo.');
+    });
+});
